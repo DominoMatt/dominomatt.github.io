@@ -1287,6 +1287,15 @@ summary:focus-visible {
     padding: 40px 22px 64px;
   }
 
+  /* title + nav together are wider than the viewport at this size, so
+     stack them — nav on top, brand below — instead of squeezing both
+     into one row. */
+  .site-header {
+    flex-direction: column-reverse;
+    align-items: stretch;
+    gap: 14px;
+  }
+
   .game-title {
     font-size: 2rem;
   }
