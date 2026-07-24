@@ -23,6 +23,8 @@ jobs:
         uses: actions/checkout@v4
       - name: Build with Astro
         uses: withastro/action@v3
+        with:
+          node-version: 24
         # withastro/action installs deps, runs `astro build`, and uploads the
         # dist/ artifact. It reads `base` from astro.config.mjs automatically.
 
