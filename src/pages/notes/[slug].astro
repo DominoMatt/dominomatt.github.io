@@ -1,0 +1,54 @@
+---
+import { render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import GameCoverGrid from '../../components/GameCoverGrid.astro';
+import { getNotes, getGames, getReferencedGames, nextPublished } from '../../lib/content';
+import type { Note, Game } from '../../lib/content';
+import { url } from '../../lib/links';
+
+export async function getStaticPaths() {
+  const notes = await getNotes();
+  const games = await getGames();
+  return notes.map((n, i) => ({
+    params: { slug: n.id },
+    props: {
+      n,
+      next: nextPublished(notes, i),
+      referencedGames: getReferencedGames(n, games),
+    },
+  }));
+}
+
+interface Props {
+  n: Note;
+  next: Note;
+  referencedGames: Game[];
+}
+
+const { n, next, referencedGames } = Astro.props;
+const { Content } = await render(n.entry);
+---
+
+<Base title={n.title} description={n.dek}>
+  <Breadcrumb section="notes" eyebrow="NOTE" />
+
+  <header class="titleblock titleblock--content titleblock--note">
+    <div class="kicker-meta">ESSAY · {n.dateFull}</div>
+    <h1 class="page-title">{n.title}</h1>
+    <div class="accent-bar" style={`background:${n.accent}`}></div>
+    <p class="lede">{n.dek}</p>
+  </header>
+
+  <div class="prose" style={`--accent:${n.accent}`}>
+    <Content />
+  </div>
+
+  <GameCoverGrid games={referencedGames} label="GAMES IN THIS ARTICLE" />
+
+  <div class="footer-actions">
+    <a class="note-next" href={url(`/notes/${next.id}`)}>NEXT · {next.title} →</a>
+  </div>
+
+  <p class="copyright-notice">© {n.date.getUTCFullYear()} dominomatt. All rights reserved.</p>
+</Base>

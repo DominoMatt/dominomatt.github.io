@@ -1,0 +1,14 @@
+---
+interface Props {
+  backHref: string;
+  backLabel: string;
+  eyebrow: string;
+}
+
+const { backHref, backLabel, eyebrow } = Astro.props;
+---
+
+<div class="topbar">
+  <a class="topbar-back" href={backHref}>{backLabel}</a>
+  <span class="topbar-eyebrow">{eyebrow}</span>
+</div>

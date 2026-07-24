@@ -1,0 +1,17 @@
+---
+import type { Game } from '../lib/content';
+import { getGameArt } from '../lib/content';
+import Motif from './Motif.astro';
+
+interface Props {
+  game: Game;
+}
+
+const { game: g } = Astro.props;
+const Art = getGameArt(g);
+---
+
+<div class="game-cover" style={`background:${g.accent}`}>
+  {Art ? <Art width="72" height="72" aria-hidden="true" /> : g.motif && <Motif motif={g.motif} ink={g.ink} />}
+  <span class="game-cover-title" style={`color:${g.ink}`}>{g.title}</span>
+</div>

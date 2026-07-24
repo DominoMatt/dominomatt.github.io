@@ -1,0 +1,35 @@
+---
+import Base from '../../layouts/Base.astro';
+import TopBar from '../../components/TopBar.astro';
+import NoteRow from '../../components/NoteRow.astro';
+import { getNotes } from '../../lib/content';
+import { url } from '../../lib/links';
+
+const notes = (await getNotes()).filter((n) => n.published);
+---
+
+<Base
+  title="Field Notes"
+  description="Short essays on the games and the trade of making them — what the single-sheet format teaches, and what it costs."
+>
+  <TopBar backHref={url('/')} backLabel="← THE INDEX" eyebrow="NOTES" />
+
+  <header class="titleblock">
+    <div class="kicker-meta">NOTES FROM THE WORKSHOP</div>
+    <h1 class="page-title">Field Notes</h1>
+    <p class="lede" style="max-width:520px">
+      Short essays on the games and the trade of making them — what the single-sheet format
+      teaches, and what it costs.
+    </p>
+  </header>
+
+  <div class="rule" style="margin-top:34px"></div>
+
+  <section class="notes notes--all" aria-label="All notes">
+    {notes.map((n) => <NoteRow note={n} />)}
+  </section>
+
+  <div style="margin-top:44px">
+    <a class="btn" href={url('/')}>← THE INDEX</a>
+  </div>
+</Base>

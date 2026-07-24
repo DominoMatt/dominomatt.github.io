@@ -1,0 +1,93 @@
+---
+import Base from '../layouts/Base.astro';
+import TopBar from '../components/TopBar.astro';
+import { site } from '../data/site';
+import { url } from '../lib/links';
+import { getGames } from '../lib/content';
+
+const topics = ['A question', 'A playtest report', 'Something else'];
+const games = (await getGames()).filter((g) => g.published);
+
+// Web3Forms' no-JS success flow redirects the browser here after a valid
+// submission, so it needs to be an absolute URL — relative paths are sent
+// through as-is and won't resolve. On Web3Forms' free plan the redirect is
+// only honored when its domain matches the domain the form was served from
+// (cross-domain redirect is a paid feature); a mismatch doesn't error, it
+// just silently falls back to Web3Forms' own thank-you page. That means the
+// astro.config.mjs `site` placeholder isn't just cosmetic — it must exactly
+// match the real deploy domain or this redirect will never fire in
+// production. In dev, use the actual dev-server origin instead so local
+// testing redirects to localhost rather than the (mismatched) `site` value.
+const origin = import.meta.env.DEV ? Astro.url.origin : Astro.site;
+const thankYouUrl = new URL(url('/thank-you'), origin).href;
+---
+
+<Base
+  title="Say hello"
+  description="Questions about a game, a playtest report, or a note about a typo in the rules — it all reaches the same kitchen table."
+>
+  <TopBar backHref={url('/')} backLabel="← THE INDEX" eyebrow="CONTACT" />
+
+  <header class="titleblock">
+    <div class="kicker-meta">GET IN TOUCH</div>
+    <h1 class="page-title">Say hello</h1>
+    <div class="accent-bar" style="background:#bd7f2e"></div>
+    <p class="lede" style="max-width:520px">
+      Questions about a game, a playtest report, or a note about a typo in the rules — it all
+      reaches the same kitchen table. We read every one.
+    </p>
+  </header>
+
+  <form class="contact-form" action={site.formAction} method="POST">
+    <input type="hidden" name="access_key" value={site.web3formsAccessKey} />
+    <input type="hidden" name="subject" value={`New message from ${site.name} contact form`} />
+    <input type="hidden" name="redirect" value={thankYouUrl} />
+    <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
+
+    <div class="field-label">THIS IS…</div>
+    <div class="chips">
+      {
+        topics.map((t, i) => (
+          <label class="chip">
+            <input type="radio" name="topic" value={t} checked={i === 0} />
+            {t.toUpperCase()}
+          </label>
+        ))
+      }
+    </div>
+
+    <div class="row" style="margin-top:30px">
+      <div class="col">
+        <div class="field-label">YOUR NAME</div>
+        <input class="input" type="text" name="name" placeholder="Jane Compositor" required />
+      </div>
+      <div class="col">
+        <div class="field-label">EMAIL</div>
+        <input class="input" type="email" name="email" placeholder="jane@example.com" required />
+      </div>
+    </div>
+
+    <div style="margin-top:24px">
+      <div class="field-label">GAME (OPTIONAL)</div>
+      <select class="input" name="game">
+        <option value="">— Not about a specific game —</option>
+        {games.map((g) => <option value={g.title}>{g.title}</option>)}
+      </select>
+    </div>
+
+    <div style="margin-top:24px">
+      <div class="field-label">YOUR NOTE</div>
+      <textarea
+        class="input"
+        name="message"
+        rows="6"
+        placeholder="Tell us what happened at the table…"
+        required></textarea>
+    </div>
+
+    <div class="footer-actions" style="border-top:0;margin-top:26px;padding-top:0">
+      <button class="btn btn--solid" type="submit">SEND NOTE →</button>
+      <a class="btn" href={url('/')}>← THE INDEX</a>
+    </div>
+  </form>
+</Base>

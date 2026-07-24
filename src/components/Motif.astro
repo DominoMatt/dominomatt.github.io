@@ -1,0 +1,23 @@
+---
+import type { Motif } from '../lib/content';
+
+interface Props {
+  motif?: Motif;
+  ink: string;
+}
+
+const { motif, ink } = Astro.props;
+---
+
+{
+  motif === 'pips' && (
+    <div class="m-pips" aria-hidden="true">
+      {Array.from({ length: 6 }).map(() => (
+        <span style={`background:${ink}`} />
+      ))}
+    </div>
+  )
+}
+{motif === 'diamond' && <div class="m-diamond" style={`background:${ink}`} aria-hidden="true" />}
+{motif === 'circle' && <div class="m-circle" style={`background:${ink}`} aria-hidden="true" />}
+{motif === 'line' && <div class="m-line" style={`background:${ink}`} aria-hidden="true" />}

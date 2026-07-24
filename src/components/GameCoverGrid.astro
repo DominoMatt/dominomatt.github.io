@@ -1,0 +1,27 @@
+---
+import type { Game } from '../lib/content';
+import GameCover from './GameCover.astro';
+import { url } from '../lib/links';
+
+interface Props {
+  games: Game[];
+  label: string;
+}
+
+const { games, label } = Astro.props;
+---
+
+{
+  games.length > 0 && (
+    <section class="game-links" aria-label={label}>
+      <div class="label label--h4">{label}</div>
+      <div class="game-links-grid">
+        {games.map((g) => (
+          <a class="game-link" href={url(`/rules/${g.id}`)} aria-label={`Read the rules for ${g.title}`}>
+            <GameCover game={g} />
+          </a>
+        ))}
+      </div>
+    </section>
+  )
+}

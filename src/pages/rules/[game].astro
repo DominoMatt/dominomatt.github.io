@@ -1,0 +1,64 @@
+---
+import { render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import GameCoverGrid from '../../components/GameCoverGrid.astro';
+import DownloadsList from '../../components/DownloadsList.astro';
+import { getGames, getRelatedGames, getGameArt, getGameEyebrow } from '../../lib/content';
+import type { Game } from '../../lib/content';
+
+export async function getStaticPaths() {
+  const games = await getGames();
+  return games.map((g) => ({
+    params: { game: g.id },
+    props: { g, relatedGames: getRelatedGames(g, games) },
+  }));
+}
+
+interface Props {
+  g: Game;
+  relatedGames: Game[];
+}
+
+const { g, relatedGames } = Astro.props;
+const { Content } = await render(g.entry);
+const Art = getGameArt(g);
+const hasAddendum = g.downloads.length > 0 || g.attributions.length > 0 || relatedGames.length > 0;
+---
+
+<Base title={`${g.title} — Rules`} description={g.description}>
+  <Breadcrumb section="games" eyebrow="RULES" />
+
+  <header class="titleblock titleblock--content">
+    <div class="titleblock-head">
+      <span class="title-icon" style={`background:${g.accent}`}>
+        {Art && <Art width="72" height="72" aria-hidden="true" />}
+      </span>
+      <div class="titleblock-headings">
+        <div class="kicker-meta">{getGameEyebrow(g)}</div>
+        <h1 class="page-title">{g.title}</h1>
+      </div>
+    </div>
+    <p class="lede">{g.description}</p>
+    {
+      g.mechanics.length > 0 && (
+        <div class="mechanics">
+          {g.mechanics.map((m) => (
+            <span class="mechanic-pill">{m}</span>
+          ))}
+        </div>
+      )
+    }
+    <p class="kicker-meta license-brow">LICENSE · {g.license}</p>
+  </header>
+
+  <div class="prose" style={`--accent:${g.accent}`}>
+    <Content />
+  </div>
+
+  {hasAddendum && <hr class="rule" style={`margin-top:52px;background:${g.accent}`} />}
+
+  <DownloadsList game={g} />
+
+  <GameCoverGrid games={relatedGames} label="RELATED GAMES" />
+</Base>

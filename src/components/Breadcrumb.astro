@@ -1,0 +1,25 @@
+---
+import { site } from '../data/site';
+import { url } from '../lib/links';
+
+interface Props {
+  section: 'games' | 'notes';
+  eyebrow: string;
+}
+
+const { section, eyebrow } = Astro.props;
+const sectionHref = section === 'games' ? '/games' : '/notes';
+const sectionLabel = section === 'games' ? 'GAMES' : 'NOTEBOOK';
+---
+
+<div class="topbar">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    {site.mark && (
+      <span class="breadcrumb-mark" aria-hidden="true">{site.mark}</span>
+    )}
+    <a href={url('/')}>INDEX</a>
+    <span class="sep" aria-hidden="true">/</span>
+    <a href={url(sectionHref)}>{sectionLabel}</a>
+  </nav>
+  <span class="topbar-eyebrow">{eyebrow}</span>
+</div>

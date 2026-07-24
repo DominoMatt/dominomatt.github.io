@@ -1,0 +1,58 @@
+---
+import Base from '../../layouts/Base.astro';
+import TopBar from '../../components/TopBar.astro';
+import GameRow from '../../components/GameRow.astro';
+import { getGames, getGameCategories } from '../../lib/content';
+import { url } from '../../lib/links';
+
+export async function getStaticPaths() {
+  const games = (await getGames()).filter((g) => g.published);
+  const categories = getGameCategories(games);
+  return [
+    { params: { category: undefined } }, // /games — all of them
+    ...categories.map((c) => ({ params: { category: c.slug } })),
+  ];
+}
+
+const { category } = Astro.params;
+const games = (await getGames()).filter((g) => g.published);
+const categories = getGameCategories(games);
+const active = categories.find((c) => c.slug === category);
+const shown = active ? games.filter((g) => g.category === active.label) : games;
+---
+
+<Base
+  title={active ? `Games · ${active.label}` : 'Games'}
+  description="Every game we've made, printable at home — filter by category."
+>
+  <TopBar backHref={url('/')} backLabel="← THE INDEX" eyebrow="GAMES" />
+
+  <header class="titleblock">
+    <div class="kicker-meta">
+      {active ? `GAMES · ${active.label.toUpperCase()}` : 'THE FULL CATALOGUE'}
+    </div>
+    <h1 class="page-title">Games</h1>
+    <p class="lede" style="max-width:520px">Every game we've made, printable at home.</p>
+  </header>
+
+  <nav class="chips" style="margin-top:30px" aria-label="Filter by category">
+    <a class:list={['chip', !active && 'active']} href={url('/games')}>ALL</a>
+    {
+      categories.map((c) => (
+        <a class:list={['chip', active?.slug === c.slug && 'active']} href={url(`/games/${c.slug}`)}>
+          {c.label.toUpperCase()}
+        </a>
+      ))
+    }
+  </nav>
+
+  <div class="rule" style="margin-top:26px"></div>
+
+  <section class="games" aria-label={active ? `${active.label} games` : 'All games'}>
+    {shown.map((g) => <GameRow game={g} />)}
+  </section>
+
+  <div style="margin-top:44px">
+    <a class="btn" href={url('/')}>← THE INDEX</a>
+  </div>
+</Base>

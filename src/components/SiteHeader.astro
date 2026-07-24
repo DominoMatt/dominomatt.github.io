@@ -1,0 +1,30 @@
+---
+import { site } from '../data/site';
+import { getSiteMark } from '../lib/content';
+import { url } from '../lib/links';
+
+interface Props {
+  active?: 'index' | 'games' | 'notes';
+}
+
+const { active = 'index' } = Astro.props;
+const MarkSvg = getSiteMark();
+---
+
+<header class="site-header">
+  <a class="brand" href={url('/')} aria-label={site.name}>
+    {MarkSvg ? (
+      <span class="brand-mark" aria-hidden="true"><MarkSvg /></span>
+    ) : (
+      site.mark && <span class="brand-mark" aria-hidden="true">{site.mark}</span>
+    )}
+    <span class="brand-name">{site.name}</span>
+  </a>
+  <nav class="nav" aria-label="Primary">
+    <a href={url('/')} class={active === 'index' ? 'active' : ''}>INDEX</a>
+    <span class="sep" aria-hidden="true">/</span>
+    <a href={url('/games')} class={active === 'games' ? 'active' : ''}>GAMES</a>
+    <span class="sep" aria-hidden="true">/</span>
+    <a href={url('/notes')} class={active === 'notes' ? 'active' : ''}>NOTEBOOK</a>
+  </nav>
+</header>

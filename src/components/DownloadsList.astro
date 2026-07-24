@@ -1,0 +1,91 @@
+---
+import type { Game } from '../lib/content';
+import { descriptionLines } from '../lib/content';
+import { url } from '../lib/links';
+
+interface Props {
+  game: Game;
+}
+
+const { game: g } = Astro.props;
+const downloads = g.downloads;
+const attributions = g.attributions;
+---
+
+{
+  downloads.length > 0 && (
+    <section class="downloads-section" style={`--accent:${g.accent}`} aria-label="Downloads">
+      <div class="label label--h4">DOWNLOADS</div>
+      <div class="downloads-list">
+        {downloads.map((d) => (
+          <div class="dl-row">
+            <span class="dl-type">{d.type}</span>
+            <div class="dl-body">
+              <div class="dl-name">{d.title}</div>
+              {descriptionLines(d.description).map((line) => (
+                <p class="dl-desc">{line}</p>
+              ))}
+              <div class="dl-meta">
+                <span class="dl-version">{d.version}</span>
+                {d.spec && <span class="dl-spec">{d.spec}</span>}
+                {d.history.length > 0 && (
+                  <details class="dl-history">
+                    <summary>
+                      <span class="dl-history-marker">
+                        <span class="dl-history-closed">▾</span>
+                        <span class="dl-history-open">▴</span>
+                      </span>{' '}
+                      <span class="dl-history-link">
+                        <span class="dl-history-closed">
+                          {d.history.length} EARLIER VERSION{d.history.length === 1 ? '' : 'S'}
+                        </span>
+                        <span class="dl-history-open">HIDE VERSIONS</span>
+                      </span>
+                    </summary>
+                  </details>
+                )}
+              </div>
+              {d.history.length > 0 && (
+                <div class="dl-history-body">
+                  <div class="dl-history-label">VERSION HISTORY</div>
+                  {d.history.map((h) => (
+                    <div class="dl-history-row">
+                      <span class="dl-history-version">{h.version}</span>
+                      <span class="dl-history-note">{h.note}</span>
+                      <span class="dl-history-date">{h.date}</span>
+                      {h.file ? (
+                        <a class="dl-history-get" href={url(`/print/${h.file}`)} download>
+                          GET →
+                        </a>
+                      ) : (
+                        <span class="dl-history-get" aria-hidden="true" />
+                      )}
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+            <a class="btn btn--solid dl-get" href={url(`/print/${d.file}`)} download>
+              GET →
+            </a>
+          </div>
+        ))}
+      </div>
+    </section>
+  )
+}
+
+{
+  attributions.length > 0 && (
+    <section class="attributions-section" aria-label="Attributions">
+      <div class="label label--h4">ATTRIBUTIONS</div>
+      <div class="prose attributions-body" style={`--accent:${g.accent}`}>
+        <ul>
+          {attributions.map((a) => (
+            <li>{a}</li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )
+}

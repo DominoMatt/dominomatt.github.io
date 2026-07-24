@@ -1,0 +1,46 @@
+// Studio-wide configuration and the few bits of editable copy that aren't
+// tied to a specific game or note.
+export const site = {
+  // Brand mark shown before the site name. `mark` is plain text (a glyph
+  // like "◆" works well) and appears in both the homepage header and page
+  // breadcrumbs. `markSvg` is a filename under src/assets/art/, inlined at
+  // build time — it replaces `mark` in the homepage header only (breadcrumbs
+  // stay text-only, since the SVG reads too small there). Leave both empty
+  // for no mark.
+  mark: '',
+  markSvg: 'single_domino_white.svg',
+  name: 'FREE DOMINO GAMES',
+  title: 'Free Domino Games',
+  description: 'Free domino games',
+  tagline: '',
+  interactCopy:
+    'Everything here is free to play. If a game earned its place at your table, drop us a line.',
+
+  // Tip jar: any external link (Ko-fi, Buy Me a Coffee, PayPal.me, etc).
+  // Set tipsEnabled to false to hide the "LEAVE A TIP" button entirely.
+  tipsEnabled: false,
+  tipUrl: 'https://ko-fi.com/your-handle', // TODO: set your tip-jar URL
+
+  // Contact form target: Web3Forms. GitHub Pages is static (no server), so
+  // the form POSTs straight to Web3Forms' API — the endpoint below is fixed
+  // and doesn't change per client. What's client-specific is the access key,
+  // generated free at https://web3forms.com by entering the destination
+  // inbox email. It's safe to expose in the page source (it only authorizes
+  // submissions, not reads). Until it's set below the form will not deliver
+  // anything.
+  formAction: 'https://api.web3forms.com/submit',
+  web3formsAccessKey: '023b0748-caf0-4797-9c5c-5bf4e648e4f3',
+
+  // Homepage widget curation. Each list is an array of content ids (the
+  // filename in src/content/{games,notes}/ without ".md") in the exact order
+  // they should appear on the homepage. Only ids listed here show up —
+  // nothing is auto-derived from "newest" or "all". Unlisted ids just don't
+  // appear on the homepage (they're still reachable from /games and /notes).
+  // This intentionally lives here rather than in frontmatter: it's a
+  // "curate the front door" decision, not a per-item edit, so it takes a dev
+  // touch — see AUTHORING.md for the day-to-day content workflow.
+  homepage: {
+    notes: ['dominoes', 'layout_games'],
+    games: ['memory', 'fish_pond', 'domino_kingdom', 'push_your_luck'],
+  },
+};

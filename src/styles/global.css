@@ -1,0 +1,1374 @@
+/* ============================================================
+   Reference Games — global styles
+   Dark theme only (the design's light palette and toggle were
+   dropped). Palette + type lifted verbatim from Studio.dc.html.
+   ============================================================ */
+
+:root {
+  --bg: #16140d;
+  --ink: #ece6d8;
+  --mut: #8f8a7d;
+  --faint: #6e695d;
+  --line: rgba(236, 230, 216, 0.16);
+  --tint: #1f1c13;
+  --code: rgba(236, 230, 216, 0.09);
+  --accent: #bd7f2e; /* fallback; each rules/notes page sets its own on .prose */
+  --btnbg: #ece6d8;
+  --btnink: #16140d;
+
+  /* The "<Family> fallback" names are generated at build time by the
+     fontaine Vite plugin (astro.config.mjs) — a local system font resized
+     via size-adjust/ascent-override/descent-override to match each
+     self-hosted face's metrics, so the font-display:swap reflow shrinks
+     even before the real face finishes downloading. */
+  --serif-display: 'Libre Caslon Display', 'Libre Caslon Display fallback', serif;
+  --serif-text: 'Libre Caslon Text', 'Libre Caslon Text fallback', serif;
+  --sans: 'Libre Franklin', 'Libre Franklin fallback', sans-serif;
+  --mono: 'Spline Sans Mono', 'Spline Sans Mono fallback', monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  /* Site is dark-theme only — this tells the browser to paint native form
+     chrome (select dropdown popups, scrollbars, autofill) dark instead of
+     defaulting to a white popup with our light --ink text on top of it. */
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--serif-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ---- layout -------------------------------------------------- */
+
+.wrap {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 56px 32px 88px;
+}
+
+.rule {
+  height: 1px;
+  margin: 0;
+  border: 0;
+  background: var(--ink);
+}
+
+.label {
+  font-family: var(--mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.1em;
+  color: var(--faint);
+}
+
+/* matches .prose h4's typography (the in-article "label" heading), for
+   section headers that sit right below prose content, e.g. downloads and
+   related games. */
+.label--h4 {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mut);
+}
+
+/* ---- buttons (links + submit share one look) ---------------- */
+
+.btn {
+  appearance: none;
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  padding: 12px 20px;
+  border: 1px solid var(--ink);
+  border-radius: 2px;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn--solid {
+  background: var(--btnbg);
+  color: var(--btnink);
+  border: none;
+  padding: 12px 22px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* ---- site header (index only) ------------------------------- */
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.brand-mark {
+  font-family: var(--serif-display);
+  font-size: 4.25rem;
+  line-height: 0.66;
+  letter-spacing: -0.02em;
+}
+
+/* an SVG mark sizes to match the text mark's visual box; width follows the
+   file's own aspect ratio, overriding any width/height baked into the SVG */
+.brand-mark svg {
+  display: block;
+  height: 44px;
+  width: auto;
+}
+
+.brand-name {
+  font-family: var(--mono);
+  font-size: 0.8125rem;
+  letter-spacing: 0.34em;
+  white-space: nowrap;
+}
+
+.nav {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.1em;
+}
+
+.nav a {
+  color: var(--faint);
+}
+
+.nav a.active {
+  color: var(--ink);
+}
+
+.nav a:hover {
+  color: var(--ink);
+}
+
+.nav .sep {
+  color: var(--faint);
+}
+
+/* ---- index masthead ----------------------------------------- */
+
+.tagline {
+  margin: 34px 0 0;
+  font-family: var(--serif-display);
+  font-size: 2.5rem;
+  line-height: 1.06;
+  letter-spacing: -0.01em;
+  max-width: 560px;
+  text-wrap: pretty;
+}
+
+.interact {
+  padding: 40px 0 34px;
+}
+
+.interact-copy {
+  margin: 10px 0 0;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+/* ---- notes list (shared: index "latest 3" + notebook) ------- */
+
+.notes .note-row {
+  display: flex;
+  gap: 22px;
+  align-items: baseline;
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+  cursor: pointer;
+}
+
+.notes .note-row:first-child {
+  border-top: 0;
+}
+
+.notes--all .note-row {
+  border-top: 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.note-row:hover {
+  opacity: 0.72;
+}
+
+.note-main {
+  flex: 1;
+}
+
+.note-title {
+  display: block;
+  font-family: var(--serif-display);
+  font-size: 1.5rem;
+  line-height: 1.12;
+  letter-spacing: -0.005em;
+}
+
+.note-dek {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.875rem;
+  line-height: 1.45;
+  color: var(--mut);
+}
+
+.note-date {
+  flex-shrink: 0;
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.06em;
+  color: var(--faint);
+}
+
+/* ---- game index (native <details> accordion) ---------------- */
+
+.game {
+  border-bottom: 1px solid var(--line);
+}
+
+.game-head {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 24px 0;
+  cursor: pointer;
+  list-style: none;
+}
+
+.game-head::-webkit-details-marker {
+  display: none;
+}
+
+.game-head:hover {
+  opacity: 0.74;
+}
+
+.game-no {
+  width: 24px;
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--faint);
+}
+
+.game-head-main {
+  flex: 1;
+}
+
+.game-title {
+  display: block;
+  font-family: var(--serif-display);
+  font-size: 2.5rem;
+  line-height: 0.98;
+  letter-spacing: -0.01em;
+}
+
+.game-meta {
+  display: block;
+  margin-top: 8px;
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--mut);
+}
+
+.game-accent {
+  width: 60px;
+  aspect-ratio: 1;
+  border-radius: 1px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-sign {
+  width: 18px;
+  text-align: center;
+  font-family: var(--mono);
+  font-size: 1.375rem;
+  color: var(--mut);
+}
+
+.game-sign::after {
+  content: '+';
+}
+
+.game[open] .game-sign::after {
+  content: '−';
+}
+
+.game-detail {
+  display: flex;
+  gap: 30px;
+  padding: 6px 0 34px 46px;
+}
+
+.game-cover {
+  width: 158px;
+  height: 212px;
+  flex-shrink: 0;
+  padding: 18px;
+  border-radius: 1px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.game-cover-title {
+  margin-top: auto;
+  font-family: var(--serif-display);
+  font-size: 1.875rem;
+  line-height: 0.9;
+}
+
+.game-body {
+  flex: 1;
+  padding-top: 2px;
+}
+
+.game-desc {
+  margin: 0;
+  max-width: 380px;
+  font-size: 1.125rem;
+  line-height: 1.55;
+}
+
+.game-body .mechanics {
+  margin-top: 14px;
+}
+
+.game-license {
+  margin: 6px 0 0;
+  font-family: var(--mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+
+.game-contents {
+  margin-top: 24px;
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+  color: var(--mut);
+}
+
+.game-spec {
+  margin-top: 6px;
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.06em;
+  color: var(--faint);
+}
+
+.game-downloads-count {
+  margin-top: 6px;
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.06em;
+  color: var(--faint);
+}
+
+.game-body .actions {
+  margin-top: 28px;
+}
+
+/* ---- attachments (bottom-of-rules-page downloads section) ----- */
+/* Ported from the Claude Design "Downloads Explorations" 1d direction
+   (dedicated-page layout), adapted per the design handoff to live as a
+   section at the bottom of a game's Rules page rather than its own page.
+   Every row is always-visible (name/desc/meta/GET) — only a file's version
+   history, when present, is a native <details> disclosure, kept inline in
+   the meta row via flex-basis:100% on [open] so it drops to its own line
+   without any client JS. */
+
+/* same top-margin treatment as GameCoverGrid's "RELATED GAMES" section —
+   no divider line between sections, just consistent spacing. */
+.downloads-section {
+  margin-top: 48px;
+}
+
+.attributions-section {
+  margin-top: 48px;
+}
+
+.downloads-list {
+  margin-top: 24px;
+}
+
+.dl-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px 0;
+}
+
+.dl-row:first-child {
+  padding-top: 0;
+}
+
+.dl-row:last-child {
+  padding-bottom: 0;
+}
+
+.dl-row + .dl-row {
+  border-top: 1px solid var(--line);
+}
+
+.dl-type {
+  flex-shrink: 0;
+  font-family: var(--mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.06em;
+  color: var(--ink);
+  background: var(--code);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  padding: 5px 8px;
+}
+
+.dl-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.dl-name {
+  font-size: 1.1875rem;
+  color: var(--ink);
+}
+
+.dl-desc {
+  margin: 5px 0 0;
+  max-width: 420px;
+  font-size: 0.875rem;
+  line-height: 1.45;
+  color: var(--mut);
+}
+
+.dl-desc + .dl-desc {
+  margin-top: 0.6em;
+}
+
+.dl-meta {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+  margin-top: 9px;
+  flex-wrap: wrap;
+}
+
+.dl-version {
+  flex-shrink: 0;
+  font-family: var(--mono);
+  font-size: 0.625rem;
+  color: var(--mut);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  padding: 2px 6px;
+}
+
+.dl-spec {
+  font-family: var(--mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.04em;
+  color: var(--faint);
+}
+
+.dl-history summary {
+  font-family: var(--mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.04em;
+  color: var(--faint);
+  cursor: pointer;
+  list-style: none;
+}
+
+.dl-history summary::-webkit-details-marker {
+  display: none;
+}
+
+.dl-history summary:hover {
+  color: var(--ink);
+}
+
+/* the ▾/▴ marker sits outside the underlined link text — same clickable
+   summary, just not styled as part of the "link" itself */
+.dl-history-marker {
+  display: inline-block;
+}
+
+.dl-history-link {
+  text-decoration: underline;
+}
+
+.dl-history-open {
+  display: none;
+}
+
+.dl-history[open] .dl-history-closed {
+  display: none;
+}
+
+.dl-history[open] .dl-history-open {
+  display: inline;
+}
+
+/* the toggle itself is just the <details>'s <summary> — a plain-text link
+   that stays put in the meta row and only ever swaps its own text. The
+   revealed version-history panel lives outside the flex row entirely (a
+   later sibling in .dl-body, not nested in .dl-history), shown/hidden off
+   the <details>'s [open] state via :has() so opening it never moves the
+   link that opened it. */
+.dl-history-body {
+  display: none;
+  margin-top: 16px;
+  padding-left: 18px;
+  border-left: 1px solid var(--line);
+}
+
+.dl-body:has(.dl-history[open]) .dl-history-body {
+  display: block;
+}
+
+.dl-history-label {
+  margin-bottom: 8px;
+  font-family: var(--mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.08em;
+  color: var(--faint);
+}
+
+.dl-history-row {
+  display: grid;
+  grid-template-columns: 46px 1fr 62px 34px;
+  gap: 12px;
+  padding: 7px 0;
+  font-size: 0.8125rem;
+}
+
+.dl-history-version {
+  font-family: var(--mono);
+  color: var(--mut);
+}
+
+.dl-history-note {
+  color: var(--mut);
+}
+
+.dl-history-date {
+  font-family: var(--mono);
+  color: var(--faint);
+  text-align: right;
+}
+
+/* a plain text link, not the .btn treatment used for the current version's
+   GET button — an old version is a minor, secondary action */
+.dl-history-get {
+  font-family: var(--mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.04em;
+  color: var(--faint);
+  text-decoration: underline;
+  text-align: right;
+}
+
+.dl-history-get:hover {
+  color: var(--ink);
+}
+
+.dl-get {
+  flex-shrink: 0;
+}
+
+/* cover motifs */
+.m-pips {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 9px;
+  width: 62px;
+}
+
+.m-pips span {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+
+.m-diamond {
+  width: 34px;
+  height: 34px;
+  transform: rotate(45deg);
+  margin: 8px 0 0 6px;
+}
+
+.m-circle {
+  align-self: flex-end;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+}
+
+.m-line {
+  width: 100%;
+  height: 3px;
+  margin-top: auto;
+}
+
+/* motifs reused as the collapsed index row's swatch, in place of real
+   art — same shapes, scaled down and re-centred for the smaller box */
+.game-accent .m-pips {
+  width: 29px;
+  gap: 4px;
+}
+
+.game-accent .m-pips span {
+  width: 7px;
+  height: 7px;
+}
+
+.game-accent .m-diamond {
+  width: 22px;
+  height: 22px;
+  margin: 0;
+}
+
+.game-accent .m-circle {
+  align-self: center;
+  width: 34px;
+  height: 34px;
+}
+
+.game-accent .m-line {
+  width: 34px;
+  height: 2px;
+  margin-top: 0;
+}
+
+/* ---- sub-page top bar --------------------------------------- */
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar-back {
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.08em;
+  color: var(--mut);
+}
+
+.topbar-back:hover {
+  color: var(--ink);
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.08em;
+}
+
+.breadcrumb-mark {
+  font-family: var(--serif-display);
+  font-size: 1.125rem;
+  line-height: 1;
+}
+
+.breadcrumb a {
+  color: var(--mut);
+}
+
+.breadcrumb a:hover {
+  color: var(--ink);
+}
+
+.breadcrumb .sep {
+  color: var(--faint);
+}
+
+.topbar-eyebrow {
+  font-family: var(--mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.14em;
+  color: var(--faint);
+}
+
+/* ---- title block + prose sections (rules + articles) -------- */
+
+.titleblock {
+  margin-top: 44px;
+}
+
+.titleblock-head {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.title-icon {
+  width: 100px;
+  aspect-ratio: 1;
+  border-radius: 1px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* article (note) masthead — no game signet, narrower than the body */
+.titleblock--note {
+  max-width: 560px;
+}
+
+.titleblock--note .accent-bar {
+  width: 64px;
+  height: 4px;
+  margin-top: 22px;
+  border-radius: 1px;
+}
+
+/* game rules + note articles read their lede in the "Content & Markdown"
+   sans (Libre Franklin), matching the .prose body below it. The index,
+   notebook list, and contact masthead stay on the Studio serif. */
+.titleblock--content .lede {
+  font-family: var(--sans);
+}
+
+.kicker-meta {
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--mut);
+}
+
+.page-title {
+  margin: 12px 0 0;
+  font-family: var(--serif-display);
+  font-size: 4rem;
+  line-height: 0.92;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+}
+
+.lede {
+  margin: 24px 0 0;
+  font-size: 1.25rem;
+  line-height: 1.55;
+}
+
+.titleblock .mechanics {
+  margin-top: 18px;
+}
+
+.license-brow {
+  margin-top: 14px;
+}
+
+/* ---- rendered markdown body (rules + articles) -------------- */
+/* Full GitHub Flavored Markdown, typeset to the "Content & Markdown"
+   design. Body copy runs in Libre Franklin (sans), not the Studio
+   serif — this is the one design deliberately split from the index
+   chrome. The heading scale runs display -> label:
+     h2  section    — serif display, ruled, with an accent tick
+     h3  subsection — sans, bold (a voice shift via weight, not italic)
+     h4  label      — small uppercase mono (the old numbered "kicker",
+                      now at the bottom of the scale, un-numbered)
+   Each page sets --accent inline on .prose from its frontmatter, so the
+   markers / rules / links pick up that page's colour. */
+
+.prose {
+  /* set to e.g. 600px to constrain text line length; none = full column width */
+  --measure: none;
+  font-family: var(--sans);
+}
+
+.prose h1 {
+  margin: 0;
+  font-family: var(--serif-display);
+  font-size: 2.75rem;
+  line-height: 0.92;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+}
+
+.prose h2 {
+  margin: 1.875em 0 0;
+  font-family: var(--serif-display);
+  font-size: 2rem;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+}
+
+.prose h2::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 3px;
+  margin-bottom: 0.4375em;
+  background: var(--accent);
+  border-radius: 1px;
+}
+
+.prose h3 {
+  margin: 1.545em 0 0;
+  font-family: var(--serif-display);
+  font-size: 1.55rem;
+  line-height: 1.2;
+  font-weight: 500;
+
+}
+
+.prose h2 + h3 {
+  margin-top: 1.273em;
+}
+
+.prose h4 {
+  margin: 2.667em 0 0;
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mut);
+}
+
+.prose p {
+  margin: 0.889em 0 0;
+  max-width: var(--measure);
+  font-size: 1rem;
+  line-height: 1.66;
+}
+
+/* lists — native markers, styled as quiet outline points.
+   Markers use the body sans in a muted ink (not the accent, not mono)
+   so numbers and letters read like ordinary text and nest cleanly.
+   Bullets read a touch bigger and bolder than numbered/lettered markers,
+   per the design spec. Native markers also honour the `type`, `start`,
+   and `value` attributes for free — see the ol type map below. */
+.prose ul,
+.prose ol {
+  margin: 0.889em 0 0;
+  padding-left: 2em;
+  max-width: var(--measure);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.prose li {
+  margin-top: 0.389em;
+  padding-left: 0.3em;
+}
+
+.prose li::marker {
+  font-family: var(--sans);
+  font-size: 1em;
+  font-weight: 400;
+  color: var(--faint);
+}
+
+.prose ul > li::marker {
+  font-weight: 700;
+  font-size: 1.15em;
+  color: var(--mut);
+}
+
+/* nested lists sit tight under their parent item */
+.prose li > ul,
+.prose li > ol {
+  margin-top: 0.222em;
+}
+
+/* ordered-list numbering systems — full <ol type> support.
+   Browsers map the `type` attribute to list-style-type automatically,
+   but setting the decimal default above would clobber that, so the
+   variants are restored explicitly here. start/value are honoured
+   natively by all of them. */
+.prose ol {
+  list-style-type: decimal;
+}
+.prose ol[type='1'] {
+  list-style-type: decimal;
+}
+.prose ol[type='a'] {
+  list-style-type: lower-alpha;
+}
+.prose ol[type='A'] {
+  list-style-type: upper-alpha;
+}
+.prose ol[type='i'] {
+  list-style-type: lower-roman;
+}
+.prose ol[type='I'] {
+  list-style-type: upper-roman;
+}
+
+/* GFM task lists — the checkbox replaces the marker and sits flush left */
+.prose ul:has(> li > input[type='checkbox']) {
+  padding-left: 0;
+}
+
+.prose li:has(> input[type='checkbox']) {
+  list-style: none;
+  padding-left: 0;
+}
+
+.prose input[type='checkbox'] {
+  margin: 0 0.444em 0 0;
+  accent-color: var(--accent);
+}
+
+.prose blockquote {
+  margin: 1.1em 0 0;
+  padding: 0.1em 0 0.1em 1.1em;
+  border-left: 3px solid var(--accent);
+  max-width: var(--measure);
+  font-style: italic;
+  font-size: 1.125rem;
+  line-height: 1.66;
+  color: var(--ink);
+}
+
+.prose blockquote p {
+  margin-top: 0.5em;
+  max-width: none;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.prose blockquote > :first-child {
+  margin-top: 0;
+}
+
+.prose a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-underline-offset: 3px;
+}
+
+.prose a:hover {
+  text-decoration-color: var(--ink);
+}
+
+.prose strong {
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.prose em {
+  font-style: italic;
+}
+
+.prose del {
+  color: var(--mut);
+}
+
+.prose code {
+  font-family: var(--mono);
+  font-size: 0.84em;
+  background: var(--code);
+  padding: 0.132em 0.397em;
+  border-radius: 3px;
+}
+
+.prose pre {
+  margin: 1.231em 0 0;
+  padding: 1.231em 1.385em;
+  background: var(--tint);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  overflow-x: auto;
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 0.8125rem;
+  line-height: 1.7;
+}
+
+.prose pre code {
+  background: none;
+  padding: 0;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.prose hr {
+  margin: 2.75em 0;
+  border: 0;
+  height: 1px;
+  background: var(--line);
+}
+
+.prose table {
+  width: 100%;
+  margin: 1.375em 0 0;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+.prose th,
+.prose td {
+  text-align: left;
+  vertical-align: top;
+}
+
+.prose th {
+  padding: 0 1.2em 1.1em;
+  border-bottom: 1px solid var(--ink);
+  font-family: var(--mono);
+  font-size: 0.625rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+
+.prose td {
+  padding: 0.8125em 0.75em;
+  border-bottom: 1px solid var(--line);
+  line-height: 1.4;
+}
+
+.prose th:first-child,
+.prose td:first-child {
+  padding-left: 0;
+}
+
+.prose th:last-child,
+.prose td:last-child {
+  padding-right: 0;
+}
+
+.prose figure {
+  margin: 2em 0 0;
+}
+
+.prose figcaption {
+  margin-top: 0.909em;
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.04em;
+  color: var(--faint);
+}
+
+.prose img {
+  max-width: 100%;
+  height: auto;
+  margin: 1.125em 0 0;
+  border-radius: 2px;
+}
+
+/* ---- end-of-page game cross-links ("box art") -----------------
+   Shared by an article's "games in this article" and a game's own
+   "related games" — both end with a row of linked GameCover thumbnails. */
+
+.game-links {
+  margin-top: 48px;
+}
+
+.game-links-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.game-link {
+  display: block;
+  transition: transform 0.15s ease;
+}
+
+.game-link:hover {
+  transform: translateY(-2px);
+}
+
+.footer-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 54px;
+  padding-top: 32px;
+  border-top: 1px solid var(--line);
+  flex-wrap: wrap;
+}
+
+.note-next {
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.05em;
+  color: var(--mut);
+}
+
+.note-next:hover {
+  color: var(--ink);
+}
+
+.copyright-notice {
+  margin: 12px 0 0;
+  font-family: var(--mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.06em;
+  color: var(--faint);
+}
+
+/* ---- contact form ------------------------------------------- */
+
+.contact-form {
+  margin-top: 44px;
+}
+
+.field-label {
+  margin-bottom: 9px;
+  font-family: var(--mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.12em;
+  color: var(--faint);
+}
+
+.chips {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.06em;
+  padding: 9px 16px;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  color: var(--mut);
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.chip:hover {
+  transform: translateY(-1px);
+}
+
+.chip input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.chip:has(input:checked),
+.chip.active {
+  background: var(--ink);
+  color: var(--bg);
+  border-color: var(--ink);
+}
+
+.chip:has(input:focus-visible) {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+
+/* ---- mechanics tags (game widget + rules masthead) ----------- */
+/* Same family as .chip, but 0 radius and tighter padding so they read
+   as tags, not as clickable buttons. */
+
+.mechanics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.mechanic-pill {
+  font-family: var(--mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.06em;
+  padding: 3px 9px;
+  border: 1px solid var(--line);
+  border-radius: 0;
+  color: var(--mut);
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1;
+  min-width: 220px;
+}
+
+.input {
+  width: 100%;
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  padding: 13px 14px;
+  font-family: var(--serif-text);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--ink);
+  outline: none;
+}
+
+.input:focus {
+  border-color: var(--ink);
+}
+
+textarea.input {
+  resize: vertical;
+}
+
+select.input option {
+  background: var(--bg);
+  color: var(--ink);
+}
+
+/* ---- focus visibility for keyboard users -------------------- */
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+  border-radius: 1px;
+}
+
+/* ---- narrow screens ----------------------------------------- */
+
+@media (max-width: 640px) {
+  .wrap {
+    padding: 40px 22px 64px;
+  }
+
+  .game-title {
+    font-size: 2rem;
+  }
+
+  .page-title {
+    font-size: 2.75rem;
+  }
+
+  .game-detail {
+    flex-direction: column;
+    gap: 22px;
+    padding-left: 0;
+  }
+
+  .prose ul,
+  .prose ol {
+    padding-left: 1.25em;
+  }
+}
+
+/* ---- print --------------------------------------------------- */
+/* The dark theme's near-white ink and hairlines are invisible on
+   paper, so print gets its own palette in the same warm hue family,
+   inverted for a light background. Everything downstream (body,
+   .prose, .rule, .btn, tables, code blocks) already reads these
+   custom properties, so redefining them here is the whole fix. */
+
+@media print {
+  * {
+    /* background-colors (accent swatches, cover, bars, the h2 tick) are
+       suppressed by default on print unless a page opts in. */
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  html {
+    /* every font-size in this file is rem, so scaling the root scales
+       the whole type system proportionally — no zoom/transform needed */
+    font-size: 66.6%;
+  }
+
+  :root {
+    --bg: #faf8f2;
+    --ink: #1c1810;
+    --mut: #5c5648;
+    --faint: #86806d;
+    --line: rgba(28, 24, 16, 0.18);
+    --tint: #f1ece0;
+    --code: rgba(28, 24, 16, 0.07);
+    --btnbg: #1c1810;
+    --btnink: #faf8f2;
+  }
+
+  /* --bg only exists to give print its own light-on-dark-ink palette (see
+     above) — the page itself should stay unpainted paper, not a filled
+     cream rectangle burning ink on every print. */
+  body {
+    background: none;
+  }
+
+  .nav,
+  .actions,
+  .footer-actions,
+  .downloads-section,
+  .topbar-back,
+  .breadcrumb,
+  .game-sign,
+  .game-links {
+    display: none;
+  }
+
+  /* native <details> hide their content unless [open] — older engines
+     via `display: none` on the child, current Chromium via the
+     internal ::details-content wrapper's content-visibility/block-size.
+     Override both so every game's rules render even if left collapsed
+     on screen. */
+  .game-detail {
+    display: flex !important;
+  }
+
+  details::details-content {
+    content-visibility: visible !important;
+    block-size: auto !important;
+  }
+}

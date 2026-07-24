@@ -1,0 +1,45 @@
+---
+import Base from '../layouts/Base.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import GameRow from '../components/GameRow.astro';
+import NoteRow from '../components/NoteRow.astro';
+import { getFeaturedGames, getFeaturedNotes } from '../lib/content';
+import { site } from '../data/site';
+import { url } from '../lib/links';
+
+const games = await getFeaturedGames();
+const notes = await getFeaturedNotes();
+---
+
+<Base>
+  <SiteHeader active="index" />
+
+  <h1 class="tagline">{site.tagline}</h1>
+
+  <div class="rule" style="margin-top:36px"></div>
+
+  <section class="notes" style="padding:14px 0 6px" aria-label="Latest notes">
+    {notes.map((n) => <NoteRow note={n} />)}
+  </section>
+
+  <div class="rule" style="margin-top:18px"></div>
+
+  <section class="games" aria-label="Games">
+    {games.map((g) => <GameRow game={g} />)}
+  </section>
+
+  <div class="rule"></div>
+
+  <section class="interact">
+    <div style="max-width:360px">
+      <div class="label">INTERACT</div>
+      <p class="interact-copy">{site.interactCopy}</p>
+    </div>
+    <div class="actions" style="margin-top:22px">
+      {site.tipsEnabled && (
+        <a class="btn btn--solid" href={site.tipUrl} rel="noopener" target="_blank">LEAVE A TIP →</a>
+      )}
+      <a class="btn" href={url('/contact')}>GET IN TOUCH →</a>
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,61 @@
+---
+import type { Game } from '../lib/content';
+import { getGameArt, getGameEyebrow } from '../lib/content';
+import GameCover from './GameCover.astro';
+import Motif from './Motif.astro';
+import { url } from '../lib/links';
+
+interface Props {
+  game: Game;
+}
+
+const { game: g } = Astro.props;
+const Art = getGameArt(g);
+---
+
+<details class="game" name="games">
+  <summary class="game-head">
+    <span class="game-no">{g.no}</span>
+    <span class="game-head-main">
+      <span class="game-title">{g.title}</span>
+      <span class="game-meta">{getGameEyebrow(g)}</span>
+    </span>
+    <span class="game-accent" style={`background:${g.accent}`}>
+      {Art ? <Art width="42" height="42" aria-hidden="true" /> : g.motif && <Motif motif={g.motif} ink={g.ink} />}
+    </span>
+    <span class="game-sign" aria-hidden="true"></span>
+  </summary>
+
+  <div class="game-detail">
+    <GameCover game={g} />
+
+    <div class="game-body">
+      <p class="game-desc">{g.description}</p>
+
+      {
+        g.mechanics.length > 0 && (
+          <div class="mechanics">
+            {g.mechanics.slice(0, 3).map((m) => (
+              <span class="mechanic-pill">{m}</span>
+            ))}
+          </div>
+        )
+      }
+      <p class="game-license">LICENSE · {g.license}</p>
+
+      <div class="game-contents">{g.contents}</div>
+      <div class="game-spec">{g.spec}</div>
+      {
+        g.downloads.length > 0 && (
+          <div class="game-downloads-count">
+            {g.downloads.length} Downloadable Asset{g.downloads.length === 1 ? '' : 's'}
+          </div>
+        )
+      }
+
+      <div class="actions">
+        <a class="btn btn--solid" href={url(`/rules/${g.id}`)}>READ RULES →</a>
+      </div>
+    </div>
+  </div>
+</details>

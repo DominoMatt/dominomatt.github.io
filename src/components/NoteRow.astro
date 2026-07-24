@@ -1,0 +1,18 @@
+---
+import type { Note } from '../lib/content';
+import { url } from '../lib/links';
+
+interface Props {
+  note: Note;
+}
+
+const { note: n } = Astro.props;
+---
+
+<a class="note-row" href={url(`/notes/${n.id}`)}>
+  <span class="note-main">
+    <span class="note-title">{n.title}</span>
+    <span class="note-dek">{n.dek}</span>
+  </span>
+  <span class="note-date">{n.dateShort} →</span>
+</a>

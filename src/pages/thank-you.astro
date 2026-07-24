@@ -1,0 +1,22 @@
+---
+import Base from '../layouts/Base.astro';
+import TopBar from '../components/TopBar.astro';
+import { url } from '../lib/links';
+---
+
+<Base title="Thanks" description="Your note reached the table. We read every one and reply when we can.">
+  <TopBar backHref={url('/')} backLabel="← THE INDEX" eyebrow="CONTACT" />
+
+  <header class="titleblock">
+    <div class="kicker-meta">MESSAGE SENT</div>
+    <h1 class="page-title">Thanks for writing</h1>
+    <div class="accent-bar" style="background:#bd7f2e"></div>
+    <p class="lede" style="max-width:520px">
+      Your note reached the table. We read every one and reply when we can.
+    </p>
+  </header>
+
+  <div class="footer-actions" style="border-top:0;margin-top:26px;padding-top:0">
+    <a class="btn btn--solid" href={url('/')}>← BACK TO THE INDEX</a>
+  </div>
+</Base>
