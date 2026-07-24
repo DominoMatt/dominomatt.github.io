@@ -1,13 +1,12 @@
 # Print files
 
 Drop downloadable files here, at whatever path each game's `downloads:`
-frontmatter entry sets as its `file` (see AUTHORING.md) — currently:
+frontmatter entry sets as its `file` (see AUTHORING.md).
 
-- `twelves.pdf`
-- `smallkings.pdf`
-- `parish.pdf`
-- `wake.pdf`
-- `memory.pdf`
+None of the current games (`memory`, `fish_pond`, `domino_kingdom`,
+`push_your_luck`) have a `downloads:` list yet, so nothing is required here
+today — `kd_example.png` is an inline rules illustration referenced from
+`domino_kingdom.md`'s body, not a download.
 
 Each game's downloads list can hold any number of entries (PDFs, STLs, …),
 including none — a game with no `downloads:` in its frontmatter just shows no

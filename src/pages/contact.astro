@@ -22,20 +22,14 @@ const origin = import.meta.env.DEV ? Astro.url.origin : Astro.site;
 const thankYouUrl = new URL(url('/thank-you'), origin).href;
 ---
 
-<Base
-  title="Say hello"
-  description="Questions about a game, a playtest report, or a note about a typo in the rules — it all reaches the same kitchen table."
->
+<Base title={site.pages.contact.title} description={site.pages.contact.lede}>
   <TopBar backHref={url('/')} backLabel="← THE INDEX" eyebrow="CONTACT" />
 
   <header class="titleblock">
     <div class="kicker-meta">GET IN TOUCH</div>
-    <h1 class="page-title">Say hello</h1>
+    <h1 class="page-title">{site.pages.contact.title}</h1>
     <div class="accent-bar" style="background:#bd7f2e"></div>
-    <p class="lede" style="max-width:520px">
-      Questions about a game, a playtest report, or a note about a typo in the rules — it all
-      reaches the same kitchen table. We read every one.
-    </p>
+    <p class="lede" style="max-width:520px">{site.pages.contact.lede}</p>
   </header>
 
   <form class="contact-form" action={site.formAction} method="POST">

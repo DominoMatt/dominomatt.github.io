@@ -3,6 +3,7 @@ import Base from '../../layouts/Base.astro';
 import TopBar from '../../components/TopBar.astro';
 import GameRow from '../../components/GameRow.astro';
 import { getGames, getGameCategories } from '../../lib/content';
+import { site } from '../../data/site';
 import { url } from '../../lib/links';
 
 export async function getStaticPaths() {
@@ -22,8 +23,8 @@ const shown = active ? games.filter((g) => g.category === active.label) : games;
 ---
 
 <Base
-  title={active ? `Games · ${active.label}` : 'Games'}
-  description="Every game we've made, printable at home — filter by category."
+  title={active ? `${site.pages.games.title} · ${active.label}` : site.pages.games.title}
+  description={site.pages.games.lede}
 >
   <TopBar backHref={url('/')} backLabel="← THE INDEX" eyebrow="GAMES" />
 
@@ -31,8 +32,8 @@ const shown = active ? games.filter((g) => g.category === active.label) : games;
     <div class="kicker-meta">
       {active ? `GAMES · ${active.label.toUpperCase()}` : 'THE FULL CATALOGUE'}
     </div>
-    <h1 class="page-title">Games</h1>
-    <p class="lede" style="max-width:520px">Every game we've made, printable at home.</p>
+    <h1 class="page-title">{site.pages.games.title}</h1>
+    <p class="lede" style="max-width:520px">{site.pages.games.lede}</p>
   </header>
 
   <nav class="chips" style="margin-top:30px" aria-label="Filter by category">

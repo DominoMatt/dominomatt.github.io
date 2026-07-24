@@ -12,9 +12,37 @@ export const site = {
   name: 'FREE DOMINO GAMES',
   title: 'Free Domino Games',
   description: 'Free domino games',
-  tagline: '',
   interactCopy:
     'Everything here is free to play. If a game earned its place at your table, drop us a line.',
+
+  // Per-page hero copy for the site's static pages: `title` is used as both
+  // the on-page H1 and the browser <title>; `lede` is used as both the
+  // on-page lede paragraph and <meta name="description">. This is the copy
+  // a client is most likely to want to reword. Article/game pages aren't
+  // listed here — their title/lede come from each note's or game's own
+  // frontmatter (title/dek, title/description) in src/content/, not from
+  // this file.
+  pages: {
+    home: {
+      tagline: '', // homepage <h1> — leave empty to hide it
+    },
+    contact: {
+      title: 'Say hello',
+      lede: 'Questions about a game, a playtest report, or a note about a typo in the rules — it all reaches the same kitchen table. We read every one.',
+    },
+    thankYou: {
+      title: 'Thanks for writing',
+      lede: 'Your note reached the table. We read every one and reply when we can.',
+    },
+    games: {
+      title: 'Games', // category name is appended to the browser <title> automatically, not to the H1
+      lede: "Every game we've made, printable at home.",
+    },
+    notes: {
+      title: 'Field Notes',
+      lede: 'Short essays on the games and the trade of making them — what the single-sheet format teaches, and what it costs.',
+    },
+  },
 
   // Tip jar: any external link (Ko-fi, Buy Me a Coffee, PayPal.me, etc).
   // Set tipsEnabled to false to hide the "LEAVE A TIP" button entirely.

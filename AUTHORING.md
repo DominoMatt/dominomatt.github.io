@@ -77,6 +77,30 @@ plain code block
 > **Tables need the divider row.** A table must have the `| --- | --- |` line
 > directly under the header row, or Markdown treats it as plain text.
 
+### Lettered sub-steps (a, b, c…)
+
+Markdown has no built-in way to write a lettered list, so when a step needs
+"do A or B" sub-options, drop in this exact HTML snippet — it's the one place
+you'll need something other than plain Markdown:
+
+```markdown
+1. Roll a die.
+2. Choose one:
+   <ol type="a">
+   <li>Keep the roll.</li>
+   <li>Re-roll once.</li>
+   </ol>
+```
+
+It renders as a normal lettered list (a, b, c…) styled to match the rest of
+the page. Several existing games already use this — copy the pattern from
+their body text if you want a working example.
+
+> **Linking to a heading.** Every `##`/`###` heading automatically gets a
+> linkable id from its own text (lowercase, spaces → hyphens), so
+> `[see the glossary](#glossary)` links straight to a `## Glossary` section
+> with nothing extra to add — no raw HTML needed for this part.
+
 ## New game — template
 
 Create `src/content/games/<id>.md`:
@@ -124,10 +148,21 @@ How the game begins.
 How the game ends.
 ```
 
+`contents:` and `spec:` are both required — two short lines shown stacked
+together on the game's row on `/games` once it's expanded (not on the rules
+page itself), `contents:` in front and `spec:` smaller underneath it. Both
+are free text with no fixed meaning to match — use them however best
+describes the game at a glance. Existing games use `contents:` for what the
+player gets (e.g. `Rules Sheet`) and `spec:` for what else they'll need to
+play (e.g. `Double Six Dominoes, D6 Dice x1`); a print-and-play game might
+instead use them the way the template above does, for what's in the PDF and
+its print spec. Leaving either out isn't an option — the site won't build
+without them.
+
 `downloads:` is optional — omit it entirely for a game that's play-from-the-page
 only, with nothing to print or download; the game just won't show a downloads
-section. When present, it renders as an "Attachments" section at the bottom
-of the game's rules page — every entry's name, description, and GET button are
+section. When present, it renders as a "Downloads" section at the bottom of
+the game's rules page — every entry's name, description, and GET button are
 always visible (nothing to expand to reach the file). It's an ordered list,
 one entry per file:
 
@@ -181,11 +216,10 @@ played straight from the rules page, with nothing to print).
 
 `attributions:` is an optional list of plain credit-line strings, e.g.
 `"Box Art by CoolArtist"` or `"3D Tokens by CoolPrinter"`. When present, they
-show as a bulleted "Attributions" list in the Attachments section, right
-after Downloads. Leave it out entirely for a game with nothing to credit —
-zero entries hides the list, same as `downloads:`. A game with attributions
-but no downloads still gets an Attachments section (just the Attributions
-list, no Downloads block).
+show as a bulleted "Attributions" section right after Downloads. Leave it out
+entirely for a game with nothing to credit — zero entries hides the section,
+same as `downloads:`. A game with attributions but no downloads still gets
+an Attributions section, just with no Downloads block above it.
 
 `motif:` is optional — one of `pips | diamond | circle | line`, a small
 plain shape drawn on the "box art" cover (top area, title pinned to the
@@ -282,6 +316,35 @@ articles are all-rights-reserved by default.
 of the neighboring "NEXT" link on other articles), but the page still builds
 at `/notes/<id>` — a preview link you can share before it's public. Leave
 `published` out entirely (or set it `true`) for the normal case.
+
+## Site-wide page copy
+
+Games and notes aren't the only editable text — the heading and intro line
+on five other pages live in `src/data/site.ts`, under `pages`:
+
+```ts
+pages: {
+  home: { tagline: '' },
+  contact: { title: 'Say hello', lede: '...' },
+  thankYou: { title: 'Thanks for writing', lede: '...' },
+  games: { title: 'Games', lede: '...' },
+  notes: { title: 'Field Notes', lede: '...' },
+},
+```
+
+- `title` is shown twice — as the big heading on the page, and as the
+  browser tab title (with the site name appended, e.g. "Say hello · Free
+  Domino Games"). One field drives both, so they're always the same text.
+- `lede` is shown twice too — as the paragraph under the heading, and as the
+  page's `<meta name="description">` (what search results and link
+  previews show). Same rule: one field, one text.
+- `home.tagline` is the homepage's own H1, above the notes/games lists — it
+  has no `lede`. Leave it blank to hide it entirely.
+- The Games page's browser tab appends the active category automatically
+  (e.g. "Games · Dice"); the H1 itself always just reads "Games".
+
+This is plain text — no Markdown, no frontmatter, no quotes to worry about
+beyond the ones already in the file — safe to edit directly.
 
 ## A few rules of thumb
 
