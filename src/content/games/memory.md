@@ -9,7 +9,7 @@ accent: "#C47234"
 ink: "#dde4d8"
 motif: circle
 art: dominos_white.svg
-description: "Flip dominoes 2 at a time and use your memory to make as many matches as
+description: "Flip dominoes 2 at a time, using your memory to make as many matches as
   possible."
 mechanics: [Memory, Matching, Equal End Matching]
 license: CC BY-NC
