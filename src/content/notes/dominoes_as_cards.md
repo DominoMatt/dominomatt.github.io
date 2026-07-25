@@ -7,7 +7,7 @@ dek: "Dominoes can also be used similarly to cards."
 # published: false
 ---
 
-- Western dominoes can also be used similarly to cards. And for the purposes of this site's content all dominoes used as 'cards' are Western ones, Double 6, 9, 12, or 15 sets.
+- Western dominoes can be used similarly to cards. And for the purposes of this site's content all dominoes used as 'cards' are Western ones, Double 6 or 9 sets.
 
 ## By 'suit' via Equal End Matching
 
@@ -29,9 +29,11 @@ dek: "Dominoes can also be used similarly to cards."
 
 - When playing dominoes as part of a set... really just the 'suit' is important.  The player ultimately deciding if a 2-5 domino is played as part of a set of 2s or a set of 5s.
 > If a player had a 2-5, 2-3, 3-4, and 3-5 in hand, they could have:
-> A. a pair of 2s (2-5, 2-3) and a pair of 3s (3-4, 3-5),  or
-> B. a pair of 3s (3-2, 3-4) and a pair of 5s (5-2, 5-3), or  
-> C. a triplet of 3s (3-2, 3-4, 3-5).
+>  <ol type="a">
+>    <li>a pair of 2s (2-5, 2-3) and a pair of 3s (3-4, 3-5),  or</li>
+>    <li>a pair of 3s (3-2, 3-4) and a pair of 5s (5-2, 5-3), or</li>
+>    <li>a triplet of 3s (3-2, 3-4, 3-5).</li>
+>  </ol>
 - In set building/melding, 'doubles' many times are also their own suit (a 2-2 is suit of 2s and doubles). 
 - Suits might be ranked also, suit of 6 being the highest and blanks/0 the lowest, if playing with doubles as suit it would be higher than 6s. Thus a set of 4-5s would rank higher than 4-2s.
 - Dominoes that shares a suit/value may be played as a set or meld. A 2-4, 2-0, and 2-2 would be considered: a set of 3-2s (or a triplet of 2s).
