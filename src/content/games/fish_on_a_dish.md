@@ -2,7 +2,7 @@
 title: Fish on a Dish
 order: 3
 category: Domino Variant
-players: 2-4
+players: "2-4"
 # age: 8+
 time: 20 min
 accent: "#bd7f2e"

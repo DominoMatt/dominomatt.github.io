@@ -2,7 +2,7 @@
 title: Domino Duel
 order: 1
 category: Domino Variant
-players: 2
+players: "2 players"
 # age: 8+
 time: 20 min
 accent: "#bd7f2e"

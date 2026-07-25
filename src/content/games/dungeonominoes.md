@@ -2,7 +2,7 @@
 title: Dungeonominoes
 order: 2
 category: Domino Variant
-players: 2-4
+players: "2-4"
 # age: 7+
 time: 15 min
 accent: "#bd7f2e"
