@@ -13,7 +13,7 @@ export const site = {
   title: 'Free Domino Games',
   description: 'Free domino games',
   interactCopy:
-    'Everything here is free to play. If a game earned its place at your table, drop us a line.',
+    'Everything here is free to play. If you've enjoyed a game or article, drop us a line.',
 
   // Per-page hero copy for the site's static pages: `title` is used as both
   // the on-page H1 and the browser <title>; `lede` is used as both the
@@ -27,20 +27,20 @@ export const site = {
       tagline: '', // homepage <h1> — leave empty to hide it
     },
     contact: {
-      title: 'Say hello',
-      lede: 'Questions about a game, a playtest report, or a note about a typo in the rules — it all reaches the same kitchen table. We read every one.',
+      title: 'Contact me',
+      lede: 'Questions about a game, a playtest report, a note about a typo in the rules or articles, or a general comment — I'd love to hear from you. We read every one.',
     },
     thankYou: {
       title: 'Thanks for writing',
-      lede: 'Your note reached the table. We read every one and reply when we can.',
+      lede: 'Your note has been sent. I read every one and reply when I can.',
     },
     games: {
       title: 'Games', // category name is appended to the browser <title> automatically, not to the H1
-      lede: "Every game we've made, printable at home.",
+      lede: "Every game I've made, free* to play. *some generic components are required.",
     },
     notes: {
-      title: 'Field Notes',
-      lede: 'Short essays on the games and the trade of making them — what the single-sheet format teaches, and what it costs.',
+      title: 'Articles',
+      lede: 'Articles on dominoes and a few other topics.',
     },
   },
 
