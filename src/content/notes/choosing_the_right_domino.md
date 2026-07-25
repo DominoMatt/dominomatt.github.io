@@ -7,7 +7,7 @@ dek: "Not all dominoes are created equally."
 # published: true
 ---
 
-Choosing the right domino shouldn't be ignored or underrated. Thought and planning now can ensure you purchase a set of dominoes that is well suited to your needs and will serve you for years. Not all dominoes are created equally.
+Choosing the right domino shouldn't be ignored or underrated. Thought and planning now can ensure you purchase a set of dominoes that is well suited to your needs and will serve you for years.
 
 - The goal is determining your use case and purchasing a set that meets those needs.
 
@@ -34,15 +34,15 @@ Western dominoes (Double 6, 9, 12, or 15 sets) are twice as long as they are wid
 2. Standard: There is a huge amount of variance in tile thickness among "standard" dominoes.
    - "Cheaper" sets are typically thinner and will require racks to hold your hand of tiles.
    - Thinner "cheaper" sets are typically too thin to be toppled and might be frustrating to young players.
-   - Recommended minimum thickness for edge standing: 5/16 inch (X mm) or more.
-3. Professional/Tournament: The thickness is typically proportional to size and therefore can be stood on edge easily. Their thicknesses should exceed 3/8 inch or X mm.
+   - __Recommended minimum thickness for edge standing: 5/16 inch (8 mm) or more__ for standard sized dominoes.
+3. Professional/Tournament: The thickness is typically proportional to size and therefore can be stood on edge easily. Their thicknesses should exceed 3/8 inch (9.5 mm).
 4. Large: When the width exceeds 1.5 inches, the size and thickness can vary widely.
 
 ## Quality
 
 Do you get what you pay for? Many times this is true. 
 - The cheapest dominoes are smaller and thinner on average.
-- I have purchased many sets of dominoes... many have contained incomplete sets (typically having multiple copies of a domino and none of another). Even better sets suffer from this problem, but the 'better'/more expensive the set the more likely you will receive good customer service... thus replacements, if needed.
+- I have purchased many sets of dominoes... many have contained incomplete sets (typically having multiple copies of a domino and none of another). Even better sets can suffer from this problem, but the 'better'/more expensive the set the more likely you will receive good customer service... thus replacements, if needed.
 
 ## End values
 
