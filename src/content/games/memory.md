@@ -33,7 +33,7 @@ them back face-down after all players have seen them.
 1. Flip a domino face-up in place.
 2. Flip a 2nd domino face-up in place.
 3. Compare your dominoes, do A or B below.
-   <ol type="a">
+  <ol type="a">
     <li>If both dominoes match, collect those dominoes (both share a common end value).</li>
 		<li>If not, flip them face-down in place after all players have had 'ample' time to see them.</li>
 	</ol>
