@@ -28,7 +28,7 @@ export const site = {
     },
     contact: {
       title: 'Contact me',
-      lede: 'Questions about a game, a playtest report, a note about a typo in the rules or articles, or a general comment — I'd love to hear from you. We read every one.',
+      lede: 'Questions about a game, a playtest report, a note about a typo in the rules or articles, or a general comment - I\'d love to hear from you. We read every one.',
     },
     thankYou: {
       title: 'Thanks for writing',
