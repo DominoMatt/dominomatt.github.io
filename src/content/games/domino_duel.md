@@ -9,7 +9,7 @@ accent: "#bd7f2e"
 ink: "#1d1408"
 # motif: pips
 # art: dominos_black.svg
-description: "A short description for this game."
+description: "Duel your friends in this 2 player trick-taker."
 mechanics: [Trick-taking]
 license: CC BY-NC
 contents: Rules Sheet
@@ -35,11 +35,11 @@ Doubles rank highest in their 'suit', followed by heaviest weight of the Power a
 
 Play a domino, with a 1-6 end value. The attacking/'lead' player continues to Attack until:
 
-	<ol type="a">
-		<li> Dealing 1 HP of damage,</li>
-		<li>Until Countered, or</li>
-		<li>The attacker has no more tiles to attack with, see Round End.</li>
-	</ol>
+<ol type="a">
+  <li>Dealing 1 HP of damage,</li>
+  <li>Until Countered, or</li>
+  <li>The attacker has no more tiles to attack with, see Round End.</li>
+</ol>
 
 - The end played towards your opponent is the Attack Type/'suit'.
 - The end closest you is it's Power/'rank'.
