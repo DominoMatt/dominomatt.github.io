@@ -2,12 +2,12 @@
 title: Dominoes as Cards
 date: 2026-07-25
 accent: "#bd7f2e"
-dek: "Dominoes can also be used similarly to cards."
+dek: "Dominoes can be used similarly to cards."
 # games: []
 # published: false
 ---
 
-- Western dominoes can be used similarly to cards. And for the purposes of this site's content all dominoes used as 'cards' are Western ones, Double 6 or 9 sets.
+- For the purposes of this site's content all dominoes used as 'cards' are Western ones, Double 6 or 9 sets.
 
 ## By 'suit' via Equal End Matching
 
