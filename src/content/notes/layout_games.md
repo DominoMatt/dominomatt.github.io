@@ -64,19 +64,23 @@ Shape is determined by the amount of doubles that act as *spinners*.  The larger
 
 Equal End Matching — At least 1 end of a domino being played must match an open end of another domino that is already been played/set in the layout.
 
-- There are other rules for matrching, like matador. 
+- There are other rules for matching, like matador. 
 
 ### Block vs. Draw Games
 
 - Block Games — Hands are dealt and then only those tiles added to the layout; if a player can't lay a tile, they pass their turn... hoping to continue playing in future turns.
 - Draw Games — Players who can't make a play draw dominoes from the boneyard (undealt tiles) until a play can be made or the boneyard is either empty or nearly empty. If the boneyard is empty play continues like block until the round's end.
--**'Draw1'** Games — Players who can't make a play draw a domino from the boneyard, and then either play or pass. If the boneyard is empty play continues like block until the round's end.
+- **'Draw1'** Games — Players who can't make a play draw a domino from the boneyard, and then either play or pass. If the boneyard is empty play continues like block until the round's end.
 
-The above 3 modes are all Basic Domino games, but all have some different play patterns and strategy. They can also be seen as the basic building blocks in which rules can be added to create more advanced domino games.
+The above 3 modes are all Basic Domino games, but all have some different play patterns and strategy. They can also be seen as the basic building blocks in which rules can be added to create more advanced domino games. I really enjoy **Draw1**.
 
 ### Blocking vs. Scoring Games
 
 At the end of a round, points are awarded one of two ways:
 
-- Blocking games — the goal is to *shed* every tile in your hand onto the layout before your opponents do, while keeping the weight of any tiles left in hand as low as possible. A round ends either when a player sheds their last tile ("goes out" / "goes domino") or when the layout is *blocked* — no player has a legal move. Scoring can go either direction: some blocking games award points for the weight remaining in *opponents'* hands (highest score wins); others score the weight left in *your own* hand (lowest score wins). Some variants assign the 0-0 tile a non-zero weight.
-- Scoring games — points are earned during play itself, for specific plays or combinations. Muggins, All-Fives, and Bergen are common examples.
+<ol type="a">
+   <li>- Blocking games — the goal is to *shed* every tile in your hand onto the layout before your opponents do, while keeping the weight of any tiles left in hand as low as possible. 
+    - A round ends either when a player sheds their last tile ("goes out" / "goes domino") or when the layout is *blocked* no player has a legal move. 
+    - Scoring can go either direction: some blocking games award points for the weight remaining in *opponents'* hands (highest score wins); others score the weight left in *your own* hand (lowest score wins). Some variants assign the 0-0 tile a non-zero weight.</li>
+     <li>- Scoring games — points are earned during play itself, for specific plays or combinations. Muggins, All-Fives, and Bergen are common examples.</li>
+</ol>
