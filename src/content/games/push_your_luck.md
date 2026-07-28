@@ -41,32 +41,27 @@ Roll and Match dice to the end values of your Objectives. Complete as many as yo
 
 1. Roll: Roll between 1-4 dice, roll that amount of dice Yahtzee style pulling Matched dice you wish to keep as you go. Roll, keep?, re-roll, keep?, re-roll, final result.
 2. Match your die values to unmarked Objective ends... marking your matched ends w/ chips/dice.
-3. Scrap those dice that do not Match an unmarked end, putting a mark in your
-   Scrapheap.
-   - If there are 4 or more Scrap/marks in your Scrapheap... go Bust (see below).
-
+3. Scrap those dice that do not Match an unmarked end, putting a mark in your Scrapheap.
+- If there are 4 or more Scrap/marks in your Scrapheap... go Bust (see below).
 4. If all your Objectives are fully Matched after #1-3 (all your Objective ends with values 1-6 are marked off as being matched), automatically Complete all your Objectives.
 
 ### Complete
 
-When you Complete, all your active Objectives that have all ends w/ values 1-6
-Matched are set aside facedown as pnts.
+When you Complete, all your active Objectives that have all ends w/ values 1-6 Matched are set aside facedown as pnts.
 
 ### Draw
 
 - Draw 1 Objective from the boneyard, if there isn't one see End Game (below).
-- A player may Draw have any number of Objectives beyond their 2 (base)
-  Objectives.
+- A player may Draw have any number of Objectives beyond their 2 (base) Objectives.
 
 ### Bust
 
-- Scrap those dice that do not Match an unmarked end to your Scrapheap (as per
-  Match #3).
+- Scrap those dice that do not Match an unmarked end to your Scrapheap (as per Match #3).
 - If there are 4 marks in your Scrapheap go Bust; remove all marks in your Scrapheap and Objectives.
 
 ### End Game
 
-- When the boneyard is 'empty'... If 1 or 2 player go to End Game;
+- When the boneyard is 'empty'... If 1 or 2 player go to End Game.
 - If 3 p. tally the Scores and reshuffle a new boneyard with all the claimed Objectives/points (keep active Objectives), the 2nd time the boneyard is emptied Score.
 - If 4 p. reshuffle twice instead and Score when the yard is emptied 3 times.
 

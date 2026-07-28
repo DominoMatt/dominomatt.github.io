@@ -29,8 +29,7 @@ Draw and play dominoes to tile your 5x5 grid, creating the 3 largest terrains/se
 
 1. Draw a domino.
 2. Play a domino to your 5x5 layout (via [Equal End Matching](#glossary)).
-3. Continue taking turns until your 5x5 is fully tiled, or becomes blocked by
-   1x1 holes.
+3. Continue taking turns until your 5x5 is fully tiled, or becomes blocked by 1x1 holes.
 
 ### Draw
 
@@ -53,10 +52,7 @@ When you can no longer play any dominoes to your layout, score as follows:
 
 1. Find the 3 largest orthogonally connected sets in your layout.
 2. Score 1 point for each domino end that is part of one of these 3 sets.
-3. Subtract 1 point per face-down end, unmatched end, or 1x1 hole in the layout
-   (e.g., a face-down domino = -2 pts, since both ends count; a mismatched
-   1-and-6 pairing = -2 pts). Exception: unmatched ends attached to the Town
-   Center's edges don't count against you.
+3. Subtract 1 point per face-down end, unmatched end, or 1x1 hole in the layout.<br> &nbsp;&nbsp;&nbsp;&nbsp; Exception: unmatched ends attached to the Town Center's edges don't count against you.
 
 ![Kingdom Domino Exmaple](/print/kd_example.png)
 

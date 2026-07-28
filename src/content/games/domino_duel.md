@@ -29,12 +29,14 @@ Doubles rank highest in their 'suit', followed by heaviest weight of the Power a
 - Shuffle the dominoes face-down or in a bag (boneyard). 
 - Each player gets 3 HP (health) at the start of the game. (same as best of 5 play)
 - First player can be randomly determined and after drawing up decides whether to Attack or Defend. 
-## Gameplay:
 
-### Attack
+## Gameplay:
 
 - The end played towards your opponent is the Attack Type/'suit'.
 - The end closest you is it's Power/'rank'.
+- Thus a trick is played and the domino ends that 'match' is the Attack Type/'suit'.
+
+### Attack
 
 Play a domino, with a 1-6 end value. The attacking/'lead' player continues to Attack until:
 
