@@ -73,9 +73,6 @@ When you can no longer play any dominoes to your layout, score as follows:
 
 <h2 id="glossary">Glossary</h2>
 
-**Equal End Matching** — At least 1 of the 2 ends of the domino being played
-(not necessarily both) must match the value of an orthogonally adjacent,
-still-open end of an already-played domino, or match one of the 4 sides of the
-Town Center.
+**Equal End Matching** — At least 1 of the 2 ends of the domino being played (not necessarily both) must match the value of an orthogonally adjacent, still-open end of an already-played domino, or match one of the 4 sides of the Town Center.
 
 **Orthogonal** — Edge to edge, not diagonal. (orth. adj. = orthogonally adjacent)
