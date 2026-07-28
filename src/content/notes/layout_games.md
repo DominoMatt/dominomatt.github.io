@@ -6,9 +6,9 @@ dek: "Dominoes are used to play a variety of games... most of them layout games.
 games: [domino_kingdom]
 ---
 
-Dominoes are played end to end, by matching a tile to an open end in the layout, progressing the line of play. 
-Layout Games can be split up in two categories:
-- Connecting games 
+Dominoes are played end to end, by matching a tile to an open end in the layout, progressing the line of play... the stereotypical domino game. Layout Games played in this traditional manner are widely considered __Connection Games__.
+
+On the other hand there is a little looser definition of Layout Game.
 - Other Layout Games
 
 ## Variation in Connection Games

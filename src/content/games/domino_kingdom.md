@@ -23,8 +23,7 @@ spec: Double Six Dominoes, Town Center Marker
 
 ## Gameplay
 
-Draw and play dominoes to tile your 5x5 grid, creating the 3 largest
-terrains/sets possible while minimizing single (unmatched) ends in your layout.
+Draw and play dominoes to tile your 5x5 grid, creating the 3 largest terrains/sets possible while minimizing single (unmatched) ends in your layout.
 
 #### On your turn
 
@@ -35,8 +34,7 @@ terrains/sets possible while minimizing single (unmatched) ends in your layout.
 
 ### Draw
 
-If there is no face-up domino available for option A, flip one up from the
-boneyard first. Draw a domino by doing A or B below.
+If there is no face-up domino available for option A, flip one up from the boneyard first. Draw a domino by doing A or B below.
 
 <ol type="a">
 <li>Draw the known domino that is face-up.</li>
@@ -47,9 +45,7 @@ boneyard first. Draw a domino by doing A or B below.
 
 Play your domino to the 5x5 layout using Equal End Matching (see below).
 
-- If you cannot make a match, you must place the domino face-down somewhere in
-  your 5x5 layout, [orth. adj.](#glossary) to another domino already in the
-  layout. (You may also choose to do this voluntarily.)
+- If you cannot make a match, you must place the domino face-down somewhere in your 5x5 layout, [orth. adj.](#glossary) to another domino already in the layout. (You may also choose to do this voluntarily.)
 
 ## Scoring
 
@@ -86,5 +82,4 @@ When you can no longer play any dominoes to your layout, score as follows:
 still-open end of an already-played domino, or match one of the 4 sides of the
 Town Center.
 
-**Orthogonal** — Edge to edge, not diagonal. (orth. adj. = orthogonally
-adjacent)
+**Orthogonal** — Edge to edge, not diagonal. (orth. adj. = orthogonally adjacent)
