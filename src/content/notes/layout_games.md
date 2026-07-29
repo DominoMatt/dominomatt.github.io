@@ -79,8 +79,11 @@ The above 3 modes are all Basic Domino games, but all have some different play p
 At the end of a round, points are awarded one of two ways:
 
 <ol type="a">
-   <li>- Blocking games — the goal is to *shed* every tile in your hand onto the layout before your opponents do, while keeping the weight of any tiles left in hand as low as possible. 
-    - A round ends either when a player sheds their last tile ("goes out" / "goes domino") or when the layout is *blocked* no player has a legal move. 
-    - Scoring can go either direction: some blocking games award points for the weight remaining in *opponents'* hands (highest score wins); others score the weight left in *your own* hand (lowest score wins). Some variants assign the 0-0 tile a non-zero weight.</li>
-     <li>- Scoring games — points are earned during play itself, for specific plays or combinations. Muggins, All-Fives, and Bergen are common examples.</li>
+  <li>Blocking games:
+    <ul>
+      <li>The goal is to *shed* every tile in your hand onto the layout before your opponents do, while keeping the weight of any tiles left in hand as low as possible. A round ends either when a player has shed all tiles from their hand, or when no player can make a legal play (the layout is blocked).</li>
+      <li>Scoring for the round is typically awarded based on the pip-weight remaining in opponents' hands (often the winner scores the total pip-count of all opponents' remaining tiles, sometimes rounded or capped by rules).</li>
+    </ul>
+  </li>
+  <li>Scoring games: Points are earned during play itself, for specific plays or combinations. Muggins, All-Fives, and Bergen are common examples.</li>
 </ol>
