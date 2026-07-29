@@ -1,0 +1,48 @@
+{
+  "name": "Reference Games (Astro)",
+
+  // Node 24 to match the version .github/workflows/deploy.yml builds with.
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:24-bookworm",
+
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+
+  // `astro dev` and `astro preview` both serve on 4321.
+  "forwardPorts": [4321],
+  "portsAttributes": {
+    "4321": {
+      "label": "Astro dev server",
+      "onAutoForward": "openPreview"
+    }
+  },
+
+  "postCreateCommand": "npm ci",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "astro-build.astro-vscode",
+        "yzhang.markdown-all-in-one",
+        "streetsidesoftware.code-spell-checker"
+      ],
+      "settings": {
+        "files.eol": "\n",
+        "[astro]": {
+          "editor.defaultFormatter": "astro-build.astro-vscode"
+        },
+        "editor.formatOnSave": true,
+        // Games and notes are hand-wrapped prose — leave their line breaks alone.
+        "[markdown]": {
+          "editor.formatOnSave": false
+        },
+        "search.exclude": {
+          "**/dist": true,
+          "**/.astro": true
+        }
+      }
+    }
+  },
+
+  "remoteUser": "node"
+}

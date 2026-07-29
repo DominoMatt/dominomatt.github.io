@@ -71,6 +71,19 @@ npm run build     # build to ./dist
 npm run preview   # preview the production build
 ```
 
+### GitHub Codespaces
+
+`.devcontainer/devcontainer.json` describes a ready-to-run environment (Node 24,
+matching the deploy workflow). **Code → Codespaces → Create codespace on main**,
+or open the repo locally in VS Code with the Dev Containers extension. `npm ci`
+runs on create, so afterwards just:
+
+```sh
+npm run dev
+```
+
+Port 4321 is forwarded automatically and opens in the editor's simple browser.
+
 ## Configuration
 
 Three things to set before deploying — all in code, no env vars needed:
