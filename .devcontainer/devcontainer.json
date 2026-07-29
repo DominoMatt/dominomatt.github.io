@@ -2,11 +2,12 @@
   "name": "Reference Games (Astro)",
 
   // Node 24 to match the version .github/workflows/deploy.yml builds with.
+  //
+  // Deliberately no "features": declaring any makes the CLI build a derived
+  // image with buildkit before it can start, which is both slower and the
+  // step that was crashing on Codespaces hosts. With a plain image and no
+  // features the container is just `docker run` on a prebuilt image.
   "image": "mcr.microsoft.com/devcontainers/javascript-node:24-bookworm",
-
-  "features": {
-    "ghcr.io/devcontainers/features/github-cli:1": {}
-  },
 
   // `astro dev` and `astro preview` both serve on 4321.
   "forwardPorts": [4321],
