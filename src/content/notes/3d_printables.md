@@ -7,7 +7,7 @@ dek: "A domino rack, a town center..."
 # published: false
 ---
 
-This is a collection of all 3-d printed assets that are offered on this site. 
+This is a collection of all 3-d printed assets that are offered on this site.
 
 ### Are they Print and Play assets?
 

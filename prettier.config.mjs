@@ -18,6 +18,23 @@
 export default {
   proseWrap: 'always',
   printWidth: 80,
+
+  // Do not reformat the *inside* of fenced code blocks. This is not a style
+  // preference — leaving it on corrupts documentation.
+  //
+  // AUTHORING.md teaches Markdown by showing it, inside ```markdown fences. With
+  // embedded formatting on, Prettier parses that example as Markdown and rewrites
+  // it: the `| --- | --- |` divider the surrounding prose tells the reader to type
+  // gets padded to the column width, so the example contradicts its own lesson.
+  //
+  // Worse, that file demonstrates a fenced code block by escaping the inner fence
+  // with a zero-width space. Prettier does not recognise the escape, reads the
+  // inner ``` as an inline code span, and collapses three lines into one broken
+  // line — and it takes two passes to settle, so a single --write leaves the file
+  // still failing --check.
+  //
+  // An example in a document is quoted material. It should survive verbatim.
+  embeddedLanguageFormatting: 'off',
   overrides: [
     {
       files: 'src/content/**/*.md',

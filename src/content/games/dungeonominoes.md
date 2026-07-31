@@ -35,19 +35,19 @@ published: false
 
 ### Double six
 
-| Players | Hand size |
-| --- | --- |
-| 4 players | 5 |
-| 3 players | 6 |
-| 2 players | 7 |
+| Players   | Hand size |
+| --------- | --------- |
+| 4 players | 5         |
+| 3 players | 6         |
+| 2 players | 7         |
 
 ### Double nine
 
-| Players | Hand size |
-| --- | --- |
-| 4+ players | 7 |
-| 3 players | 8 |
-| 2 players | 9 |
+| Players    | Hand size |
+| ---------- | --------- |
+| 4+ players | 7         |
+| 3 players  | 8         |
+| 2 players  | 9         |
 
 The line of play may be bent 90° and certain branches may need to be re-adjusted during play.
 

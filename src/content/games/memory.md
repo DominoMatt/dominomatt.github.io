@@ -32,6 +32,7 @@ Flip 2 dominoes face-up in place. If they 'match', collect them; if not, turn th
 1. Flip a domino face-up in place.
 2. Flip a 2nd domino face-up in place.
 3. Compare your dominoes, do A or B below.
+
   <ol type="a">
     <li>If both dominoes match, collect those dominoes (both share a common end value).</li>
 		<li>If not, flip them face-down in place after all players have had 'ample' time to see them.</li>
@@ -54,8 +55,7 @@ Secret Objectives adds goals that players use to inform gameplay and strategy.
 
 #### Hidden goals; playing cards 1(Ace)-6 in one suit (or handmade cards); age 5+
 
-- Before the round begins, shuffle six cards 1(Ace)-6 and deal one Secret
-  Objective to each player.
+- Before the round begins, shuffle six cards 1(Ace)-6 and deal one Secret Objective to each player.
 - Score 1 extra point for each domino that matches your secret value. (Doubles only score 1 extra point.)
 - If playing with Secret Objectives and playing numerous games with a running point total, you might need to adjust the point totals you are playing to.
 

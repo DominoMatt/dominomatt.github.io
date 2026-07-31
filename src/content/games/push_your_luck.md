@@ -42,7 +42,9 @@ Roll and Match dice to the end values of your Objectives. Complete as many as yo
 1. Roll: Roll between 1-4 dice, roll that amount of dice Yahtzee style pulling Matched dice you wish to keep as you go. Roll, keep?, re-roll, keep?, re-roll, final result.
 2. Match your die values to unmarked Objective ends... marking your matched ends w/ chips/dice.
 3. Scrap those dice that do not Match an unmarked end, putting a mark in your Scrapheap.
+
 - If there are 4 or more Scrap/marks in your Scrapheap... go Bust (see below).
+
 4. If all your Objectives are fully Matched after #1-3 (all your Objective ends with values 1-6 are marked off as being matched), automatically Complete all your Objectives.
 
 ### Complete
@@ -70,7 +72,7 @@ If a player has < 2 active Objectives and another player > 2 (the p. w/most, tie
 ## Objectives
 
 - All Objectives consist of 1 or 2 dominoes and have either 2 or 3 ends with values 1-6. (blanks don't need matched)
-- An Objective can be merely a single non-blank domino (2 ends). Or if a tile with a blank was flipped 	(only 1 end), flip another and combine them so there is at minimum of 2-3 ends with values 1-6.
+- An Objective can be merely a single non-blank domino (2 ends). Or if a tile with a blank was flipped (only 1 end), flip another and combine them so there is at minimum of 2-3 ends with values 1-6.
 - When the double blank domino (0-0) is pulled... set it aside; and all players may remove 1 Scrap.
 
 ## Scoring

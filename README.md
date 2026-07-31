@@ -1,19 +1,22 @@
 # Reference Games
 
-A bare-metal, HTML-first Astro port of the `Studio.dc.html` Claude Design.
-Zero UI framework, dark theme only, static output for GitHub Pages.
+A bare-metal, HTML-first Astro port of the `Studio.dc.html` Claude Design. Zero
+UI framework, dark theme only, static output for GitHub Pages.
 
 ## Stack
 
-- **Astro** (static output) — `.astro` components render to plain HTML at build time
+- **Astro** (static output) — `.astro` components render to plain HTML at build
+  time
 - **`@astrojs/sitemap`** — build-time `sitemap-index.xml`, no client JS
-- **Plain CSS** — one global stylesheet (`src/styles/global.css`), CSS variables for the palette
-- **External fonts** — Google Fonts (Libre Caslon Display/Text, Spline Sans Mono)
+- **Plain CSS** — one global stylesheet (`src/styles/global.css`), CSS variables
+  for the palette
+- **External fonts** — Google Fonts (Libre Caslon Display/Text, Spline Sans
+  Mono)
 
 Client JavaScript shipped: **one component.** The games index uses native
-`<details name="games">` for the exclusive accordion; the contact form is a
-real `<form>`; navigation is real pages and links. The only `<script>` on the
-site is the print-mode picker in `src/components/PrintButton.astro` — see
+`<details name="games">` for the exclusive accordion; the contact form is a real
+`<form>`; navigation is real pages and links. The only `<script>` on the site is
+the print-mode picker in `src/components/PrintButton.astro` — see
 [`docs/adr/0001-client-js-for-print-mode.md`](docs/adr/0001-client-js-for-print-mode.md)
 for why.
 
@@ -54,17 +57,17 @@ Games and notes are **Markdown with frontmatter** (Astro content collections),
 rendered through Astro's built-in **GitHub Flavored Markdown** pipeline — lists,
 tables, blockquotes, code, task lists, etc. all work and are styled for the dark
 theme (see `.prose` in `src/styles/global.css`). In the body, `##` is a serif
-section heading (with a short accent tick above it), `###` a serif subsection, and
-`####` a small uppercase mono label.
-See [AUTHORING.md](AUTHORING.md) for the templates a non-technical editor uses.
-No new dependencies: the Markdown pipeline and glob loader are part of Astro core.
+section heading (with a short accent tick above it), `###` a serif subsection,
+and `####` a small uppercase mono label. See [AUTHORING.md](AUTHORING.md) for
+the templates a non-technical editor uses. No new dependencies: the Markdown
+pipeline and glob loader are part of Astro core.
 
 Each game/note also has a `published` flag (default `true`). Set it `false` to
-take an entry off its `/games` or `/notes` listing and out of the sitemap
-while still building its page at `/rules/:id` or `/notes/:id` — a link you can
-share before it's publicly listed. `astro.config.mjs` reads this straight off
-the frontmatter (content collections aren't queryable that early) to exclude
-those same pages from `@astrojs/sitemap`.
+take an entry off its `/games` or `/notes` listing and out of the sitemap while
+still building its page at `/rules/:id` or `/notes/:id` — a link you can share
+before it's publicly listed. `astro.config.mjs` reads this straight off the
+frontmatter (content collections aren't queryable that early) to exclude those
+same pages from `@astrojs/sitemap`.
 
 ## Commands
 
@@ -97,10 +100,10 @@ Three things to set before deploying — all in code, no env vars needed:
    through `src/lib/links.ts`, so this is the only edit required.
 
 2. **`src/data/site.ts`** — `tipUrl` (tip jar) and `formAction` (contact form
-   endpoint, e.g. Formspree / Web3Forms / Basin). The contact form is static;
-   it needs a third-party endpoint to actually deliver. Set `tipsEnabled: false`
-   to hide the tip button. Also `homepage.notes` / `homepage.games` — the
-   ordered id lists that decide what shows on the homepage (see AUTHORING.md).
+   endpoint, e.g. Formspree / Web3Forms / Basin). The contact form is static; it
+   needs a third-party endpoint to actually deliver. Set `tipsEnabled: false` to
+   hide the tip button. Also `homepage.notes` / `homepage.games` — the ordered
+   id lists that decide what shows on the homepage (see AUTHORING.md).
 
 3. **`public/print/`** — add the real download files (PDFs, STLs, …) at the
    paths each game's `downloads:` frontmatter points to (see AUTHORING.md).
@@ -111,19 +114,19 @@ the above — they're just Markdown files. See [AUTHORING.md](AUTHORING.md).
 ## Deploy
 
 `.github/workflows/deploy.yml` builds and publishes to GitHub Pages on every
-push to `main`. In the repo: **Settings → Pages → Build and deployment →
-Source → GitHub Actions**.
+push to `main`. In the repo: **Settings → Pages → Build and deployment → Source
+→ GitHub Actions**.
 
 ## License
 
-The codebase (everything under `src/`, config, and build tooling) is
-**MIT** — see [LICENSE](LICENSE).
+The codebase (everything under `src/`, config, and build tooling) is **MIT** —
+see [LICENSE](LICENSE).
 
 Content is licensed separately:
 
-- **Games** (`src/content/games/*.md`) — each game declares its own
-  `license:` frontmatter field, shown as a line under its mechanics tags on
-  both `/games` and its rules page. All current games are **CC BY-NC**.
+- **Games** (`src/content/games/*.md`) — each game declares its own `license:`
+  frontmatter field, shown as a line under its mechanics tags on both `/games`
+  and its rules page. All current games are **CC BY-NC**.
 - **Articles** (`src/content/notes/*.md`) — **all rights reserved**. Every
   article page shows a copyright notice at the bottom automatically; no
   frontmatter needed.
