@@ -738,6 +738,12 @@ a {
   color: var(--faint);
 }
 
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
 /* ---- title block + prose sections (rules + articles) -------- */
 
 .titleblock {
@@ -1368,8 +1374,18 @@ summary:focus-visible {
   .topbar-back,
   .breadcrumb,
   .game-sign,
-  .game-links {
+  .game-links,
+  .print-trigger,
+  .rule--addendum {
     display: none;
+  }
+
+  /* belt-and-suspenders: a closed <dialog> is already display:none per the
+     UA stylesheet, but top-layer handling during print has historically
+     been inconsistent across browsers — this covers the edge case of a
+     user hitting Ctrl+P while the print-mode modal happens to be open. */
+  dialog {
+    display: none !important;
   }
 
   /* native <details> hide their content unless [open] — older engines
@@ -1384,5 +1400,169 @@ summary:focus-visible {
   details::details-content {
     content-visibility: visible !important;
     block-size: auto !important;
+  }
+}
+
+/* ---- print: compact + two-column modes -------------------------
+   Overlays on top of the print rules above. Reached when the print
+   modal's "Compact" or "Two-Column" choice sets html[data-print-mode]
+   to "compact" or "two-column" (see PrintButton.astro) — both share
+   this same tightened spacing/type; "two-column" additionally gets the
+   column layout in the block below. Targets the px-based layout spacing
+   the 66.6% root-font-size trick above doesn't touch, tightens .prose's
+   em-based vertical rhythm beyond what the (further-reduced) root
+   font-size alone would give it, and nudges the root font-size a bit
+   further. Selectors that don't exist on notes pages (.title-icon,
+   .mechanics, .license-brow) simply no-op there. */
+
+@media print {
+  html[data-print-mode='compact'],
+  html[data-print-mode='two-column'] {
+    font-size: 62%;
+  }
+
+  html[data-print-mode='compact'] .wrap,
+  html[data-print-mode='two-column'] .wrap {
+    padding: 20px 28px 32px;
+  }
+
+  html[data-print-mode='compact'] .titleblock,
+  html[data-print-mode='two-column'] .titleblock {
+    margin-top: 16px;
+  }
+
+  html[data-print-mode='compact'] .titleblock-head,
+  html[data-print-mode='two-column'] .titleblock-head {
+    gap: 12px;
+  }
+
+  html[data-print-mode='compact'] .title-icon,
+  html[data-print-mode='two-column'] .title-icon {
+    width: 40px;
+  }
+
+  html[data-print-mode='compact'] .title-icon svg,
+  html[data-print-mode='two-column'] .title-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  html[data-print-mode='compact'] .page-title,
+  html[data-print-mode='two-column'] .page-title {
+    margin-top: 6px;
+  }
+
+  html[data-print-mode='compact'] .lede,
+  html[data-print-mode='two-column'] .lede {
+    margin-top: 10px;
+    font-size: 1.05rem;
+  }
+
+  html[data-print-mode='compact'] .titleblock .mechanics,
+  html[data-print-mode='two-column'] .titleblock .mechanics {
+    margin-top: 8px;
+    gap: 6px;
+  }
+
+  html[data-print-mode='compact'] .mechanic-pill,
+  html[data-print-mode='two-column'] .mechanic-pill {
+    padding: 2px 7px;
+  }
+
+  html[data-print-mode='compact'] .license-brow,
+  html[data-print-mode='two-column'] .license-brow {
+    margin-top: 10px;
+  }
+
+  html[data-print-mode='compact'] .titleblock--note .accent-bar,
+  html[data-print-mode='two-column'] .titleblock--note .accent-bar {
+    width: 48px;
+    height: 3px;
+    margin-top: 10px;
+  }
+
+  html[data-print-mode='compact'] .prose h2,
+  html[data-print-mode='two-column'] .prose h2 {
+    margin: 1.1em 0 0;
+  }
+
+  html[data-print-mode='compact'] .prose h2::before,
+  html[data-print-mode='two-column'] .prose h2::before {
+    width: 20px;
+    height: 2px;
+    margin-bottom: 0.3em;
+  }
+
+  html[data-print-mode='compact'] .prose h3,
+  html[data-print-mode='two-column'] .prose h3 {
+    margin: 0.9em 0 0;
+  }
+
+  html[data-print-mode='compact'] .prose h2 + h3,
+  html[data-print-mode='two-column'] .prose h2 + h3 {
+    margin-top: 0.8em;
+  }
+
+  html[data-print-mode='compact'] .prose h4,
+  html[data-print-mode='two-column'] .prose h4 {
+    margin: 1.6em 0 0;
+  }
+
+  html[data-print-mode='compact'] .prose p,
+  html[data-print-mode='two-column'] .prose p {
+    margin-top: 0.6em;
+    line-height: 1.45;
+  }
+
+  html[data-print-mode='compact'] .prose ul,
+  html[data-print-mode='compact'] .prose ol,
+  html[data-print-mode='two-column'] .prose ul,
+  html[data-print-mode='two-column'] .prose ol {
+    margin-top: 0.6em;
+    padding-left: 1.4em;
+    line-height: 1.4;
+  }
+
+  html[data-print-mode='compact'] .prose li,
+  html[data-print-mode='two-column'] .prose li {
+    margin-top: 0.25em;
+  }
+
+  html[data-print-mode='compact'] .prose li > ul,
+  html[data-print-mode='compact'] .prose li > ol,
+  html[data-print-mode='two-column'] .prose li > ul,
+  html[data-print-mode='two-column'] .prose li > ol {
+    margin-top: 0.15em;
+  }
+}
+
+/* ---- print: two-column mode only --------------------------------
+   Layered on top of the shared compact tightening above. Only .prose
+   flows into columns — .titleblock (title, lede, mechanics, license)
+   sits outside .prose and stays full-width above the columns. Headings
+   get break-after/inside: avoid so a section title never lands alone at
+   the bottom of a column; images/tables/blockquotes get break-inside:
+   avoid so they don't split across the column gap. Lists are left free
+   to break naturally — forcing every list to stay whole would leave
+   large gaps at column bottoms for anything longer than a few items. */
+
+@media print {
+  html[data-print-mode='two-column'] .prose {
+    column-count: 2;
+    column-gap: 28px;
+  }
+
+  html[data-print-mode='two-column'] .prose h2,
+  html[data-print-mode='two-column'] .prose h3,
+  html[data-print-mode='two-column'] .prose h4 {
+    break-after: avoid;
+    break-inside: avoid;
+  }
+
+  html[data-print-mode='two-column'] .prose img,
+  html[data-print-mode='two-column'] .prose table,
+  html[data-print-mode='two-column'] .prose blockquote,
+  html[data-print-mode='two-column'] .prose pre {
+    break-inside: avoid;
   }
 }

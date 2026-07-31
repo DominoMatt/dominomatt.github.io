@@ -1,0 +1,164 @@
+---
+---
+
+<button type="button" class="print-trigger" id="print-trigger" aria-haspopup="dialog">PRINT</button>
+
+<dialog class="print-modal" id="print-modal" aria-labelledby="print-modal-label">
+  <button type="button" class="print-modal-close" data-print-close aria-label="Close">×</button>
+  <p class="label print-modal-label" id="print-modal-label">PRINT MODE</p>
+  <div class="print-modal-choices">
+    <button type="button" class="print-modal-choice" data-print-mode="normal">
+      <span class="print-modal-choice-title">Normal</span>
+      <span class="print-modal-choice-desc">Standard spacing, closest to the on-screen layout.</span>
+    </button>
+    <button type="button" class="print-modal-choice" data-print-mode="compact">
+      <span class="print-modal-choice-title">Compact</span>
+      <span class="print-modal-choice-desc">Tightened spacing and type — fits more per page.</span>
+    </button>
+    <button type="button" class="print-modal-choice" data-print-mode="two-column">
+      <span class="print-modal-choice-title">Two-Column</span>
+      <span class="print-modal-choice-desc">Compact spacing flowed into two columns — the most per page.</span>
+    </button>
+  </div>
+</dialog>
+
+<script>
+  const trigger = document.getElementById('print-trigger');
+  const dialog = document.getElementById('print-modal') as HTMLDialogElement | null;
+
+  trigger?.addEventListener('click', () => dialog?.showModal());
+
+  dialog?.querySelectorAll('[data-print-close]').forEach((el) =>
+    el.addEventListener('click', () => dialog.close())
+  );
+
+  // A click whose target is the <dialog> element itself (not one of its
+  // content children) means the click landed on the backdrop / the
+  // dialog's own box outside its inner content — treat it as "close".
+  dialog?.addEventListener('click', (event) => {
+    if (event.target === dialog) dialog.close();
+  });
+
+  dialog?.querySelectorAll<HTMLButtonElement>('[data-print-mode]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const mode = btn.dataset.printMode;
+      if (mode === 'normal') {
+        document.documentElement.removeAttribute('data-print-mode');
+      } else if (mode) {
+        document.documentElement.setAttribute('data-print-mode', mode);
+      }
+      dialog.close();
+      window.print();
+    });
+  });
+</script>
+
+<style>
+  /* Deliberately smaller/quieter than .btn (global.css) — this sits in the
+     delicate mono topbar row next to .breadcrumb (0.6875rem) and
+     .topbar-eyebrow (0.625rem), so it borrows their scale rather than the
+     full-size button treatment used for primary page actions. Same visual
+     family as .mechanic-pill / .dl-type (1px var(--line) border, hairline
+     radius, mono, muted-to-ink hover). */
+  .print-trigger {
+    appearance: none;
+    font-family: var(--mono);
+    font-size: 0.625rem;
+    letter-spacing: 0.08em;
+    padding: 4px 10px;
+    border: 1px solid var(--line);
+    border-radius: 2px;
+    background: transparent;
+    color: var(--mut);
+    cursor: pointer;
+    transition: color 0.15s ease, border-color 0.15s ease;
+  }
+
+  .print-trigger:hover {
+    color: var(--ink);
+    border-color: var(--ink);
+  }
+
+  .print-modal {
+    width: min(360px, calc(100vw - 48px));
+    padding: 28px 28px 24px;
+    border: 1px solid var(--line);
+    border-radius: 2px;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--serif-text);
+  }
+
+  /* Do NOT set `position` here — the UA stylesheet already makes a
+     showModal()'d <dialog> `position: fixed; inset: 0; margin: auto;`,
+     which is what centers it. It also establishes the positioning
+     context the absolutely-positioned close button below relies on. */
+
+  .print-modal::backdrop {
+    background: rgba(0, 0, 0, 0.55);
+  }
+
+  .print-modal-close {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    appearance: none;
+    background: transparent;
+    border: none;
+    font-family: var(--mono);
+    font-size: 1rem;
+    line-height: 1;
+    color: var(--faint);
+    cursor: pointer;
+  }
+
+  .print-modal-close:hover {
+    color: var(--ink);
+  }
+
+  .print-modal-label {
+    margin: 0 0 18px;
+  }
+
+  .print-modal-choices {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .print-modal-choice {
+    appearance: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 14px 16px;
+    border: 1px solid var(--line);
+    border-radius: 2px;
+    background: transparent;
+    color: var(--ink);
+    cursor: pointer;
+    transition: border-color 0.15s ease, transform 0.15s ease;
+  }
+
+  .print-modal-choice:hover,
+  .print-modal-choice:focus-visible {
+    border-color: var(--ink);
+    transform: translateY(-1px);
+  }
+
+  .print-modal-choice-title {
+    display: block;
+    font-family: var(--serif-display);
+    font-size: 1.25rem;
+    line-height: 1.1;
+  }
+
+  .print-modal-choice-desc {
+    display: block;
+    margin-top: 4px;
+    font-family: var(--sans);
+    font-size: 0.8125rem;
+    line-height: 1.4;
+    color: var(--mut);
+  }
+</style>
