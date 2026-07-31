@@ -21,16 +21,16 @@ in the Setup section of `twelves.md`, nothing else"_ — then hold to it.
 | ------------------------- | ------------------------------------ | ----------------------------------------------------------------------------------- |
 | "Fix this typo"           | that typo                            | the rest of the sentence, paragraph, or file                                        |
 | "Proofread this section"  | misspellings, grammar, punctuation   | rewording clear sentences, reordering, cutting or adding content, changing headings |
-| "Reformat this list"      | the list markup                      | the wording inside the items, the prose around it                                   |
+| "Turn this into a list"   | the markup for those items           | the wording inside the items, the prose around it                                   |
 | "Add a new game"          | one new file in `src/content/games/` | existing game files, components, styles                                             |
 | "Change the player count" | that one frontmatter field           | other fields, the body                                                              |
 
 ### Specifically, unless you are asked to
 
-- **Leave Markdown formatting alone — Prettier owns it.** Line wrapping, list
-  markers, table padding and trailing whitespace are normalised automatically
-  when you commit (see §3). Don't hand-adjust them, and don't reformat a file to
-  tidy it: a reformat nobody asked for is still an unrelated change.
+- **Do not hand-format Markdown.** Line wrapping, list markers, table padding
+  and trailing whitespace are normalised automatically when you commit (see §3)
+  — Prettier owns them. Don't reformat a file to tidy it either: a reformat
+  nobody asked for is still an unrelated change.
 - **Do not improve wording** when asked to fix mechanics. A proofread is not a
   rewrite.
 - **Do not fix unrelated problems you notice.** Report them instead, at the end
@@ -72,6 +72,11 @@ hook working, not a problem.
 A static Astro site: a portfolio of tabletop game rules and short essays. It
 builds to plain HTML and deploys to GitHub Pages on every push to `main`
 (`.github/workflows/deploy.yml`).
+
+**A push to `main` publishes the site.** There is no staging step and no
+approval gate — the deploy runs on push and is live within a couple of minutes.
+Committing is safe; pushing to `main` is publishing. Don't do it unless
+publishing is what was asked for.
 
 - **Content** — Markdown + frontmatter in `src/content/games/` and
   `src/content/notes/`
