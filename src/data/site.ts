@@ -68,7 +68,7 @@ export const site = {
   // "curate the front door" decision, not a per-item edit, so it takes a dev
   // touch — see AUTHORING.md for the day-to-day content workflow.
   homepage: {
-    notes: ['dominoes', '3d-printables'],
+    notes: ['dominoes', '3d-printables', 'wellsboro_comic_con'],
     games: ['memory', 'fish_pond', 'domino_kingdom', 'push_your_luck'],
   },
 };
