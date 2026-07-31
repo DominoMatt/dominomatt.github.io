@@ -1,0 +1,56 @@
+#!/bin/sh
+#
+# Format staged Markdown with Prettier before the commit is written.
+#
+# Why a hook rather than a CI check: a failed deploy is a terrible way to find
+# out about a line break. This runs locally, fixes the file, and stages the fix,
+# so formatting never turns into a red build or a blocked publish.
+#
+# This hook is deliberately incapable of stopping a commit. Every failure path
+# warns and exits 0 — a formatting rule is not worth standing between an author
+# and their work.
+#
+# It only touches files that are already staged, so adopting it never causes a
+# bulk reformat: content is normalised gradually, as each file is next edited.
+#
+# Enabled by:   git config core.hooksPath .githooks
+# which .devcontainer/devcontainer.json runs on create, and which anyone working
+# outside the devcontainer gets from `npm run hooks`.
+#
+# Bypass once with:   git commit --no-verify
+
+prettier_bin="node_modules/.bin/prettier"
+
+# Staged Markdown only — (A)dded (C)opied (M)odified (R)enamed, so a staged
+# deletion is never handed to the formatter.
+staged=$(git diff --cached --name-only --diff-filter=ACMR | grep -E '\.md$' || true)
+[ -n "$staged" ] || exit 0
+
+if [ ! -f "$prettier_bin" ]; then
+  echo "pre-commit: Prettier not installed — leaving Markdown unformatted."
+  echo "            Run 'npm ci' to enable it. Committing anyway."
+  exit 0
+fi
+
+# Split on newlines only, so paths containing spaces survive.
+IFS='
+'
+
+for file in $staged; do
+  [ -f "$file" ] || continue
+
+  # A file with unstaged edits would have those edits swept into this commit by
+  # the `git add` below. Leave it alone rather than commit work nobody staged.
+  if [ -n "$(git diff --name-only -- "$file")" ]; then
+    echo "pre-commit: skipped $file (has unstaged changes)"
+    continue
+  fi
+
+  if "$prettier_bin" --write "$file" >/dev/null 2>&1; then
+    git add -- "$file"
+  else
+    echo "pre-commit: could not format $file — committing it unchanged."
+  fi
+done
+
+exit 0

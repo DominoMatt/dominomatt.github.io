@@ -10,9 +10,12 @@ Zero UI framework, dark theme only, static output for GitHub Pages.
 - **Plain CSS** — one global stylesheet (`src/styles/global.css`), CSS variables for the palette
 - **External fonts** — Google Fonts (Libre Caslon Display/Text, Spline Sans Mono)
 
-Client JavaScript shipped: **none.** The games index uses native
+Client JavaScript shipped: **one component.** The games index uses native
 `<details name="games">` for the exclusive accordion; the contact form is a
-real `<form>`; navigation is real pages and links.
+real `<form>`; navigation is real pages and links. The only `<script>` on the
+site is the print-mode picker in `src/components/PrintButton.astro` — see
+[`docs/adr/0001-client-js-for-print-mode.md`](docs/adr/0001-client-js-for-print-mode.md)
+for why.
 
 ## Structure
 
