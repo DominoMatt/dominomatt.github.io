@@ -1,10 +1,17 @@
-3-d Printables
+---
+title: 3-d Printables
+date: 2026-07-31
+accent: "#bd7f2e"
+dek: "A domino rack, a town center..."
+# games: []
+# published: false
+---
 
 A domino rack, a town center...
 
 This is a collection of all 3-d printed assets that are offered on this site. 
 
-###Are they Print and Play assets?
+### Are they Print and Play assets?
 
 Can 3-d printed things fall into this category... I definitely think so. On the other hand, just because an object is 'printed' doesn't necessarily make it a print and play asset. It must be a game component that you actually play the game with or on. A printable rule sheet does not make something a print and play game.
 
