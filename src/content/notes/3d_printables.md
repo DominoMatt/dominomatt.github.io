@@ -1,0 +1,25 @@
+3-d Printables
+
+A domino rack, a town center...
+
+This is a collection of all 3-d printed assets that are offered on this site. 
+
+###Are they Print and Play assets?
+
+Can 3-d printed things fall into this category... I definitely think so. On the other hand, just because an object is 'printed' doesn't necessarily make it a print and play asset. It must be a game component that you actually play the game with or on. A printable rule sheet does not make something a print and play game.
+
+- The town center could be considered print and play, you use it to play a certain game.
+- The domino rack would not be a print and play asset, it isn't needed to play a particular game, it's just a handy item to have around.
+
+## A domino rack
+
+This domino rack is not a large one, compared to it's commercial multi-row counterparts. One player might need two to have enough space for their hand. Smaller is sometimes better, especially when it comes to 3-d printing.
+
+- This rack is the perfect size to hold your hand of 6 dominoes in Domino Duel.
+- It also features a card slot.
+
+## A town center
+
+This is a house with a base 1 inch by 1 inch. I like to call it a town center. If you need this to be slightly larger or smaller to match your domino set, just increase or decrease the size of the model before you slice it to print.
+
+- This house is used in Domino Kingdom.
