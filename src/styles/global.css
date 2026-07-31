@@ -1335,6 +1335,11 @@ summary:focus-visible {
     /* every font-size in this file is rem, so scaling the root scales
        the whole type system proportionally — no zoom/transform needed */
     font-size: 66.6%;
+    /* the site is color-scheme: dark, which makes the browser paint the
+       default page canvas dark behind body's "none" background unless
+       overridden — without this, print shows the dark canvas instead of
+       unpainted paper. */
+    color-scheme: light;
   }
 
   :root {
