@@ -18,12 +18,17 @@
     }
   },
 
-  "postCreateCommand": "npm ci",
+  // `git config core.hooksPath` is what activates .githooks/pre-commit. Git will
+  // not use a committed hooks directory until it is pointed at one, and it is
+  // per-clone rather than per-repo, so every new Codespace has to run this. It
+  // applies to agents too — they commit through the same git.
+  "postCreateCommand": "npm ci && git config core.hooksPath .githooks",
 
   "customizations": {
     "vscode": {
       "extensions": [
         "astro-build.astro-vscode",
+        "esbenp.prettier-vscode",
         "yzhang.markdown-all-in-one",
         "streetsidesoftware.code-spell-checker"
       ],
@@ -37,8 +42,13 @@
           "editor.defaultFormatter": "astro-build.astro-vscode"
         },
         "editor.formatOnSave": true,
-        // Games and notes are hand-wrapped prose — leave their line breaks alone.
+        // Prettier owns Markdown wrapping (see prettier.config.mjs), but it runs
+        // at commit time via .githooks/pre-commit — deliberately NOT on save, so
+        // the editor never reflows a paragraph out from under someone who is
+        // still typing in it. Setting the formatter anyway makes an explicit
+        // "Format Document" do the right thing, and stops VS Code guessing.
         "[markdown]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode",
           "editor.formatOnSave": false
         },
         "search.exclude": {

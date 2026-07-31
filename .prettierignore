@@ -1,0 +1,17 @@
+# Build output and vendored files.
+dist
+.astro
+node_modules
+package-lock.json
+public
+
+# Prettier is used for Markdown only in this project (see prettier.config.mjs).
+# Ignoring the source here means a stray `prettier --write .` cannot silently
+# reformat every component — the pre-commit hook and `npm run format` both scope
+# themselves to *.md anyway, this is the backstop for a hand-run command.
+*.astro
+*.ts
+*.mjs
+*.css
+*.svg
+*.json
