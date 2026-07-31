@@ -122,7 +122,8 @@ This project holds a few deliberate constraints:
    `src/layouts/Base.astro`.
 3. **No new dependencies** without an agreed reason.
 4. **Static output only** — no server runtime, no client-side routing.
-5. **Line breaks in prose belong to the author**, not to a formatter.
+5. **No raw HTML in content** beyond the documented `<ol type="a">` sub-step
+   block.
 
 None of these are absolutes. They are defaults that can be overridden by a
 decision on the record — `docs/adr/0001-client-js-for-print-mode.md`, for
