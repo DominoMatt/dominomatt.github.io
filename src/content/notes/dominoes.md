@@ -13,13 +13,13 @@ games: [memory, fish_pond, domino_kingdom]
 
 ## Set Sizes
 
-| Set | End values | Tile count | Notes |
-| --- | --- | --- | --- |
-| Double Six | 0–6 | 28 | Standard set |
-| Double Nine | 0–9 | 55 | |
-| Double Twelve | 0–12 | 91 | |
-| Double Fifteen | 0–15 | 136 | |
-| Chinese | 1–6 | 32 | Repeat tiles, no blanks |
+| Set            | End values | Tile count | Notes                   |
+| -------------- | ---------- | ---------- | ----------------------- |
+| Double Six     | 0–6        | 28         | Standard set            |
+| Double Nine    | 0–9        | 55         |                         |
+| Double Twelve  | 0–12       | 91         |                         |
+| Double Fifteen | 0–15       | 136        |                         |
+| Chinese        | 1–6        | 32         | Repeat tiles, no blanks |
 
 ## Equal End Matching
 

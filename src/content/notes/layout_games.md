@@ -6,41 +6,42 @@ dek: "Dominoes are used to play a variety of games... most of them layout games.
 games: [domino_kingdom]
 ---
 
-Dominoes are played end to end, by matching a tile to an open end in the layout, progressing the line of play... the stereotypical domino game. Layout Games played in this traditional manner are widely considered __Connection Games__.
+Dominoes are played end to end, by matching a tile to an open end in the layout, progressing the line of play... the stereotypical domino game. Layout Games played in this traditional manner are widely considered **Connection Games**.
 
 On the other hand there is a little looser definition of Layout Game.
+
 - Other Layout Games
 
 ## Variation in Connection Games
 
 Six choices define a given game:
 
-- [**Domino Set/Hand size**](#domino-sethand-size) — More players... larger domino set. More players... smaller hand size. 
-- [**Setting the first domino**](#setting-the-first-domino) —  doubles, heaviest, choice.
-- [**Layout shape**](#layout-shape) — arm, line, cross, or tree. Shape is determined by how many doubles (if any) act as *spinners* (tiles that branch the layout).
+- [**Domino Set/Hand size**](#domino-sethand-size) — More players... larger domino set. More players... smaller hand size.
+- [**Setting the first domino**](#setting-the-first-domino) — doubles, heaviest, choice.
+- [**Layout shape**](#layout-shape) — arm, line, cross, or tree. Shape is determined by how many doubles (if any) act as _spinners_ (tiles that branch the layout).
 - [**Connection rule**](#connection-rules) — most games use Equal End Matching; a few (e.g., matador) use different matching logic.
-- [**Draw mode**](#block-vs-draw-games) — in a *block* game, only dealt tiles are played, and a player without a legal move passes. In a *draw* game, a player without a legal move draws from the boneyard (face-down undealt tiles) until they can play.
-- [**Scoring mode**](#blocking-vs-scoring-games) —  Blocking vs. Scoring Games.
+- [**Draw mode**](#block-vs-draw-games) — in a _block_ game, only dealt tiles are played, and a player without a legal move passes. In a _draw_ game, a player without a legal move draws from the boneyard (face-down undealt tiles) until they can play.
+- [**Scoring mode**](#blocking-vs-scoring-games) — Blocking vs. Scoring Games.
 
 ### Domino Set/Hand size
 
 Depending on number of players and the type of game, domino set and hand size varies.
 
-| Set size | Number of players | Hand Size(+/-1) |
-|---|---|---|
-| Double Six | | |
-| | 2 p. | 8 |
-| | 3 p. | 7 |
-| | 4 p. | 6 |
-| Double Nine | | |
-| | 3 p. | 11 |
-| | 4 p. | 10 |
-| | 5 p. | 9 |
-| Double Twelve | | |
-| | 4 p. | 14 |
-| | 5 p. | 13 |
-| | 6 p. | 12 |
-| | 7 p. | 11 |
+| Set size      | Number of players | Hand Size(+/-1) |
+| ------------- | ----------------- | --------------- |
+| Double Six    |                   |                 |
+|               | 2 p.              | 8               |
+|               | 3 p.              | 7               |
+|               | 4 p.              | 6               |
+| Double Nine   |                   |                 |
+|               | 3 p.              | 11              |
+|               | 4 p.              | 10              |
+|               | 5 p.              | 9               |
+| Double Twelve |                   |                 |
+|               | 4 p.              | 14              |
+|               | 5 p.              | 13              |
+|               | 6 p.              | 12              |
+|               | 7 p.              | 11              |
 
 ### Setting the first domino
 
@@ -49,12 +50,12 @@ Depending on number of players and the type of game, domino set and hand size va
        <li>tiles are shuffled and re-dealt; or</li>
        <li>players draw one tile at a time until a double is found.</li>  
     </ol>
-- Heaviest domino: Dominoes are dealt and the heaviest tile in a player's hand is set (weight 12, 11, 10, 9, etc.). If 8 is the heaviest: the double, then the heaviest ended (4-4, 6-2, 5-3) is set.  
+- Heaviest domino: Dominoes are dealt and the heaviest tile in a player's hand is set (weight 12, 11, 10, 9, etc.). If 8 is the heaviest: the double, then the heaviest ended (4-4, 6-2, 5-3) is set.
 - Player's choice: Dominoes are dealt and a first turn marker advanced around the table. Each player, when their lead, sets whatever tile they would like to from their hand.
 
 ### Layout Shape
 
-Shape is determined by the amount of doubles that act as *spinners*.  The larger domino set the more spinners that are likely to be present.
+Shape is determined by the amount of doubles that act as _spinners_. The larger domino set the more spinners that are likely to be present.
 
 - A double six set's layout normally is a line (2 open ends), no spinners.
 - A double nine set might be played as a cross; the first double being a spinner and all other doubles not (4 open ends).
@@ -64,7 +65,7 @@ Shape is determined by the amount of doubles that act as *spinners*.  The larger
 
 Equal End Matching — At least 1 end of a domino being played must match an open end of another domino that is already been played/set in the layout.
 
-- There are other rules for matching, like matador. 
+- There are other rules for matching, like matador.
 
 ### Block vs. Draw Games
 

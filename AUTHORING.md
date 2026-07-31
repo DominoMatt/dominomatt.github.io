@@ -8,13 +8,12 @@ All game and note content lives in plain Markdown files. You never touch code.
 The file name (without `.md`) becomes the page URL — `twelves.md` →
 `/rules/twelves`, `onepage.md` → `/notes/onepage`. Use lowercase, no spaces.
 
-Every game and note also appears on its catalogue page automatically — all
-games at `/games` (filterable by category), all notes at `/notes` — unless
-you mark it `published: false` (see below).
+Every game and note also appears on its catalogue page automatically — all games
+at `/games` (filterable by category), all notes at `/notes` — unless you mark it
+`published: false` (see below).
 
-Each file has two parts: the **frontmatter** (the block between the `---`
-lines at the top — the card details) and the **body** (everything below — the
-prose).
+Each file has two parts: the **frontmatter** (the block between the `---` lines
+at the top — the card details) and the **body** (everything below — the prose).
 
 ## The section convention (used in both games and notes)
 
@@ -52,7 +51,7 @@ The youngest player lays the first tile.
 Inside any section you can use the full range of GitHub Flavored Markdown and it
 will be styled to match the site:
 
-```markdown
+````markdown
 Regular paragraphs, **bold**, *italic*, ~~strikethrough~~, and [links](https://example.com).
 
 - bullet lists
@@ -72,16 +71,16 @@ Regular paragraphs, **bold**, *italic*, ~~strikethrough~~, and [links](https://e
 ​```
 plain code block
 ​```
-```
+````
 
 > **Tables need the divider row.** A table must have the `| --- | --- |` line
 > directly under the header row, or Markdown treats it as plain text.
 
 ### Lettered sub-steps (a, b, c…)
 
-Markdown has no built-in way to write a lettered list, so when a step needs
-"do A or B" sub-options, drop in this exact HTML snippet — it's the one place
-you'll need something other than plain Markdown:
+Markdown has no built-in way to write a lettered list, so when a step needs "do
+A or B" sub-options, drop in this exact HTML snippet — it's the one place you'll
+need something other than plain Markdown:
 
 ```markdown
 1. Roll a die.
@@ -92,14 +91,14 @@ you'll need something other than plain Markdown:
    </ol>
 ```
 
-It renders as a normal lettered list (a, b, c…) styled to match the rest of
-the page. Several existing games already use this — copy the pattern from
-their body text if you want a working example.
+It renders as a normal lettered list (a, b, c…) styled to match the rest of the
+page. Several existing games already use this — copy the pattern from their body
+text if you want a working example.
 
 > **Linking to a heading.** Every `##`/`###` heading automatically gets a
 > linkable id from its own text (lowercase, spaces → hyphens), so
-> `[see the glossary](#glossary)` links straight to a `## Glossary` section
-> with nothing extra to add — no raw HTML needed for this part.
+> `[see the glossary](#glossary)` links straight to a `## Glossary` section with
+> nothing extra to add — no raw HTML needed for this part.
 
 ## New game — template
 
@@ -149,22 +148,21 @@ How the game ends.
 ```
 
 `contents:` and `spec:` are both required — two short lines shown stacked
-together on the game's row on `/games` once it's expanded (not on the rules
-page itself), `contents:` in front and `spec:` smaller underneath it. Both
-are free text with no fixed meaning to match — use them however best
-describes the game at a glance. Existing games use `contents:` for what the
-player gets (e.g. `Rules Sheet`) and `spec:` for what else they'll need to
-play (e.g. `Double Six Dominoes, D6 Dice x1`); a print-and-play game might
-instead use them the way the template above does, for what's in the PDF and
-its print spec. Leaving either out isn't an option — the site won't build
-without them.
+together on the game's row on `/games` once it's expanded (not on the rules page
+itself), `contents:` in front and `spec:` smaller underneath it. Both are free
+text with no fixed meaning to match — use them however best describes the game
+at a glance. Existing games use `contents:` for what the player gets (e.g.
+`Rules Sheet`) and `spec:` for what else they'll need to play (e.g.
+`Double Six Dominoes, D6 Dice x1`); a print-and-play game might instead use them
+the way the template above does, for what's in the PDF and its print spec.
+Leaving either out isn't an option — the site won't build without them.
 
 `downloads:` is optional — omit it entirely for a game that's play-from-the-page
 only, with nothing to print or download; the game just won't show a downloads
-section. When present, it renders as a "Downloads" section at the bottom of
-the game's rules page — every entry's name, description, and GET button are
-always visible (nothing to expand to reach the file). It's an ordered list,
-one entry per file:
+section. When present, it renders as a "Downloads" section at the bottom of the
+game's rules page — every entry's name, description, and GET button are always
+visible (nothing to expand to reach the file). It's an ordered list, one entry
+per file:
 
 ```yaml
 downloads:
@@ -189,27 +187,26 @@ downloads:
 
 - `title` — the file's name, shown above its description.
 - `file` — where the file lives under `public/print/`. A flat name
-  (`twelves.pdf`) works for a single file; use a subfolder
-  (`twelves/tiles.stl`) once a game has more than one, so filenames across
-  games don't collide. The `PDF` / `IMG` / `STL` type tag shown next to the
-  name is read straight off this path's extension — never a separate field
-  to keep in sync.
-- `description` — a short blurb, always shown under the name. Can run more
-  than one line — either YAML folded (`>`, blank line = paragraph break) or
-  literal (`|`, every line kept as-is) block scalars both work; each
-  resulting line renders as its own paragraph.
+  (`twelves.pdf`) works for a single file; use a subfolder (`twelves/tiles.stl`)
+  once a game has more than one, so filenames across games don't collide. The
+  `PDF` / `IMG` / `STL` type tag shown next to the name is read straight off
+  this path's extension — never a separate field to keep in sync.
+- `description` — a short blurb, always shown under the name. Can run more than
+  one line — either YAML folded (`>`, blank line = paragraph break) or literal
+  (`|`, every line kept as-is) block scalars both work; each resulting line
+  renders as its own paragraph.
 - `spec` — optional one-line meta string (paper size, page count, print
   settings, whatever's relevant) shown next to the version. Omit it and that
   entry just shows no spec text.
 - `version` — optional; defaults to `V1.0` if you leave it out.
-- `history` — optional list of earlier releases of this same file, newest
-  first, each with a `version`, a one-line `note` on what changed, and a
-  `date`. Leave it out entirely for a file with no version history — a
-  "N EARLIER VERSIONS" toggle only appears when this list is non-empty. Each
-  entry's own `file` is optional — set it (same `public/print/` convention as
-  above) to show a small "GET →" link for that old version specifically;
-  leave it out for a past release you no longer keep a copy of, and that row
-  just shows its version/note/date with no link.
+- `history` — optional list of earlier releases of this same file, newest first,
+  each with a `version`, a one-line `note` on what changed, and a `date`. Leave
+  it out entirely for a file with no version history — a "N EARLIER VERSIONS"
+  toggle only appears when this list is non-empty. Each entry's own `file` is
+  optional — set it (same `public/print/` convention as above) to show a small
+  "GET →" link for that old version specifically; leave it out for a past
+  release you no longer keep a copy of, and that row just shows its
+  version/note/date with no link.
 
 A game can have any number of entries, in any order — including zero (a game
 played straight from the rules page, with nothing to print).
@@ -218,59 +215,58 @@ played straight from the rules page, with nothing to print).
 `"Box Art by CoolArtist"` or `"3D Tokens by CoolPrinter"`. When present, they
 show as a bulleted "Attributions" section right after Downloads. Leave it out
 entirely for a game with nothing to credit — zero entries hides the section,
-same as `downloads:`. A game with attributions but no downloads still gets
-an Attributions section, just with no Downloads block above it.
+same as `downloads:`. A game with attributions but no downloads still gets an
+Attributions section, just with no Downloads block above it.
 
-`motif:` is optional — one of `pips | diamond | circle | line`, a small
-plain shape drawn on the "box art" cover (top area, title pinned to the
-bottom below it) as a placeholder until the game has real art. Leave it out
-entirely for a game with neither `motif` nor `art` and the cover just shows
-the flat `accent` colour with the title at the bottom — no shape.
+`motif:` is optional — one of `pips | diamond | circle | line`, a small plain
+shape drawn on the "box art" cover (top area, title pinned to the bottom below
+it) as a placeholder until the game has real art. Leave it out entirely for a
+game with neither `motif` nor `art` and the cover just shows the flat `accent`
+colour with the title at the bottom — no shape.
 
 `art:` is optional. Give it the filename of an SVG already dropped into
-`src/assets/art/` (ask a dev to add the file itself — this is the one asset
-type that isn't a plain content edit) and that icon replaces the flat
-accent-colour square (and any `motif` shape) everywhere this game's identity
-shows up: the rules page masthead, the small swatch on the games index row,
-the "box art" cover shown when that row is expanded, and wherever this
-game is cross-linked as a related/referenced game on another page. Leave it
-out entirely and every one of those stays exactly as it is today (flat
-colour, plain motif shape if set) — most games don't have real art yet.
-Pick whichever variant (if more than one exists for the same icon) reads
-clearly against this game's `accent` colour.
+`src/assets/art/` (ask a dev to add the file itself — this is the one asset type
+that isn't a plain content edit) and that icon replaces the flat accent-colour
+square (and any `motif` shape) everywhere this game's identity shows up: the
+rules page masthead, the small swatch on the games index row, the "box art"
+cover shown when that row is expanded, and wherever this game is cross-linked as
+a related/referenced game on another page. Leave it out entirely and every one
+of those stays exactly as it is today (flat colour, plain motif shape if set) —
+most games don't have real art yet. Pick whichever variant (if more than one
+exists for the same icon) reads clearly against this game's `accent` colour.
 
 `mechanics:` is a tag list of the game's mechanics (e.g. `Push Your Luck`,
-`Bluffing`) — display only, never used for filtering. The first three show up
-in the index's game widget, right after the description; the full list shows
-under the description on the game's own rules page.
+`Bluffing`) — display only, never used for filtering. The first three show up in
+the index's game widget, right after the description; the full list shows under
+the description on the game's own rules page.
 
-`license:` is required — a short plain-text label (e.g. `CC BY-NC`) shown as
-a small line right after the mechanics tags, both on the games index row and
-the game's own rules page. This is the license for the game's content (rules
-text, described components, etc.) — separate from the codebase's own MIT
-license (see the repo's `LICENSE` file). Every current game ships under
-`CC BY-NC`; if a future game needs different terms, just change its value.
+`license:` is required — a short plain-text label (e.g. `CC BY-NC`) shown as a
+small line right after the mechanics tags, both on the games index row and the
+game's own rules page. This is the license for the game's content (rules text,
+described components, etc.) — separate from the codebase's own MIT license (see
+the repo's `LICENSE` file). Every current game ships under `CC BY-NC`; if a
+future game needs different terms, just change its value.
 
-`category:` is free text, not a fixed list — whatever you type becomes a
-filter chip on `/games`. Capitalization doesn't matter (`Domino Variant` and
-`domino variant` share a chip), but the words themselves must match — spell
-it **exactly the same** on every game that should group together
-(`Domino Variant` and `Domino Variants` make two separate chips).
+`category:` is free text, not a fixed list — whatever you type becomes a filter
+chip on `/games`. Capitalization doesn't matter (`Domino Variant` and
+`domino variant` share a chip), but the words themselves must match — spell it
+**exactly the same** on every game that should group together (`Domino Variant`
+and `Domino Variants` make two separate chips).
 
-`relatedGames:` is optional. List the ids (filenames, no `.md`) of other
-games worth pointing a reader to — their cover art renders at the end of
-this game's rules page, each linking to its own rules. Leave it out entirely
-for a game with no natural cross-link.
+`relatedGames:` is optional. List the ids (filenames, no `.md`) of other games
+worth pointing a reader to — their cover art renders at the end of this game's
+rules page, each linking to its own rules. Leave it out entirely for a game with
+no natural cross-link.
 
 ### Publishing a game early, or not at all
 
-`published: false` takes a game off `/games` (and its category filter) and
-out of the sitemap, but the page still builds at `/rules/<id>` — useful for
-sharing a preview link before it's ready to be found. Leave `published` out
-entirely (or set it `true`) for the normal case: listed everywhere. Either
-way, anything already featured on the homepage (`src/data/site.ts`) or
-referenced from a note's `games:` list keeps showing there regardless —
-those are hand-picked, not auto-listed.
+`published: false` takes a game off `/games` (and its category filter) and out
+of the sitemap, but the page still builds at `/rules/<id>` — useful for sharing
+a preview link before it's ready to be found. Leave `published` out entirely (or
+set it `true`) for the normal case: listed everywhere. Either way, anything
+already featured on the homepage (`src/data/site.ts`) or referenced from a
+note's `games:` list keeps showing there regardless — those are hand-picked, not
+auto-listed.
 
 ## New note — template
 
@@ -297,12 +293,12 @@ First section's prose.
 Another section. Blank line between paragraphs makes new paragraphs.
 ```
 
-The date drives both the short label on the list (`MAR ’26`) and the full one
-on the article (`MARCH 2026`) — you only enter it once, as `YYYY-MM-DD`.
+The date drives both the short label on the list (`MAR ’26`) and the full one on
+the article (`MARCH 2026`) — you only enter it once, as `YYYY-MM-DD`.
 
 `games:` is optional. List the ids (filenames, no `.md`) of any games the
-article talks about, in brackets and separated by commas — the game's cover
-art renders at the end of the piece, linking to its rules page. Leave it out
+article talks about, in brackets and separated by commas — the game's cover art
+renders at the end of the piece, linking to its rules page. Leave it out
 entirely for a note that isn't about a specific game.
 
 Every article automatically gets a "© {year} dominomatt. All rights reserved."
@@ -312,15 +308,15 @@ articles are all-rights-reserved by default.
 
 ### Publishing a note early, or not at all
 
-`published: false` takes a note off `/notes` and out of the sitemap (and out
-of the neighboring "NEXT" link on other articles), but the page still builds
-at `/notes/<id>` — a preview link you can share before it's public. Leave
+`published: false` takes a note off `/notes` and out of the sitemap (and out of
+the neighboring "NEXT" link on other articles), but the page still builds at
+`/notes/<id>` — a preview link you can share before it's public. Leave
 `published` out entirely (or set it `true`) for the normal case.
 
 ## Site-wide page copy
 
-Games and notes aren't the only editable text — the heading and intro line
-on five other pages live in `src/data/site.ts`, under `pages`:
+Games and notes aren't the only editable text — the heading and intro line on
+five other pages live in `src/data/site.ts`, under `pages`:
 
 ```ts
 pages: {
@@ -332,16 +328,16 @@ pages: {
 },
 ```
 
-- `title` is shown twice — as the big heading on the page, and as the
-  browser tab title (with the site name appended, e.g. "Say hello · Free
-  Domino Games"). One field drives both, so they're always the same text.
+- `title` is shown twice — as the big heading on the page, and as the browser
+  tab title (with the site name appended, e.g. "Say hello · Free Domino Games").
+  One field drives both, so they're always the same text.
 - `lede` is shown twice too — as the paragraph under the heading, and as the
-  page's `<meta name="description">` (what search results and link
-  previews show). Same rule: one field, one text.
-- `home.tagline` is the homepage's own H1, above the notes/games lists — it
-  has no `lede`. Leave it blank to hide it entirely.
-- The Games page's browser tab appends the active category automatically
-  (e.g. "Games · Dice"); the H1 itself always just reads "Games".
+  page's `<meta name="description">` (what search results and link previews
+  show). Same rule: one field, one text.
+- `home.tagline` is the homepage's own H1, above the notes/games lists — it has
+  no `lede`. Leave it blank to hide it entirely.
+- The Games page's browser tab appends the active category automatically (e.g.
+  "Games · Dice"); the H1 itself always just reads "Games".
 
 This is plain text — no Markdown, no frontmatter, no quotes to worry about
 beyond the ones already in the file — safe to edit directly.
@@ -357,9 +353,9 @@ beyond the ones already in the file — safe to edit directly.
   removing its `.md` file doesn't take it off either — the homepage's two
   widgets (latest notes, featured games) are a separate, hand-picked list in
   `src/data/site.ts` (`homepage.notes` / `homepage.games`), in whatever order
-  they're listed. Every published game and note is reachable from `/games`
-  and `/notes` regardless of what's featured on the homepage — see
-  `published:` above for the unlisted-but-still-live case. Changing the
-  homepage lineup is a dev edit, not a frontmatter one.
-- After saving, run `npm run dev` to preview, or just push — the site
-  rebuilds and deploys on its own.
+  they're listed. Every published game and note is reachable from `/games` and
+  `/notes` regardless of what's featured on the homepage — see `published:`
+  above for the unlisted-but-still-live case. Changing the homepage lineup is a
+  dev edit, not a frontmatter one.
+- After saving, run `npm run dev` to preview, or just push — the site rebuilds
+  and deploys on its own.

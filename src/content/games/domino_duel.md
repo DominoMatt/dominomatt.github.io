@@ -25,10 +25,12 @@ spec: Double 6 Dominoes
 ---
 
 Doubles rank highest in their 'suit', followed by heaviest weight of the Power and so on... (e.g. 2-2, 2-6, 2-5, 2-4, 2-3, 2-1, 2-0). This same ranking pattern is true of each suit.
+
 ## Set-up:
-- Shuffle the dominoes face-down or in a bag (boneyard). 
+
+- Shuffle the dominoes face-down or in a bag (boneyard).
 - Each player gets 3 HP (health) at the start of the game. (same as best of 5 play)
-- First player can be randomly determined and after drawing up decides whether to Attack or Defend. 
+- First player can be randomly determined and after drawing up decides whether to Attack or Defend.
 
 ## Gameplay:
 

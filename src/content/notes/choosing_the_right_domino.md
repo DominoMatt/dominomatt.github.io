@@ -15,12 +15,12 @@ Choosing the right domino shouldn't be ignored or underrated. Thought and planni
 
 Western dominoes (Double 6, 9, 12, or 15 sets) are twice as long as they are wide.
 
-| size | approximate dimensions |
-| --- | --- |
-| Small | <1 inch wide |
-| Standard | 1 in. wide x 2 in. long |
-| Professional/Tournament | 1.1 - 1.5 inches wide |
-| 'Large' (jumbo, yard) | >1.5 inches wide | 
+| size                    | approximate dimensions  |
+| ----------------------- | ----------------------- |
+| Small                   | <1 inch wide            |
+| Standard                | 1 in. wide x 2 in. long |
+| Professional/Tournament | 1.1 - 1.5 inches wide   |
+| 'Large' (jumbo, yard)   | >1.5 inches wide        |
 
 ## Thickness
 
@@ -32,13 +32,14 @@ Western dominoes (Double 6, 9, 12, or 15 sets) are twice as long as they are wid
 2. Standard: There is a huge amount of variance in tile thickness among "standard" dominoes.
    - "Cheaper" sets are typically thinner and will require racks to hold your hand of tiles.
    - Thinner "cheaper" sets are typically too thin to be toppled and might be frustrating to young players.
-   - __Recommended thickness for edge standing: 3/8 inch (9.5 mm) or more__ for standard sized dominoes (5/16 in. as a minimum).
+   - **Recommended thickness for edge standing: 3/8 inch (9.5 mm) or more** for standard sized dominoes (5/16 in. as a minimum).
 3. Professional/Tournament: The thickness is typically proportional to size and therefore can be stood on edge easily. Their thicknesses should exceed 3/8 inch (9.5 mm).
 4. Large: When the width exceeds 1.5 inches, the size and thickness can vary widely.
 
 ## Quality
 
-Do you get what you pay for? Many times this is true. 
+Do you get what you pay for? Many times this is true.
+
 - The cheapest dominoes are smaller and thinner on average.
 - I have purchased many sets of dominoes... many have contained incomplete sets (typically having multiple copies of a domino and none of another). Even better sets can suffer from this problem, but the 'better'/more expensive the set the more likely you will receive good customer service... thus replacements, if needed.
 
@@ -84,12 +85,13 @@ As set size increases, so does the amount of pips.
 
 ### Backs
 
-- Sometimes there is art printed of the backs of dominoes. There could be ink printing or the double dragon pressed backs. 
+- Sometimes there is art printed of the backs of dominoes. There could be ink printing or the double dragon pressed backs.
 - Some sets are bi-color (thickness wise)... the face and back being distinct colors.
 
 ## Spinners
 
 Some dominoes particular professional/tournament sized ones might have spinners.
-- Spinners are tack like pieces of metal inserted into the face of the tiles. 
+
+- Spinners are tack like pieces of metal inserted into the face of the tiles.
 - The tack's head protrudes from the domino's face and is centered so tiles spin around it as an axis while shuffling facedown... making shuffling easier/ more thorough.
 - Dominoes with spinners cannot be stacked.
