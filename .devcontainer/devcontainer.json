@@ -28,8 +28,12 @@
     "vscode": {
       "extensions": [
         "astro-build.astro-vscode",
+        // Prettier is the only Markdown formatter here, on purpose. Markdown All
+        // in One used to be installed alongside it and reformatted tables and
+        // renumbered lists on its own schedule, which is the likeliest source of
+        // the mangled HTML blocks in content/. Two formatters, one file type, is
+        // how content gets rewritten by something nobody asked.
         "esbenp.prettier-vscode",
-        "yzhang.markdown-all-in-one",
         "streetsidesoftware.code-spell-checker"
       ],
       "settings": {

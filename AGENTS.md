@@ -93,6 +93,12 @@ Changes to components, layouts, pages, `global.css`, `astro.config.mjs` or
 `package.json` are not routine. Make them when asked, but say what you are
 changing and why first. **Never add a dependency without asking.**
 
+**Install with `npm ci`, never bare `npm install`.** `npm install` re-resolves
+platform-specific optional dependencies and rewrites `package-lock.json` to suit
+whichever OS it ran on. Codespaces and CI both build on Linux, so a lockfile
+written anywhere else shows up as unexplained churn in the diff. If a dependency
+genuinely has to be added, it has to be resolved on Linux.
+
 ## 5. Content conventions worth knowing
 
 The traps the schema alone won't tell you:
