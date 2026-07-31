@@ -28,7 +28,7 @@ export const site = {
     },
     contact: {
       title: 'Contact me',
-      lede: 'Questions about a game, a playtest report, a note about a typo in the rules or articles, or a general comment - I'd love to hear from you.',
+      lede: "Questions about a game, a playtest report, a note about a typo in the rules or articles, or a general comment - I'd love to hear from you.",
     },
     thankYou: {
       title: 'Thanks for writing',
@@ -68,7 +68,7 @@ export const site = {
   // "curate the front door" decision, not a per-item edit, so it takes a dev
   // touch — see AUTHORING.md for the day-to-day content workflow.
   homepage: {
-    notes: ['dominoes', '3d-printables', 'wellsboro_comic_con'],
+    notes: ['dominoes', '3d-printables'],
     games: ['memory', 'fish_pond', 'domino_kingdom', 'push_your_luck'],
   },
 };
