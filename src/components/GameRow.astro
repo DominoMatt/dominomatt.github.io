@@ -27,7 +27,9 @@ const Art = getGameArt(g);
   </summary>
 
   <div class="game-detail">
-    <GameCover game={g} />
+    <a class="game-cover-link" href={url(`/rules/${g.id}`)} aria-label={`Read the rules for ${g.title}`}>
+      <GameCover game={g} />
+    </a>
 
     <div class="game-body">
       <p class="game-desc">{g.description}</p>
