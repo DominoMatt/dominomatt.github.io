@@ -34,7 +34,7 @@ const { Content } = await render(n.entry);
   <Breadcrumb section="notes" eyebrow="NOTE" />
 
   <header class="titleblock titleblock--content titleblock--note">
-    <div class="kicker-meta">ESSAY · {n.dateFull}</div>
+    <div class="kicker-meta">{n.dateFull}</div>
     <h1 class="page-title">{n.title}</h1>
     <div class="accent-bar" style={`background:${n.accent}`}></div>
     <p class="lede">{n.dek}</p>
