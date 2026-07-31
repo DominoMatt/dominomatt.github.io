@@ -29,6 +29,10 @@
       ],
       "settings": {
         "files.eol": "\n",
+        // Copilot only reads AGENTS.md when this is on, and it is not on by
+        // default in every VS Code build. Without it the agent loses every
+        // instruction in AGENTS.md silently, with no warning in chat.
+        "chat.useAgentsMdFile": true,
         "[astro]": {
           "editor.defaultFormatter": "astro-build.astro-vscode"
         },
