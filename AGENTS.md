@@ -73,11 +73,6 @@ A static Astro site: a portfolio of tabletop game rules and short essays. It
 builds to plain HTML and deploys to GitHub Pages on every push to `main`
 (`.github/workflows/deploy.yml`).
 
-**A push to `main` publishes the site.** There is no staging step and no
-approval gate — the deploy runs on push and is live within a couple of minutes.
-Committing is safe; pushing to `main` is publishing. Don't do it unless
-publishing is what was asked for.
-
 - **Content** — Markdown + frontmatter in `src/content/games/` and
   `src/content/notes/`
 - **Templates** — `.astro` files in `src/components/`, `src/layouts/`,
@@ -103,6 +98,11 @@ platform-specific optional dependencies and rewrites `package-lock.json` to suit
 whichever OS it ran on. Codespaces and CI both build on Linux, so a lockfile
 written anywhere else shows up as unexplained churn in the diff. If a dependency
 genuinely has to be added, it has to be resolved on Linux.
+
+**A push to `main` publishes the site.** There is no staging step and no
+approval gate — the deploy runs on push and is live within a couple of minutes.
+Committing is safe; pushing to `main` is publishing. Don't push unless
+publishing is what was asked for.
 
 ## 5. Content conventions worth knowing
 
