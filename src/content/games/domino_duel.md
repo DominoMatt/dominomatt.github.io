@@ -14,11 +14,11 @@ mechanics: [Trick-taking]
 license: CC BY-NC
 contents: Rules Sheet
 spec: Double 6 Dominoes
-# downloads:
-#   - title: Print & Play PDF
-#     file: domino_duel.pdf
-#     description: "A short description for the download."
-#     spec: PDF · A4 + LETTER · 6 PP
+downloads:
+  - title: Domino Tray for 3D Printing
+    file: stl/domino_tray.stl
+    description: "Holds 6 dominos"
+    spec: 0.2-0.4 resolution ~ 25% infill ~ no rafts/supports needed
 # attributions: []
 # relatedGames: []
 # published: false
