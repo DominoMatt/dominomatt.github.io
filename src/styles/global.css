@@ -342,10 +342,19 @@ a {
   padding: 6px 0 34px 46px;
 }
 
+.game-cover-link {
+  display: block;
+  flex-shrink: 0;
+  transition: transform 0.15s ease;
+}
+
+.game-cover-link:hover {
+  transform: translateY(-2px);
+}
+
 .game-cover {
   width: 158px;
   height: 212px;
-  flex-shrink: 0;
   padding: 18px;
   border-radius: 1px;
   position: relative;
