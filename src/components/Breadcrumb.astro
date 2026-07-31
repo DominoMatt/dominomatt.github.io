@@ -1,6 +1,7 @@
 ---
 import { site } from '../data/site';
 import { url } from '../lib/links';
+import PrintButton from './PrintButton.astro';
 
 interface Props {
   section: 'games' | 'notes';
@@ -21,5 +22,8 @@ const sectionLabel = section === 'games' ? 'GAMES' : 'NOTEBOOK';
     <span class="sep" aria-hidden="true">/</span>
     <a href={url(sectionHref)}>{sectionLabel}</a>
   </nav>
-  <span class="topbar-eyebrow">{eyebrow}</span>
+  <div class="topbar-right">
+    <span class="topbar-eyebrow">{eyebrow}</span>
+    <PrintButton />
+  </div>
 </div>
