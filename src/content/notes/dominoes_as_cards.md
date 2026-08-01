@@ -1,7 +1,7 @@
 ---
 title: Dominoes as Cards
 date: 2026-07-25
-accent: "#bd7f2e"
+accent: "#C47234"
 dek: "Dominoes can be used similarly to cards."
 # games: []
 # published: false

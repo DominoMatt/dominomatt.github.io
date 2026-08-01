@@ -1,7 +1,7 @@
 ---
 title: Choosing the Right Domino
 date: 2026-07-25
-accent: "#bd7f2e"
+accent: "#b171ae"
 dek: "Not all dominoes are created equally."
 # games: []
 # published: true
@@ -26,7 +26,7 @@ Western dominoes (Double 6, 9, 12, or 15 sets) are twice as long as they are wid
 
 - Thickness eventually boils down to whether or not a particular set can be easily set on edge so that players can see their hand.
 - Thickness is extra important if they are going to get stood on edge in a row and toppled.
-- Buying a set of domino racks can solve many issues related to thickness.
+- Buying a set of domino trays/racks can solve many issues related to thickness.
 
 1. Small: The thickness in small dominoes is typically proportional to size, although they may not stand on edge easily.
 2. Standard: There is a huge amount of variance in tile thickness among "standard" dominoes.
