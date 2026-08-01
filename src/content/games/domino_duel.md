@@ -5,7 +5,7 @@ category: Trick-taking
 players: "2 players"
 # age: 8+
 time: 20 min
-accent: "#bd7f2e"
+accent: "#b171ae"
 ink: "#1d1408"
 # motif: pips
 # art: dominos_black.svg
