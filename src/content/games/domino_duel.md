@@ -72,9 +72,11 @@ Play a domino with an end that matches the Attack's Type or has a 0/blank on one
 - Play any non-matching, non-blank domino ('junk'); effectively improving your hand.
 - Refuse to defend with a domino; to save the rest your hand for the next round.
 
-## Round end: (Round end triggers after either 6 plays/tricks OR a player losing 1 health)
+## Round end:
 
-- After 6 plays, if no one lost HP, the attacker continues to Attack (unless countered the last trick).
+The round ends after either 12 plays/tricks OR a player losing 1 health
+
+- If after 6 plays, no one lost HP, the attacker continues to Attack in the 7th trick.
   1. both players draw 6 more tiles from the boneyard's remaining tiles.
   2. Tricks 7-12 ensue, when the extra round ends, do 1-4 below.
 
@@ -88,12 +90,10 @@ Play a domino with an end that matches the Attack's Type or has a 0/blank on one
 
 If a player hits 0 HP, they lose. Another game could start and the loser starts as 1st player.
 
-## Extras
-
-### Special case
+## Special case
 
 The 0-0 domino can 'Attack', only if it's the 6th or 12th play of the round; but can be Countered by any non-0/blank domino end played against it, taking lead; or Blocked w/ a blank end.
 
-### Optional Ability
+## Optional Ability
 
 Short rest: Before drawing up, if you have >= 4 tiles left in hand, you may discard them all, shuffle them into the boneyard and then each player draws up to 6 (their hand size).
