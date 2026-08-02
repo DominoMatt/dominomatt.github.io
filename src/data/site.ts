@@ -24,7 +24,7 @@ export const site = {
   // this file.
   pages: {
     home: {
-      tagline: '10-20 minute domino games for all ages (5+)', // homepage <h1> — leave empty to hide it
+      tagline: 'Domino games for all ages.', // homepage <h1> — leave empty to hide it
     },
     contact: {
       title: 'Contact me',
