@@ -26,7 +26,7 @@ spec: D6 Dice x4, Chips/Tokens
 
 Roll and Match dice to the end values of your Objectives. Complete as many as you can as fast as you. Push Your Luck to victory or go Bust.
 
-####On your turn
+#### On your turn
 
 1. If you have less than 2 (base) active Objectives, Draw 1 Objective until you do.
 2. Choose 1 on your turn:
@@ -43,7 +43,7 @@ Roll and Match dice to the end values of your Objectives. Complete as many as yo
 2. Match your die values to unmarked Objective ends... marking your matched ends w/ chips/dice.
 3. Scrap those dice that do not Match an unmarked end, putting a mark in your Scrapheap.
 
-- If there are 4 or more Scrap/marks in your Scrapheap... go Bust (see below).
+   - If there are 4 or more Scrap/marks in your Scrapheap... go Bust (see below).
 
 4. If all your Objectives are fully Matched after #1-3 (all your Objective ends with values 1-6 are marked off as being matched), automatically Complete all your Objectives.
 

@@ -67,7 +67,7 @@ When you can no longer play any dominoes to your layout, score as follows:
 > Penalties — -4 points total:
 >
 > - -2 pts — 1 face-down domino
-> - -2 pts — 1 mismatched end (a 1-and-6 pairing)
+> - -2 pts — 2 mismatched ends (a 1 and a 6)
 >
 > **Final score: 9 points**
 

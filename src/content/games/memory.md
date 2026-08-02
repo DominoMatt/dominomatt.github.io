@@ -33,10 +33,11 @@ Flip 2 dominoes face-up in place. If they 'match', collect them; if not, turn th
 2. Flip a 2nd domino face-up in place.
 3. Compare your dominoes, do A or B below.
 
-  <ol type="a">
-    <li>If both dominoes match, collect those dominoes (both share a common end value).</li>
-		<li>If not, flip them face-down in place after all players have had 'ample' time to see them.</li>
-	</ol>
+    <ol type="a">
+      <li>If both dominoes match, collect those dominoes (both share a common end value).</li>
+    	  <li>If not, flip them face-down in place after all players have had 'ample' time to see them.</li>
+      </ol>
+
 4. The next player takes their turn, and so on. Play continues until all possible matches have been made.
 
 ## Scoring
