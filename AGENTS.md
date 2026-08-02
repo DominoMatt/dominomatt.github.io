@@ -3,8 +3,7 @@
 Instructions for AI coding agents working in this repository.
 
 Read this before making any change. **The most common failure here is doing more
-than was asked**, which is what the first section is about, after ## 0. How this
-file is loaded.
+than was asked**, which is what the first section (after ## 0) is about.
 
 ## 0. How this file is loaded
 
