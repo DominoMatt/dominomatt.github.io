@@ -3,7 +3,15 @@
 Instructions for AI coding agents working in this repository.
 
 Read this before making any change. **The most common failure here is doing more
-than was asked**, which is what the first section is about.
+than was asked**, which is what the first section is about, after ## 0. How this
+file is loaded.
+
+## 0. How this file is loaded
+
+- The devcontainer runs `npm ci && git config core.hooksPath .githooks` on every
+  Codespace creation (`.devcontainer/devcontainer.json`).
+- VS Code setting `chat.useAgentsMdFile: true` enables AGENTS.md reading. If
+  disabled, these instructions are ignored with no warning.
 
 ## 1. Do only what was asked
 
