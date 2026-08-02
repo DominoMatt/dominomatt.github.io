@@ -13,7 +13,7 @@ export const site = {
   title: 'Free Domino Games',
   description: 'Free domino games',
   interactCopy:
-    "Everything here is free to play. If you've enjoyed a game or article, drop us a line.",
+    "Everything here is free to play. If you've enjoyed a game or article, drop me a line.",
 
   // Per-page hero copy for the site's static pages: `title` is used as both
   // the on-page H1 and the browser <title>; `lede` is used as both the
@@ -24,7 +24,7 @@ export const site = {
   // this file.
   pages: {
     home: {
-      tagline: '', // homepage <h1> — leave empty to hide it
+      tagline: '10-20 minute domino games for all ages (5+)', // homepage <h1> — leave empty to hide it
     },
     contact: {
       title: 'Contact me',
