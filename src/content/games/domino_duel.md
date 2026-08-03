@@ -3,7 +3,7 @@ title: Domino Duel
 order: 1
 category: Trick-taking
 players: "2 players"
-# age: 8+
+age: ages 9+
 time: 20 min
 accent: "#b171ae"
 ink: "#1d1408"

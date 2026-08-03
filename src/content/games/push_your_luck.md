@@ -9,12 +9,12 @@ accent: "#8f3327"
 ink: "#dde4d8"
 motif: circle
 art: dice_set.svg
-description: "Match dice values to the ends of your Objectives... once an Objective has all
-  it's ends matched it can be Completed."
+description: "Match dice values to the ends of your Objectives... once an Objective has all it's ends matched it can be Completed."
 mechanics: [Push Your Luck, Matching, Roll and Keep]
 license: CC BY-NC
 contents: Rules Sheet
-spec: D6 Dice x4, Chips/Tokens
+spec: At least 4 6-sided dice and chips/markers ~ Or better yet a ton of dice to roll and mark with
+published: false
 ---
 
 ## Setup

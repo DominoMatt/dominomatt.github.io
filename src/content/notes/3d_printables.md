@@ -3,7 +3,7 @@ title: 3-d Printables
 date: 2026-07-31
 accent: "#436189"
 dek: "A domino tray, a town center..."
-# games: []
+# games: [domino_duel, domino_kingdom]
 # published: false
 ---
 

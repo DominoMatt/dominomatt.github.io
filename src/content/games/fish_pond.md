@@ -14,7 +14,7 @@ mechanics: [Matching, Fishing, Equal End Matching]
 license: CC BY-NC
 contents: Rules Sheet
 spec: Double Six Dominoes, D6 Dice x1, Deck of Playing Cards
-relatedGames: [memory]
+relatedGames: [fish_on_a_dish]
 ---
 
 ## Set-up

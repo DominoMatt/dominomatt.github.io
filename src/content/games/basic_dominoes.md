@@ -3,7 +3,7 @@ title: Basic Draw Dominoes
 order: 6
 category: Dominoes
 players: 2-4 players
-age: ages 5+
+age: ages 4+
 time: 5-15 mins
 accent: "#3f7d74"
 ink: "#dde4d8"
@@ -31,7 +31,7 @@ spec: Double Six Dominoes
 
 ## Gameplay
 
--In most basic games the Heaviest double in all player's hands is set to start the round. If no doubles: <ol type="a"> <li>tiles are shuffled and re-dealt; or</li> <li>players draw one tile at a time until a double is found.</li>  
+-In most basic games the Heaviest double in all player's hands is set to start the round. If no doubles: <ol type="a"> <li>All tiles are shuffled and re-dealt; or</li> <li>Players take turns drawing one tile at a time until a double is found.</li>  
 </ol>
 
 #### On your turn
@@ -55,3 +55,10 @@ If you can't make a play... draw.
 
 - Total the weights of all the dominoes left in the other player's hands when the round ends... each player receiving points for all other players tiles left in hand (high score being best). (Weight: sum of both ends)
 - Alternatively, total the weight in the your hand when the round ends... each player points for their tiles left in hand (low score being best).
+
+## Glossary
+
+Equal-End Matching:
+
+- At least 1 end of a domino being played must match an open end of another domino that is already been played/set in the layout.
+- The matching ends are connected together end-to-end and that end is closed and a new open end in the layout is now available. A basic line layout has 2 open ends.
