@@ -8,8 +8,8 @@ time: 15-20 mins
 accent: "#3f7d74"
 ink: "#dde4d8"
 motif: pips
-description: "The classic block game — match ends to the line and shed your hand."
-mechanics: [Blocking, Equal End Matching]
+description: "The classic end to end game — shed your hand to the layout."
+mechanics: [Line layout, Equal End Matching]
 license: CC BY-NC
 contents: Rules Sheet
 spec: Double Six Dominoes
