@@ -8,6 +8,7 @@ const games = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/games' }),
   schema: z.object({
     title: z.string(),
+    boxArtTitle: z.string().optional(), // shown on the box-art image; omit to use the title instead
     order: z.number(), // sort order on the index; also the displayed 01/02/...
     category: z.string(),
     players: z.string(),

@@ -13,5 +13,5 @@ const Art = getGameArt(g);
 
 <div class="game-cover" style={`background:${g.accent}`}>
   {Art ? <Art width="72" height="72" aria-hidden="true" /> : g.motif && <Motif motif={g.motif} ink={g.ink} />}
-  <span class="game-cover-title" style={`color:${g.ink}`}>{g.title}</span>
+  <span class="game-cover-title" style={`color:${g.ink}`}>{g.boxArtTitle ?? g.title}</span>
 </div>

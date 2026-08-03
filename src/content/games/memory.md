@@ -1,6 +1,6 @@
 ---
 title: Memory Game
-order: 1
+order: 2
 category: Dominoes
 players: 2-3 players
 age: ages 5+
@@ -15,7 +15,7 @@ mechanics: [Memory, Matching, Equal End Matching]
 license: CC BY-NC
 contents: Rules Sheet ~ 3 Variants
 spec: Double Six Dominoes, Double Nine Dominoes (variant)
-relatedGames: [fish_pond]
+#relatedGames: [fish_pond]
 ---
 
 ## Setup

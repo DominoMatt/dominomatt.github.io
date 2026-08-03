@@ -3,7 +3,7 @@ title: Dominoes as Cards
 date: 2026-07-25
 accent: "#C47234"
 dek: "Dominoes can be used similarly to cards."
-# games: []
+games: [domino_duel, nine_high]
 # published: false
 ---
 
@@ -29,12 +29,12 @@ dek: "Dominoes can be used similarly to cards."
 
 - When playing dominoes as part of a set... really just the 'suit' is important. The player ultimately deciding if a 2-5 domino is played as part of a set of 2s or a set of 5s.
 
-> If a player had a 2-5, 2-3, 3-4, and 3-5 in hand, they could have:
->  <ol type="a">
->    <li>a pair of 2s (2-5, 2-3) and a pair of 3s (3-4, 3-5),  or</li>
->    <li>a pair of 3s (3-2, 3-4) and a pair of 5s (5-2, 5-3), or</li>
->    <li>a triplet of 3s (3-2, 3-4, 3-5).</li>
->  </ol>
+  > If a player had a 2-5, 2-3, 3-4, and 3-5 in hand, they could have:
+  >  <ol type="a">
+  >    <li>a pair of 2s (2-5, 2-3) and a pair of 3s (3-4, 3-5),  or</li>
+  >    <li>a pair of 3s (3-2, 3-4) and a pair of 5s (5-2, 5-3), or</li>
+  >    <li>a triplet of 3s (3-2, 3-4, 3-5).</li>
+  >  </ol>
 
 - In set building/melding, 'doubles' many times are also their own suit (a 2-2 is suit of 2s and doubles).
 - Suits might be ranked also, suit of 6 being the highest and blanks/0 the lowest, if playing with doubles as suit it would be higher than 6s. Thus a set of 4-5s would rank higher than 4-2s.
