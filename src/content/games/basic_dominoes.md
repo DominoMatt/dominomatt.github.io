@@ -8,11 +8,14 @@ time: 5-15 mins
 accent: "#3f7d74"
 ink: "#dde4d8"
 motif: pips
+art: 1_2_domino.svg
 description: "The classic end to end matching game — shed your hand to the layout."
 mechanics: [Line layout, Equal End Matching]
 license: traditional
 contents: Rules Sheet
 spec: Double Six Dominoes
+attributions:
+  - Box art icon by lawnchairlauncher, Apache License
 ---
 
 - Basic Dominoes is the most simple version of dominoes, it is played with a double six set.

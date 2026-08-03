@@ -25,6 +25,7 @@ export interface Game {
   id: string;
   no: string;
   title: string;
+  boxArtTitle?: string; // shown on the box-art image; omit to use the title instead
   category: string;
   players: string;
   age?: string; // e.g. "8+" — shown between players and time in the eyebrow
@@ -126,6 +127,7 @@ export async function getGames(): Promise<Game[]> {
       id: e.id,
       no: String(e.data.order).padStart(2, '0'),
       title: e.data.title,
+      boxArtTitle: e.data.boxArtTitle,
       category: e.data.category,
       players: e.data.players,
       age: e.data.age,

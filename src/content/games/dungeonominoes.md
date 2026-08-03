@@ -1,14 +1,15 @@
 ---
 title: Dungeonominoes (Basic)
+boxArtTitle: Dungeon-ominoes
 order: 10
 category: Domino Variant
 players: "2-4"
 age: ages 7+
 time: 15 min
-accent: "#bd7f2e"
-ink: "#1d1408"
+accent: "#616161"
+ink: "#dde4d8"
 # motif: pips
-# art: dominos_black.svg
+art: dungeon_arch.svg
 description: "Dungeon-ominoes is a primarily a draw domino game that creates (over time) what could be considered a tree layout."
 mechanics: [Tile Placement, Hand Management]
 license: CC BY-NC
@@ -20,7 +21,8 @@ downloads:
      file: cards - basic rooms.pdf
      description: "Print and Play"
      spec: PDF · LETTER · COLOR
-# attributions: []
+attributions:
+  - Box art icon by Icons8, MIT License
 # relatedGames: []
 # published: false
 ---

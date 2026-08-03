@@ -6,9 +6,9 @@ players: "2 players"
 age: ages 9+
 time: 20 min
 accent: "#b171ae"
-ink: "#1d1408"
+ink: "#dde4d8"
 # motif: heart
-# art: dominos_black.svg
+art: sword.svg
 description: "Duel your friends in this 2 player trick-taker."
 mechanics: [Trick-taking]
 license: CC BY-NC
