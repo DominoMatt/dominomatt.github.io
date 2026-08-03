@@ -18,11 +18,11 @@
     }
   },
 
-  // `git config core.hooksPath` is what activates .githooks/pre-commit. Git will
-  // not use a committed hooks directory until it is pointed at one, and it is
-  // per-clone rather than per-repo, so every new Codespace has to run this. It
-  // applies to agents too — they commit through the same git.
-  "postCreateCommand": "npm ci && git config core.hooksPath .githooks",
+  // Installs deps, wires up the commit hook, and adds `gh` + the GitHub
+  // Copilot CLI so agents (and the client) can work with PRs/issues from the
+  // terminal. Pulled into a script because installing `gh` needs its apt repo
+  // added first — see post-create.sh for the details and source links.
+  "postCreateCommand": "bash .devcontainer/post-create.sh",
 
   "customizations": {
     "vscode": {
