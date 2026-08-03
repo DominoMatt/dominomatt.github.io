@@ -1,6 +1,6 @@
 ---
 title: Dungeonominoes
-order: 2
+order: 7
 category: Domino Variant
 players: "2-4"
 # age: 7+

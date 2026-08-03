@@ -52,6 +52,7 @@ Depending on number of players and the type of game, domino set and hand size va
     </ol>
 - Heaviest domino: Dominoes are dealt and the heaviest tile in a player's hand is set (weight 12, 11, 10, 9, etc.). If 8 is the heaviest: the double, then the heaviest ended (4-4, 6-2, 5-3) is set.
 - Player's choice: Dominoes are dealt and a first turn marker advanced around the table. Each player, when their lead, sets whatever tile they would like to from their hand.
+- Random: Flip one random domino from the boneyard... this would require tracking the 1st player with a marker.
 
 ### Layout Shape
 
@@ -83,7 +84,7 @@ At the end of a round, points are awarded one of two ways:
   <li>Blocking games:
     <ul>
       <li>The goal is to *shed* every tile in your hand onto the layout before your opponents do, while keeping the weight of any tiles left in hand as low as possible. A round ends either when a player has shed all tiles from their hand, or when no player can make a legal play (the layout is blocked).</li>
-      <li>Scoring for the round is typically awarded based on the pip-weight remaining in opponents' hands (often the winner scores the total pip-count of all opponents' remaining tiles, sometimes rounded or capped by rules).</li>
+      <li>Scoring for the round is typically the total weights of all dominoes left in the other player's hands when the round ends (high score being best); alternatively, players might take the points left in their hand (low score being best). Some variants assign a non-zero weight to the 0-0. </li>
     </ul>
   </li>
   <li>Scoring games: Points are earned during play itself, for specific plays or combinations. Muggins, All-Fives, and Bergen are common examples.</li>

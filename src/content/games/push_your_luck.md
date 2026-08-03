@@ -1,6 +1,6 @@
 ---
 title: Push Your Luck
-order: 4
+order: 5
 category: Dice
 players: 1-4 players
 age: ages 9+

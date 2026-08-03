@@ -1,6 +1,6 @@
 ---
 title: Domino Kingdom
-order: 3
+order: 4
 category: Dominoes
 players: 1-2 players
 age: ages 7+

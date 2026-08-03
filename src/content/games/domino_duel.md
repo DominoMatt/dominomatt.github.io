@@ -7,7 +7,7 @@ players: "2 players"
 time: 20 min
 accent: "#b171ae"
 ink: "#1d1408"
-# motif: pips
+# motif: heart
 # art: dominos_black.svg
 description: "Duel your friends in this 2 player trick-taker."
 mechanics: [Trick-taking]
@@ -18,7 +18,7 @@ downloads:
   - title: Domino Tray for 3D Printing
     file: stl/domino_tray.stl
     description: "Holds 6 dominos"
-    spec: 0.2-0.4 resolution ~ 25% infill ~ no rafts/supports needed
+    spec: 0.2-0.3 resolution ~ 25% infill ~ no rafts/supports needed
 # attributions: []
 # relatedGames: []
 # published: false

@@ -1,6 +1,6 @@
 ---
 title: Memory Game
-order: 1
+order: 2
 category: Dominoes
 players: 2-3 players
 age: ages 5+

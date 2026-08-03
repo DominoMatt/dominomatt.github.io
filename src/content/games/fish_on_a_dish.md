@@ -1,6 +1,6 @@
 ---
 title: Fish on a Dish
-order: 3
+order: 8
 category: Domino Variant
 players: "2-4"
 # age: 8+
