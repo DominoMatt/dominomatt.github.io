@@ -14,6 +14,15 @@ mechanics: [Set Building, Grid Layout, Equal End Matching]
 license: CC BY-NC
 contents: Rules Sheet
 spec: Double Six Dominoes, Town Center Marker
+downloads:
+   - title: 5x5 grid (large)
+     file: domino kingdom large.pdf
+     description: "Print and Play"
+     spec: PDF · LETTER · COLOR
+   - title: 5x5 grid (small)
+     file: domino kingdom small.pdf
+     description: "Print and Play"
+     spec: PDF · LETTER · COLOR
 ---
 
 ## Setup
