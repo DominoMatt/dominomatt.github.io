@@ -23,8 +23,10 @@ This domino tray is not a large one, compared to it's commercial multi-row count
 - This tray is the perfect size to hold your hand of 6 dominoes for a Domino Duel.
 - It also features a card slot.
 
-## Town center
+## [Town center](/print/stl/town_center.stl)
 
-This is a house with a base 1 inch by 1 inch. I like to call it a town center. If you need this to be slightly larger or smaller to match your domino set, just increase or decrease the size of the model before you slice it to print.
+This is a house with a base 1 inch by 1 inch. I like to call it a Town Center. If you need this to be slightly larger or smaller to match your domino set, just increase or decrease the size of the model before you slice it to print.
 
 - This house is used in Domino Kingdom.
+- It's base size is slightly less than 1 inch (24x24mm)... so it plays well with standard dominoes.
+- Resize it before you slice. (75% makes it sized for play with 3/4 in. wide dominoes) 
