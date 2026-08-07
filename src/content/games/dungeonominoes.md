@@ -13,7 +13,7 @@ art: dungeon_arch.svg
 description: "Dungeon-ominoes is a primarily a draw domino game that creates (over time) what could be considered a tree layout."
 mechanics: [Tile Placement, Hand Management]
 license: CC BY-NC
-contents: Rules Sheet · 1-page basic Rooms · 1-page advanced Rooms
+contents: Rules Sheet · 1-page basic Rooms
 spec: Double 6 dominoes · Rooms (basic) cards
 published: true
 downloads:
