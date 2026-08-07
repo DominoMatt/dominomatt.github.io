@@ -24,7 +24,13 @@ Or better yet... learn and play (playtest) some of the original domino-based gam
 ## Get involved
 
 - If you are interested, help me fill out a playtest report.
-- If circumstance and participation allows I wouldn't mind holding a Domino Duel competition at say 1 pm, let me know if you are interested in this... I would put up a $20 Pops card for the winner.
+- I also have an un-playedtested game I'd like to play, if there are 4 players willing at some point. 
+
+### Possible Domino Duel competition
+
+- If circumstance and participation allows I wouldn't mind holding a Domino Duel competition in the early afternoon.
+- Let me know if you are interested in this... I would put up a $20 Pops card for the winner.
+- Show up earlier in the day to learn to play.
 
 ## Tradition
 
