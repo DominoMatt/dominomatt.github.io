@@ -12,8 +12,8 @@ art: fish_dish.svg
 description: "Under Construction"
 mechanics: [Matching, Dice Matching, Actions]
 license: CC BY-NC
-contents: 28 printed tiles · 1-page rules
-requires: PDF · A4 + LETTER · 6 PP
+contents: 
+requires:
 # published: false
 # downloads:
 #   - title: Print & Play PDF
