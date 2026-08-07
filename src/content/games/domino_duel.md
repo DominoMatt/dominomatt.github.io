@@ -44,7 +44,7 @@ Play any domino, with a 1-6 as an end value. The attacking/'lead' player continu
   <ol type="a">
     <li>Dealing 1 HP of damage,</li>
     <li>Until Countered, or</li>
-    <li>The attacker has no more tiles to attack with, see [Round End](#round-end).</li>
+    <li>The attacker has no more tiles to attack with, see <a href="#round-end">Round end</a>.</li>
   </ol>
 
 ### Defend
@@ -72,7 +72,7 @@ Play a domino with an end that matches the Attack's Type or has a 0/blank on one
   </li>
 </ol>
 
-## Round end
+<h2 id="round-end">Round end</h2>
 
 The round ends after either a player loses 1 health or 12 plays/tricks.
 
