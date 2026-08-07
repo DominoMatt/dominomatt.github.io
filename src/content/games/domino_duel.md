@@ -23,15 +23,15 @@ downloads:
 # published: false
 ---
 
-Doubles rank highest in their 'suit', followed by heaviest weight of the Power and so on... (e.g. 2-2, 2-6, 2-5, 2-4, 2-3, 2-1, 2-0). This same ranking pattern is true of each suit.
+Doubles rank highest in their 'suit', followed by highest Power and so on... (e.g. 2-2, 2-6, 2-5, 2-4, 2-3, 2-1, 2-0). This same ranking pattern is true of each suit.
 
-## Set-up:
+## Set-up
 
 - Shuffle the dominoes face-down or in a bag (boneyard).
 - Each player gets 3 HP (health) at the start of the game. (same as best of 5 play)
 - First player can be randomly determined and after drawing up decides whether to Attack or Defend.
 
-## Gameplay:
+## Gameplay
 
 - The domino end played towards your opponent is the Attack Type/'suit'.
 - The end closest you is it's Power/'rank'.
@@ -47,7 +47,7 @@ Play any domino, with a 1-6 as an end value. The attacking/'lead' player continu
     <li>The attacker has no more tiles to attack with, see Round End.</li>
   </ol>
 
-### Defend:
+### Defend
 
 Play a domino with an end that matches the Attack's Type or has a 0/blank on one (or more) of it's ends, thereby...
 
@@ -64,12 +64,13 @@ Play a domino with an end that matches the Attack's Type or has a 0/blank on one
       <li>The defender would now becomes the attacker.</li>
     </ul>
   </li>
+    <li>If you can't Defend, Lose 1 health... triggering Round End.
+    <ul>
+      <li>Play any non-matching, non-blank domino ('junk'); effectively improving your hand.</li>
+      <li>Refuse to defend with any domino; to save all your hand for the next round.</li>
+    </ul>
+  </li>
 </ol>
-
-### Lose 1 health... triggering Round End.
-
-- Play any non-matching, non-blank domino ('junk'); effectively improving your hand.
-- Refuse to defend with a domino; to save the rest your hand for the next round.
 
 ## Round end:
 
