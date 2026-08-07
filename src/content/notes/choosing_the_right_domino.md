@@ -17,10 +17,10 @@ Western dominoes (Double 6, 9, 12, or 15 sets) are twice as long as they are wid
 
 | size                    | approximate dimensions  |
 | ----------------------- | ----------------------- |
-| Small                   | <1 inch wide            |
+| Small (mini)                  | <1 inch wide            |
 | Standard                | 1 in. wide x 2 in. long |
-| Professional/Tournament | 1.1 - 1.5 inches wide   |
-| 'Large' (jumbo, yard)   | >1.5 inches wide        |
+| Professional/Tournament | 1 3/16 inches wide   |
+| 'Large' (jumbo, yard)   | 1 1/8 inches wide & up       |
 
 ## Thickness
 

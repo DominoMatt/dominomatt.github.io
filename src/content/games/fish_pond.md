@@ -4,16 +4,15 @@ order: 3
 category: Dominoes
 players: 2-3 players
 age: ages 5+
-time: 5-10 mins
+time: 10 mins
 accent: "#436189"
 ink: "#dde4d8"
-motif: circle
 art: fish_pond_cover.svg
 description: "Catch Fish to collect Trophies before other players can."
 mechanics: [Matching, Fishing, Equal End Matching]
 license: CC BY-NC
 contents: Rules Sheet
-requires: Double Six Dominoes, D6 Dice x1, Deck of Playing Cards
+requires: Double Six Dominoes, 1x D6 Dice (or 1 per player), 1(Ace)-6 from Playing Cards
 relatedGames: [fish_on_a_dish]
 ---
 

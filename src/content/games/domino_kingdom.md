@@ -12,8 +12,21 @@ art: domino_kingdom_town.svg
 description: "Tile your 5x5 grid, creating the 3 largest terrains/sets possible."
 mechanics: [Set Building, Grid Layout, Equal End Matching]
 license: CC BY-NC
-contents: Rules Sheet
+contents: Rules Sheet, Downloads
 requires: Double Six Dominoes, Town Center Marker
+downloads:
+   - title: 5x5 grid (large)
+     file: domino kingdom large.pdf
+     description: "Print and Play"
+     spec: PDF · LETTER · COLOR
+   - title: 5x5 grid (small)
+     file: domino kingdom small.pdf
+     description: "Print and Play"
+     spec: PDF · LETTER · COLOR
+   - title: Town Center
+     file: stl/town_center.stl
+     description: "Town Center"
+     spec: 0.2-0.3 resolution ~ 25% infill ~ scale to domino size (100% = 1 inch dominoes)
 ---
 
 ## Setup
@@ -71,7 +84,7 @@ When you can no longer play any dominoes to your layout, score as follows:
 >
 > **Final score: 9 points**
 
-<h2 id="glossary">Glossary</h2>
+## Glossary
 
 **Equal End Matching** — At least 1 of the 2 ends of the domino being played (not necessarily both) must match the value of an orthogonally adjacent, still-open end of an already-played domino, or match one of the 4 sides of the Town Center.
 

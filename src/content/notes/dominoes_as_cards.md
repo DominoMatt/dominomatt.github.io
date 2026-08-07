@@ -8,6 +8,7 @@ games: [domino_duel, nine_high]
 ---
 
 - For the purposes of this site's content all dominoes used as 'cards' are Western ones, Double 6 or 9 sets.
+- To help visualizing dominoes as cards... Download: [Dominoes as Cards](/print/dominoes_as_cards.pdf) (double 6 set).
 
 ## By 'suit' via Equal End Matching
 
