@@ -120,12 +120,12 @@ description: "One or two sentences shown on the card and rules page."
 mechanics: [Tile Placement, Push Your Luck, Hand Management]  # tag list — display only
 license: CC BY-NC             # shown as a line under the mechanics tags
 contents: 28 printed tiles · 1-page rules · score pad
-spec: PDF · A4 + LETTER · 6 PP
+requires: A pencil for scoring        # what the player has to supply themselves
 downloads:
   - title: Print & Play PDF
     file: twelves.pdf                 # path under public/print/
     description: The 28 printed tiles, the rules, and a score pad on a single sheet.
-    spec: PDF · A4 + LETTER · 6 PP     # optional — omit to hide the spec text
+    spec: PDF · A4 + LETTER · 6 PP     # optional — this file's print spec, not the game's
 # attributions: ["Box Art by CoolArtist", "3D Tokens by CoolPrinter"]  # optional — credit lines; see below
 # relatedGames: [smallkings, wake]   # optional — cross-links these games at the end
 # published: false                  # optional — omit for the normal case; see below
@@ -147,14 +147,26 @@ How the game begins.
 How the game ends.
 ```
 
-`contents:` and `spec:` are both required — two short lines shown stacked
-together on the game's row on `/games` once it's expanded (not on the rules page
-itself), `contents:` in front and `spec:` smaller underneath it. Both are free
-text with no fixed meaning to match — use them however best describes the game
-at a glance. Existing games use `contents:` for what the player gets (e.g.
-`Rules Sheet`) and `spec:` for what else they'll need to play (e.g.
-`Double Six Dominoes, D6 Dice x1`); a print-and-play game might instead use them
-the way the template above does, for what's in the PDF and its print spec.
+`contents:` and `requires:` are both required. They split the same question in
+two, and each shows up in exactly one place:
+
+- `contents:` — **what you give the player.** Shown on the game's row on
+  `/games`, once it's expanded. Free text; existing games use `Rules Sheet`,
+  and a print-and-play game might use `28 printed tiles · 1-page rules` for
+  what's in the PDF.
+- `requires:` — **what the player has to supply themselves.** Shown on the
+  game's rules page, under the description, as _You will need: <requires>_ —
+  so write it as the things that have to be on the table to play, e.g.
+  `Double Six Dominoes, D6 Dice x1`. It deliberately does **not** appear on
+  the `/games` row; that row is a summary, and the requirements belong with
+  the rules.
+
+> **Note:** a `downloads:` entry has its own separate `spec:` field further
+> down, and it means something different — paper size, page count, print
+> settings for that one file. Print specs go there, never in `requires:`.
+> (`requires:` was itself called `spec:` until 2026-08-07, which is exactly
+> the confusion the rename fixes.)
+
 Leaving either out isn't an option — the site won't build without them.
 
 `downloads:` is optional — omit it entirely for a game that's play-from-the-page
@@ -195,9 +207,11 @@ downloads:
   one line — either YAML folded (`>`, blank line = paragraph break) or literal
   (`|`, every line kept as-is) block scalars both work; each resulting line
   renders as its own paragraph.
-- `spec` — optional one-line meta string (paper size, page count, print
-  settings, whatever's relevant) shown next to the version. Omit it and that
-  entry just shows no spec text.
+- `spec` — optional one-line meta string about **this file** (paper size, page
+  count, print settings, whatever's relevant) shown next to the version. Omit
+  it and that entry just shows no spec text. Not to be confused with the game's
+  top-level `requires:` — that's what the player needs at the table, this is
+  how the file prints.
 - `version` — optional; defaults to `V1.0` if you leave it out.
 - `history` — optional list of earlier releases of this same file, newest first,
   each with a `version`, a one-line `note` on what changed, and a `date`. Leave

@@ -403,14 +403,6 @@ a {
   color: var(--mut);
 }
 
-.game-spec {
-  margin-top: 6px;
-  font-family: var(--mono);
-  font-size: 0.6875rem;
-  letter-spacing: 0.06em;
-  color: var(--faint);
-}
-
 .game-downloads-count {
   margin-top: 6px;
   font-family: var(--mono);
@@ -815,6 +807,26 @@ a {
   margin: 24px 0 0;
   font-size: 1.25rem;
   line-height: 1.55;
+}
+
+/* "You will need: <requires>" — a game's frontmatter `requires` line. The
+   rules page is its only home; the /games row used to carry a mono copy of
+   it (.game-requires) but that was dropped, leaving `contents` alone there.
+   Sits between the lede and the mechanics pills, typeset at .prose p size in
+   the body sans, italic, so it reads as a print-and-play aside in the
+   article's voice rather than another mono meta brow. The lead-in drops to
+   --faint so the requirement itself is the part that carries. */
+.requires {
+  margin: 14px 0 0;
+  font-family: var(--sans);
+  font-size: 1rem;
+  line-height: 1.66;
+  font-style: italic;
+  color: var(--mut);
+}
+
+.requires-lead {
+  color: var(--faint);
 }
 
 .titleblock .mechanics {
@@ -1466,6 +1478,11 @@ summary:focus-visible {
   html[data-print-mode='two-column'] .lede {
     margin-top: 10px;
     font-size: 1.05rem;
+  }
+
+  html[data-print-mode='compact'] .requires,
+  html[data-print-mode='two-column'] .requires {
+    margin-top: 7px;
   }
 
   html[data-print-mode='compact'] .titleblock .mechanics,

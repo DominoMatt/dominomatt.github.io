@@ -13,7 +13,7 @@ description: "Shed your hand by beating the last play an opponent played."
 mechanics: [Shedding, Climbing, Equal End Matching]
 license: CC BY-NC
 contents: Rules Sheet
-spec: Double Nine Dominoes
+requires: Double Nine Dominoes
 ---
 
 ## Under Construction

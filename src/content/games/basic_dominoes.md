@@ -13,7 +13,7 @@ description: "The classic end to end matching game — shed your hand to the lay
 mechanics: [Line layout, Equal End Matching]
 license: traditional
 contents: Rules Sheet
-spec: Double Six Dominoes
+requires: Double Six Dominoes
 attributions:
   - Box art icon by lawnchairlauncher, Apache License
 ---

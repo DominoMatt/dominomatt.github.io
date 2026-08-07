@@ -37,8 +37,8 @@ export interface Game {
   description: string;
   mechanics: string[]; // tag list of the game's mechanics — display only, not used for filtering
   license: string; // e.g. "CC BY-NC" — shown as a brow line after the mechanics pills
-  contents: string;
-  spec: string;
+  contents: string; // what the player gets, e.g. "Rules Sheet" — the /games row
+  requires: string; // what the player supplies, e.g. "Double Six Dominoes" — the rules page only; distinct from a Download's `spec` (print metadata)
   downloads: Download[]; // empty = nothing to download, e.g. print-from-page-only games
   relatedGames: string[]; // ids of other games cross-linked from this one's frontmatter
   attributions: string[]; // credit lines, e.g. "Box Art by CoolArtist" — empty = nothing to credit
@@ -140,7 +140,7 @@ export async function getGames(): Promise<Game[]> {
       mechanics: e.data.mechanics,
       license: e.data.license,
       contents: e.data.contents,
-      spec: e.data.spec,
+      requires: e.data.requires,
       downloads: (e.data.downloads ?? []).map((d) => ({ ...d, type: fileType(d.file) })),
       relatedGames: e.data.relatedGames ?? [],
       attributions: e.data.attributions ?? [],

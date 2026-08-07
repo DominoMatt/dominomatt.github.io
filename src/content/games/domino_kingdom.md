@@ -13,7 +13,7 @@ description: "Tile your 5x5 grid, creating the 3 largest terrains/sets possible.
 mechanics: [Set Building, Grid Layout, Equal End Matching]
 license: CC BY-NC
 contents: Rules Sheet
-spec: Double Six Dominoes, Town Center Marker
+requires: Double Six Dominoes, Town Center Marker
 ---
 
 ## Setup

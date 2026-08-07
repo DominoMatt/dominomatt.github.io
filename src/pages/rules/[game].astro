@@ -41,6 +41,13 @@ const hasAddendum = g.downloads.length > 0 || g.attributions.length > 0 || relat
     </div>
     <p class="lede">{g.description}</p>
     {
+      g.requires && (
+        <p class="requires">
+          <span class="requires-lead">You will need:</span> {g.requires}
+        </p>
+      )
+    }
+    {
       g.mechanics.length > 0 && (
         <div class="mechanics">
           {g.mechanics.map((m) => (
