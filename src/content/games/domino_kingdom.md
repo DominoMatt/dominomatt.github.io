@@ -23,6 +23,10 @@ downloads:
      file: domino kingdom small.pdf
      description: "Print and Play"
      spec: PDF · LETTER · COLOR
+   - title: Town Center
+     file: stl/town_center.stl
+     description: "Town Center"
+     spec: 0.2-0.3 resolution ~ 25% infill ~ scale to domino size (100% = 1 inch dominoes)
 ---
 
 ## Setup
