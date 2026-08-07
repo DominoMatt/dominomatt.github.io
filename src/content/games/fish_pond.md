@@ -4,10 +4,9 @@ order: 3
 category: Dominoes
 players: 2-3 players
 age: ages 5+
-time: 5-10 mins
+time: 10 mins
 accent: "#436189"
 ink: "#dde4d8"
-motif: circle
 art: fish_pond_cover.svg
 description: "Catch Fish to collect Trophies before other players can."
 mechanics: [Matching, Fishing, Equal End Matching]
