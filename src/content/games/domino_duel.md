@@ -61,7 +61,7 @@ Play a domino with an end that matches the Attack's Type or has a 0/blank on one
   <li>Counter:
     <ul>
       <li>Play a domino that matches the Attack's Value and has Power greater than the attacking domino's Power. (A 2-6 Counters a 2-5)</li>
-      <li>**The defender would now becomes the attacker.**</li>
+      <li> ** The defender would now becomes the attacker. ** </li>
     </ul>
   </li>
     <li>If you can't Defend, Lose 1 health... triggering Round End.
@@ -72,7 +72,7 @@ Play a domino with an end that matches the Attack's Type or has a 0/blank on one
   </li>
 </ol>
 
-## Round end:
+## Round end
 
 The round ends after either a player loses 1 health or 12 plays/tricks.
 
@@ -99,6 +99,6 @@ The 0-0 domino can 'Attack', only if it's the 6th or 12th play of the round; but
 
 Short rest: Before drawing up, if you have >= 4 tiles left in hand, you may discard them all, shuffle them into the boneyard and then each player draws up to 6 (their hand size).
 
-## 'Line' of play:
+## 'Line' of play
 
 For consistency sake, when starting a round the attacker makes the first Play and the 'line' of play (the duel) gets played left to right from the attacking players perspective until the round is complete. 
