@@ -69,6 +69,6 @@ export const site = {
   // touch — see AUTHORING.md for the day-to-day content workflow.
   homepage: {
     notes: ['dominoes', 'under_construction', 'wellsboro_comic_con'],
-    games: ['domino_duel', 'memory', 'fish_pond', 'domino_kingdom', 'push_your_luck', 'draw_dominoes', 'fish_on_a_dish', 'nine_high', 'dungeonominoes'],
+    games: ['domino_duel', 'memory', 'fish_pond', 'domino_kingdom', 'push_your_luck', 'basic_dominoes', 'fish_on_a_dish', 'nine_high', 'dungeonominoes'],
   },
 };
