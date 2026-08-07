@@ -44,7 +44,7 @@ Play any domino, with a 1-6 as an end value. The attacking/'lead' player continu
   <ol type="a">
     <li>Dealing 1 HP of damage,</li>
     <li>Until Countered, or</li>
-    <li>The attacker has no more tiles to attack with, see [Round End](#Round End).</li>
+    <li>The attacker has no more tiles to attack with, see [Round End](#Round end).</li>
   </ol>
 
 ### Defend
