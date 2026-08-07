@@ -7,7 +7,6 @@ age: ages 9+
 time: 20 min
 accent: "#b171ae"
 ink: "#dde4d8"
-# motif: heart
 art: sword.svg
 description: "Duel your friends in this 2 player trick-taker."
 mechanics: [Trick-taking]
@@ -18,7 +17,7 @@ downloads:
   - title: Domino Tray for 3D Printing
     file: stl/domino_tray.stl
     description: "Holds 6 dominos"
-    spec: 0.2-0.3 resolution ~ 25% infill ~ no rafts/supports needed
+    spec: 0.2-0.3 resolution ~ 25% infill ~ brim helpful ~ no rafts/supports needed
 # attributions: []
 # relatedGames: []
 # published: false
@@ -34,13 +33,13 @@ Doubles rank highest in their 'suit', followed by heaviest weight of the Power a
 
 ## Gameplay:
 
-- The end played towards your opponent is the Attack Type/'suit'.
+- The domino end played towards your opponent is the Attack Type/'suit'.
 - The end closest you is it's Power/'rank'.
-- Thus a trick is played and the domino ends that 'match' is the Attack Type/'suit'.
+- When a trick is played the domino ends that 'match' each other is the Attack Type/'suit'.
 
 ### Attack
 
-Play a domino, with a 1-6 end value. The attacking/'lead' player continues to Attack until:
+Play any domino, with a 1-6 as an end value. The attacking/'lead' player continues to Attack until:
 
   <ol type="a">
     <li>Dealing 1 HP of damage,</li>
@@ -74,17 +73,18 @@ Play a domino with an end that matches the Attack's Type or has a 0/blank on one
 
 ## Round end:
 
-The round ends after either 12 plays/tricks OR a player losing 1 health
-
-- If after 6 plays, no one lost HP, the attacker continues to Attack in the 7th trick.
-  1. both players draw 6 more tiles from the boneyard's remaining tiles.
-  2. Tricks 7-12 ensue, when the extra round ends, do 1-4 below.
+The round ends after either a player loses 1 health or 12 plays/tricks.
 
 - If someone lost HP during the round:
   1. Players keep all of the dominoes left in their hand (if any).
   2. All other tiles are shuffled face-down.
   3. Players then draw up until they reach their hand size of 6.
   4. If someone lost HP, they decide if they want to start Attacking or Defending the next round.
+
+- If after 6 plays, no one lost HP, the attacker continues to Attack in the 7th trick.
+  1. both players draw 6 more tiles from the boneyard's remaining tiles.
+  2. Tricks 7-12 ensue, when the extra round ends, do 1-4 above.
+     -If no lost HP during this 'extra' round, the Attacker will continue to attack in the next round.
 
 ## Game end
 
@@ -97,3 +97,7 @@ The 0-0 domino can 'Attack', only if it's the 6th or 12th play of the round; but
 ## Optional Ability
 
 Short rest: Before drawing up, if you have >= 4 tiles left in hand, you may discard them all, shuffle them into the boneyard and then each player draws up to 6 (their hand size).
+
+## 'Line' of play:
+
+For consistency sake, when starting a round the attacker makes the first Play and the 'line' of play (the duel) gets played left to right from the attacking players perspective until the round is complete. 
