@@ -61,7 +61,7 @@ Play a domino with an end that matches the Attack's Type or has a 0/blank on one
   <li>Counter:
     <ul>
       <li>Play a domino that matches the Attack's Value and has Power greater than the attacking domino's Power. (A 2-6 Counters a 2-5)</li>
-      <li>The defender would now becomes the attacker.</li>
+      <li>**The defender would now becomes the attacker.**</li>
     </ul>
   </li>
     <li>If you can't Defend, Lose 1 health... triggering Round End.
