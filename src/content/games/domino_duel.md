@@ -67,7 +67,7 @@ Play a domino with an end that matches the Attack's Type or has a 0/blank on one
     <li>If you can't Defend, Lose 1 health... triggering Round End.
     <ul>
       <li>Play any non-matching, non-blank domino ('junk'); effectively improving your hand.</li>
-      <li>Refuse to defend with any domino; to save all your hand for the next round.</li>
+      <li>Refuse to defend; to save all your hand for the next round.</li>
     </ul>
   </li>
 </ol>
