@@ -13,7 +13,7 @@ description: "Match dice values to the ends of your Objectives... once an Object
 mechanics: [Push Your Luck, Matching, Roll and Keep]
 license: CC BY-NC
 contents: included: Rules Sheet
-spec: needed: 4x 6-sided dice, 20 chips/markers; best: a ton of dice to roll and mark with
+spec: needed: 4x 6-sided dice, 20 chips/markers, best: a ton of dice to roll and mark with
 published: true
 ---
 
