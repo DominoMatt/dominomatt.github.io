@@ -21,8 +21,12 @@ const games = defineCollection({
     description: z.string(),
     mechanics: z.array(z.string()), // tag list of the game's mechanics — display only, not used for filtering
     license: z.string(), // e.g. "CC BY-NC" — shown as a brow line after the mechanics pills; code is MIT, game content is licensed separately
-    contents: z.string(),
-    spec: z.string(),
+    contents: z.string(), // what the player gets, e.g. "Rules Sheet" — shown on the /games row
+    // what the player has to supply themselves, e.g. "Double Six Dominoes, D6 Dice x1" —
+    // shown only on the rules page, as "You will need: …" under the description. Deliberately
+    // NOT named `spec`: a download's own `spec` below is print metadata (paper size, page
+    // count), which is a different thing that used to share the name.
+    requires: z.string(),
     // ordered list of downloadable files for this game. Omit entirely (or
     // leave empty) for a game that's play-from-the-page only, with nothing
     // to download.

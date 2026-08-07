@@ -14,7 +14,7 @@ description: "Dungeon-ominoes is a primarily a draw domino game that creates (ov
 mechanics: [Tile Placement, Hand Management]
 license: CC BY-NC
 contents: Rules Sheet · 1-page basic Rooms
-spec: Double 6 dominoes · Rooms (basic) cards
+requires: Double 6 dominoes · Rooms (basic) cards
 published: true
 downloads:
    - title: Card Sheet

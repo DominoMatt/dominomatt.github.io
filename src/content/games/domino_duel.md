@@ -12,7 +12,7 @@ description: "Duel your friends in this 2 player trick-taker."
 mechanics: [Trick-taking]
 license: CC BY-NC
 contents: Rules Sheet
-spec: Double 6 Dominoes
+requires: Double 6 Dominoes
 downloads:
   - title: Domino Tray for 3D Printing
     file: stl/domino_tray.stl

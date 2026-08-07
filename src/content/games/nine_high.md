@@ -12,7 +12,7 @@ description: "Shed your hand by playing a set that outranks the current high pla
 mechanics: [Shedding, Climbing, Equal End Matching]
 license: CC BY-NC
 contents: Rules Sheet
-spec: Double Nine Dominoes
+requires: Double Nine Dominoes
 ---
 
 ### Warning: This game is untested. Maybe we can give it a try at Comic Con.

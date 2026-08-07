@@ -12,7 +12,7 @@ description: "Catch Fish to collect Trophies before other players can."
 mechanics: [Matching, Fishing, Equal End Matching]
 license: CC BY-NC
 contents: Rules Sheet
-spec: Double Six Dominoes, 1x D6 Dice (or 1 per player), 1(Ace)-6 from Playing Cards
+requires: Double Six Dominoes, 1x D6 Dice (or 1 per player), 1(Ace)-6 from Playing Cards
 relatedGames: [fish_on_a_dish]
 ---
 
