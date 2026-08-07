@@ -12,7 +12,7 @@ Every game on the site is free to play, and share. The rules live right on the p
 
 ## A work in progress...
 
-This website's content is currently under construction. The game themselves are in playtesting status. I am making no warranty as to the quality of content posted here; but I will say the works provided here are free and as such a could be considered a good value in gaming.
+This website's content is currently under construction. The game themselves are in playtesting status. I am making no warranty as to the quality of content posted here.
 
 - There could be changes, edits, and spellchecks taking place.
 - There will be games and other content added over the coming months and years.
