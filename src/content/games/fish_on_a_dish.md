@@ -12,8 +12,8 @@ art: fish_dish.svg
 description: "Under Construction"
 mechanics: [Matching, Dice Matching, Actions]
 license: CC BY-NC
-contents: 
-requires:
+contents: ''
+requires: ''
 # published: false
 # downloads:
 #   - title: Print & Play PDF

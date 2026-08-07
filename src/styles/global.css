@@ -822,11 +822,11 @@ a {
   font-size: 1rem;
   line-height: 1.66;
   font-style: italic;
-  color: var(--mut);
+  color: var(--ink);
 }
 
 .requires-lead {
-  color: var(--faint);
+  color: var(--ink);
 }
 
 .titleblock .mechanics {

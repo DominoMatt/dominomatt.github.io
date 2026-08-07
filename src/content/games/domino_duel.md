@@ -23,8 +23,6 @@ downloads:
 # published: false
 ---
 
-Doubles rank highest in their 'suit', followed by highest Power and so on... (e.g. 2-2, 2-6, 2-5, 2-4, 2-3, 2-1, 2-0). This same ranking pattern is true of each suit.
-
 ## Set-up
 
 - Shuffle the dominoes face-down or in a bag (boneyard).
@@ -72,6 +70,10 @@ Play a domino with an end that matches the Attack's Type or has a 0/blank on one
   </li>
 </ol>
 
+## Rankings of dominoes
+
+Doubles rank highest in their 'suit', followed by highest Power and so on... (e.g. 2-2, 2-6, 2-5, 2-4, 2-3, 2-1, 2-0). This same ranking pattern is true of each suit.
+
 <h2 id="round-end">Round end</h2>
 
 The round ends after either a player loses 1 health or 12 plays/tricks.
@@ -84,8 +86,7 @@ The round ends after either a player loses 1 health or 12 plays/tricks.
 
 - If after 6 plays, no one lost HP, the attacker continues to Attack in the 7th trick.
   1. both players draw 6 more tiles from the boneyard's remaining tiles.
-  2. Tricks 7-12 ensue, when the extra round ends, do 1-4 above.
-     -If no lost HP during this 'extra' round, the Attacker will continue to attack in the next round.
+  2. Tricks 7-12 ensue, when the extra round ends, do 1-4 above. -If no lost HP during this 'extra' round, the Attacker will continue to attack in the next round.
 
 ## Game end
 
@@ -101,4 +102,4 @@ Short rest: Before drawing up, if you have >= 4 tiles left in hand, you may disc
 
 ## 'Line' of play
 
-For consistency sake, when starting a round the attacker makes the first Play and the 'line' of play (the duel) gets played left to right from the attacking players perspective until the round is complete. 
+For consistency sake, when starting a round the attacker makes the first Play and the 'line' of play (the duel) gets played left to right from the attacking players perspective until the round is complete.

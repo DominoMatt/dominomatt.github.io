@@ -39,14 +39,6 @@ const hasAddendum = g.downloads.length > 0 || g.attributions.length > 0 || relat
         <h1 class="page-title">{g.title}</h1>
       </div>
     </div>
-    <p class="lede">{g.description}</p>
-    {
-      g.requires && (
-        <p class="requires">
-          <span class="requires-lead">You will need:</span> {g.requires}
-        </p>
-      )
-    }
     {
       g.mechanics.length > 0 && (
         <div class="mechanics">
@@ -54,6 +46,14 @@ const hasAddendum = g.downloads.length > 0 || g.attributions.length > 0 || relat
             <span class="mechanic-pill">{m}</span>
           ))}
         </div>
+      )
+    }
+    <p class="lede">{g.description}</p>
+    {
+      g.requires && (
+        <p class="requires">
+          <span class="requires-lead">You will need:</span> {g.requires}
+        </p>
       )
     }
     <p class="kicker-meta license-brow">LICENSE · {g.license}</p>
