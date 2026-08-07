@@ -24,7 +24,7 @@ Or better yet... learn and play (playtest) some of the original domino-based gam
 ## Get involved
 
 - If you are interested, help me fill out a playtest report.
-- I also have an un-playedtested game I'd like to play, if there are 4 players willing at some point. 
+- I also have an un-playedtested game (Nine High) I'd like to play, if there are 4 players willing at some point. 
 
 ## Tradition
 
