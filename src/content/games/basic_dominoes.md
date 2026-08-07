@@ -1,5 +1,5 @@
 ---
-title: Basic Draw Dominoes
+title: Draw Dominoes
 order: 6
 category: Dominoes
 players: 2-4 players
