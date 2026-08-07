@@ -33,7 +33,7 @@ A 3-4 domino would Equal End Match any domino that has a 3 or 4 on one of it's e
 
 Equal End Matching applies to dominoes used as either tiles or cards.
 
-### [As a tile...](/src/content/layout_game.stl)
+### [As a tile...](/src/content/layout_games.stl)
 
 Most domino games are tile **layout games**— typically tiles are played end-to-end to build layout, most commonly using Equal End Matching. Traditionally this class of domino games are broadly considered Connecting games.
 
