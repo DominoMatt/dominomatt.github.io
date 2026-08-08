@@ -62,7 +62,7 @@ Play a domino with an end that matches the Attack's Type or has a 0/blank on one
       <li><b>The defender would now becomes the attacker.</b></li>
     </ul>
   </li>
-    <li>If you can't Defend, Lose 1 health... triggering Round End.
+    <li>If you can't (or don't want to) Defend, Lose 1 health... triggering Round End.
     <ul>
       <li>Play any non-matching, non-blank domino ('junk'); effectively improving your hand.</li>
       <li>Refuse to defend; to save all your hand for the next round.</li>
