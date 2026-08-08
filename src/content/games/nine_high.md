@@ -81,4 +81,6 @@ Rankings of sets: 0/blank, 1, 2, 3, 4, 5, 6, 7 ,8, 9, doubles (Lowest to Highest
 
 A hand is complete when a player goes out/sheds their hand (has 0 dominoes in hand). Each player adds a point to their score for each domino left in their hand. When a player score exceeds 10 points the game ends... **low score wins**.
 
-## [Dominoes As Card](https://dominomatt.github.io/notes/layout_games/)
+## Related Reading
+
+### [Dominoes As Card](https://dominomatt.github.io/notes/layout_games/)
