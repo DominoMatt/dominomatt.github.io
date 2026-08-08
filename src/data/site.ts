@@ -36,7 +36,7 @@ export const site = {
     },
     games: {
       title: 'Games', // category name is appended to the browser <title> automatically, not to the H1
-      lede: "Every game I've made; generic (common) components are required.",
+      lede: "A game for everyone; some generic (common) components are required.",
     },
     notes: {
       title: 'Articles',
