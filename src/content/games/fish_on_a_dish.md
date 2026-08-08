@@ -12,7 +12,7 @@ description: "Catch fish, cook delicious fish dishes, and serve them to your cus
 mechanics: [Matching, Dice Matching, Actions]
 license: CC BY-NC
 contents: Rules Sheet
-requires: 'Double Six Dominoes, 2x D6 Dice (or 2 per player), 24 dishes: 1(Ace)-6 in all 4 suits from Playing Cards, 12 customers (face-cards)'
+requires: 'Double Six Dominoes, 2x D6 dice (or 2 per player), 24 dishes: 1(Ace)-6 in all 4 suits from Playing Cards, 12 customers (face-cards)'
 # published: false
 # downloads:
 #   - title: Print & Play PDF
@@ -37,7 +37,7 @@ relatedGames: [fish_pond]
 
 ### On your turn
 
-- On your turn, take 2 actions of your choice (Catch a fish, Cook & Serve a fish dish, or Draft a dish).
+- On your turn, take 2 actions of your choice (Catch a fish, Draft a dish, Cook a fish dish, serve a Fish on a Dish).
 - You have a hand of 6 (5 in 3+ player) to hold your fish, dishes, or prepared dishes. If you gain an extra, discard 1 of your choice.
 
 ### Catch a fish (see Fish Pond for more details)
