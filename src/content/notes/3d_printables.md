@@ -11,7 +11,7 @@ This is a collection of all 3-d printed assets (.stl) that are offered on this s
 
 ### Are they Print and Play assets?
 
-Can 3-d printed things fall into this category... I definitely think so. On the other hand, just because an object is 'printed' doesn't necessarily make it a print and play asset. A game component that you actually play the game with or on is 'print and play'. Whereas a printable rule sheet does not make something print and play. 
+I definitely think so. On the other hand, just because an object is 'printed' doesn't necessarily make it a print and play asset. A game component that you actually play the game with or on is 'print and play'. Whereas a printable rule sheet does not make something print and play. 
 
 - The town center could be considered print and play, you use it to play a certain game.
 - The domino tray would not be a print and play asset, it isn't needed to play a particular game, it's just a handy item to have around.
@@ -20,7 +20,7 @@ Does this nuance really matter?
 
 ## Domino tray
 
-This domino tray is not a large one, compared to it's commercial multi-row counterparts. One player might need two to have enough space for their hand. Sometimes smaller is better, especially when it comes to 3-d printing.
+This domino tray is not a large one, compared to it's commercial multi-row counterparts. One player might need two to have enough space for their hand. Sometimes smaller is better, especially when it comes to 3-d printing. Best to print it with a **brim** to ensure bed adhesion.
 
 Download: [Domino tray](/print/stl/domino_tray.stl).stl
 
