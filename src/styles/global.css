@@ -206,6 +206,38 @@ a {
   line-height: 1.5;
 }
 
+/* Studio credit, homepage only. Two faces on purpose: "design by" in the
+   serif's true italic (Libre Caslon Text ships one; Libre Caslon Display
+   does not, which is why --serif-display isn't used here), the wordmark in
+   tracked sans caps. It sits quietly at --faint and only lifts to --mut on
+   hover, so it reads as a signature rather than a fourth call to action. */
+.designmark {
+  margin: 26px 0 0;
+  text-align: right;
+  font-size: 0.6875rem;
+  line-height: 1;
+  color: var(--faint);
+}
+
+.designmark a {
+  transition: color 0.15s ease;
+}
+
+.designmark a:hover {
+  color: var(--mut);
+}
+
+.designmark-by {
+  font-family: var(--serif-text);
+  font-style: italic;
+}
+
+.designmark-name {
+  font-family: var(--sans);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+}
+
 /* ---- notes list (shared: index "latest 3" + notebook) ------- */
 
 .notes .note-row {
