@@ -12,7 +12,7 @@ description: "Catch fish, cook delicious fish dishes, and serve them to your cus
 mechanics: [Matching, Dice Matching, Actions]
 license: CC BY-NC
 contents: Rules Sheet
-requires: Double Six Dominoes, 2x D6 Dice (or 2 per player), 24 dishes: 1(Ace)-6 in all 4 suits from Playing Cards, 12 customers (face-cards) 
+requires: Double Six Dominoes, 2x D6 Dice (or 2 per player), 24 dishes: 1(Ace)-6 in all 4 suits from Playing Cards, 12 customers (face-cards)
 # published: false
 # downloads:
 #   - title: Print & Play PDF
