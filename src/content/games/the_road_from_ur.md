@@ -20,7 +20,7 @@ The collective human experience over time has lead us here.
 
 ## Join me and prototype a decendant of The Royal Game of UR
 
-UR -> Backgammon ----------> here
+UR -> Backgammon ----------> We are here
 
 ## Basic Gameplay
 
