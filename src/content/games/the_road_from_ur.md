@@ -22,7 +22,7 @@ The collective human experience over time has lead us here.
 
 UR -> Backgammon ----------> We are here
 
-## Basic Gameplay
+## Basic Gameplay (Under Construction)
 
 ### Block Dominoes: Laying the way
 
