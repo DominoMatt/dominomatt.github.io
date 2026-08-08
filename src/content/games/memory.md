@@ -9,12 +9,11 @@ accent: "#C47234"
 ink: "#dde4d8"
 motif: circle
 art: dominos_white.svg
-description: "Flip dominoes 2 at a time, using your memory to make as many matches as
-  possible."
+description: "Flip dominoes 2 at a time, use your memory to make as many matches as possible."
 mechanics: [Memory, Matching, Equal End Matching]
 license: CC BY-NC
 contents: Rules Sheet ~ 3 Variants
-requires: Double Six Dominoes, Double Nine Dominoes (variant)
+requires: Double Six Dominoes
 #relatedGames: [fish_pond]
 ---
 
@@ -54,7 +53,7 @@ Play continues until **all possible matches** have been made, then score.
 
 Secret Objectives adds goals that players use to inform gameplay and strategy.
 
-#### Hidden goals; playing cards 1(Ace)-6 in one suit (or handmade cards); age 5+
+#### Hidden goals: playing cards 1(Ace)-6 in one suit; age 5+
 
 - Before the round begins, shuffle six cards 1(Ace)-6 and deal one Secret Objective to each player.
 - Score 1 extra point for each domino that matches your secret value. (Doubles only score 1 extra point.)
