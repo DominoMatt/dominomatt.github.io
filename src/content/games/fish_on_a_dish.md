@@ -5,7 +5,7 @@ category: Actions-based
 players: "2-4"
 age: ages 8+
 time: 20 min
-accent: "#f0ce49"
+accent: "#d9b44a"
 ink: "#dde4d8"
 art: fish_dish.svg
 description: "Catch fish, cook delicious fish dishes, and serve them to your customers."

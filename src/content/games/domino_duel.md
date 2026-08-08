@@ -5,7 +5,7 @@ category: Trick-taking
 players: "2 players"
 age: ages 9+
 time: 20 min
-accent: "#b171ae"
+accent: "#a06a9f"
 ink: "#dde4d8"
 art: sword.svg
 description: "Duel your friends in this 2 player trick-taker."

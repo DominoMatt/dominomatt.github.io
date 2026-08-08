@@ -6,7 +6,7 @@ category: Domino Variant
 players: "2-4"
 age: ages 7+
 time: 15 min
-accent: "#8a8a8a"
+accent: "#757575"
 ink: "#dde4d8"
 # motif: pips
 art: dungeon_arch.svg

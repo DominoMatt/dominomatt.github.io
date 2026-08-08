@@ -5,7 +5,7 @@ category: Climbing
 players: 2-4 players
 age: ages 9+
 time: 15-20 mins
-accent: "#6d5a93"
+accent: "#5f4c78"
 ink: "#dde4d8"
 art: nine_circle.svg
 description: "Shed your hand by playing a set that outranks the current high play."

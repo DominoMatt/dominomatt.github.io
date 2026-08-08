@@ -9,18 +9,18 @@ flame-yellow, ale, slate, and the muted greens and blues of well-used felt.
 
 | Game             | Accent    | Reads as        |
 | ---------------- | --------- | --------------- |
-| Fish on a Dish   | `#f0ce49` | candle-yellow   |
-| Memory Game      | `#E07B39` | ember-orange    |
+| Fish on a Dish   | `#d9b44a` | candle-yellow   |
+| Memory Game      | `#d46e3a` | ember-orange    |
 | Push Your Luck   | `#8f3327` | clay-red        |
 | The Road from UR | `#98683a` | dirt-road brown |
-| Domino Duel      | `#b171ae` | mead-mauve      |
-| Nine High        | `#6d5a93` | dusty violet    |
+| Domino Duel      | `#a06a9f` | mead-mauve      |
+| Nine High        | `#5f4c78` | dusty violet    |
 | Draw Dominoes    | `#3f7d74` | deep teal       |
 | Domino Kingdom   | `#4a6147` | forest green    |
 | Fish Pond        | `#436189` | pond blue       |
-| Dungeonominoes   | `#8a8a8a` | stone gray      |
+| Dungeonominoes   | `#757575` | stone gray      |
 
 ## Two registers
 
-- **Warm / lit** — `#f0ce49` `#E07B39` `#8f3327` `#98683a` `#b171ae`
-- **Cool / grounded** — `#6d5a93` `#3f7d74` `#4a6147` `#436189` `#8a8a8a`
+- **Warm / lit** — `#d9b44a` `#d46e3a` `#8f3327` `#98683a` `#a06a9f`
+- **Cool / grounded** — `#5f4c78` `#3f7d74` `#4a6147` `#436189` `#757575`
