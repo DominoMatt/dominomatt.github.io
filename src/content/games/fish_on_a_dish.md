@@ -68,7 +68,7 @@ If you also want to Catch a fish with your 2nd action, you may roll the second d
 ## End game
 
 - Take turns until 1 player has served 6 patrons (2 player), 4 patrons (3 player), or 3 patrons (4 player). 
-- When a player serves a patron to 'end the game', some players might need to take 1 more turn so 	all players get the same number of turns. During this last round, a player might be able to	Serve two dishes with their 2 actions, a joker (either black or red) can be served, if no other customers are available.
+- When a player serves a patron to 'end the game', some players might need to take 1 more turn so 	all players get the same number of turns. During this last round, a player might be able to	Serve two dishes with their 2 actions, unlimited jokers (either black or red (max. 4 pnts.)) can be served, if no other customers are available.
 
 ## Scoring
 
