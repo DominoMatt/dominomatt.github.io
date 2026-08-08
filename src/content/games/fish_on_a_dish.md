@@ -27,8 +27,8 @@ relatedGames: [fish_pond]
 
 - Turn all 28 dominoes face-up, flip the tiles w/ blank ends face-down... shuffling the blanks.
 - Then put all the tiles (both face-up and down) into the 'Pond'.
-- Shuffle all 24 dishes 1(Ace)-6 in all 4 suits into a deck and put it aside facedown.
-- Shuffle all 12 customers face cards in all 4 suits into a deck.
+- Shuffle all 24 dishes (1(Ace)-6 in all 4 suits) into a deck and put it aside facedown.
+- Shuffle all 12 customers (face cards in all 4 suits) into a deck.
 - Deal 3 customers to each player (in a 1,2, or 4 player game). Deal 4 customers to each player in a 3 player match.
     - In 1 or 2 player game, set the additional customers aside as a draw pile.
 - A 1st player is selected, so all players take the same # of turns.
