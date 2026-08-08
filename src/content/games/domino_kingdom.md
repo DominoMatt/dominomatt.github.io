@@ -84,6 +84,23 @@ When you can no longer play any dominoes to your layout, score as follows:
 >
 > **Final score: 9 points**
 
+## Variants
+
+### 3-4 player
+
+Use a double nine set or two double six sets mixed together to increase player count.
+
+#### double nine set or two double six sets mixed together, 2-4 players, 20 minutea
+
+### Easy Scoring 
+
+Same game... easier scoring. 
+
+#### ages 6+
+
+- Score your 2 or 3 biggest sets.
+- Don't worry about your negative points.
+
 ## Glossary
 
 **Equal End Matching** — At least 1 of the 2 ends of the domino being played (not necessarily both) must match the value of an orthogonally adjacent, still-open end of an already-played domino, or match one of the 4 sides of the Town Center.
