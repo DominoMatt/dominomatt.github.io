@@ -5,7 +5,7 @@ category: Dominoes
 players: 2-3 players
 age: ages 5+
 time: 5-10 mins
-accent: "#C47234"
+accent: "#E07B39"
 ink: "#dde4d8"
 motif: circle
 art: dominos_white.svg

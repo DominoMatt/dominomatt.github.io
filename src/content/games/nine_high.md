@@ -5,7 +5,7 @@ category: Climbing
 players: 2-4 players
 age: ages 9+
 time: 15-20 mins
-accent: "#6b4c9a"
+accent: "#6d5a93"
 ink: "#dde4d8"
 art: nine_circle.svg
 description: "Shed your hand by playing a set that outranks the current high play."
@@ -39,7 +39,7 @@ Each round progresses over a number of plays, each play must outrank the previou
    </ol>
 2. Continue taking turns in order (skipping players that have passed), until all players have passed.
 
-When all players have passed the round is over. 
+When all players have passed the round is over.
 
 The current player who owns the high play discards it and plays 1 starting tile for the following round.
 
@@ -66,7 +66,7 @@ If Playing, do 1 and then 2...
 ## Playing a Hand
 
 - A hand is played over several rounds.
-- The hand is done when the first player shed their hand. 
+- The hand is done when the first player shed their hand.
 
 ## Ranking
 

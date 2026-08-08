@@ -5,7 +5,7 @@ category: Actions-based
 players: "2-4"
 age: ages 8+
 time: 20 min
-accent: "#bd7f2e"
+accent: "#f0ce49"
 ink: "#dde4d8"
 art: fish_dish.svg
 description: "Catch fish, cook delicious fish dishes, and serve them to your customers."
@@ -30,7 +30,7 @@ relatedGames: [fish_pond]
 - Shuffle all 24 dishes (1(Ace)-6 in all 4 suits) into a deck and put it aside facedown.
 - Shuffle all 12 customers (face cards in all 4 suits) into a deck.
 - Deal 3 customers to each player (in a 2, or 4 player game). Deal 4 customers to each player in a 3 player match.
-    - In 2 player game, set the additional customers aside as a draw pile.
+  - In 2 player game, set the additional customers aside as a draw pile.
 - A 1st player is selected, so all players take the same # of turns.
 
 ## Gameplay
@@ -50,7 +50,7 @@ Roll a die to Catch any Fish (domino) in the Pond that has the same value on 1 o
 If you also want to Catch a fish with your 2nd action, you may roll the second die before catching the 1st domino/fish, so as to most strategically harvest your fish.
 
 ### Draft a dish
- 
+
 - To Draft a dish... draw 3 dishes from the top of the dish pile, keep one of them.
 - Add the remaining 2 dishes into a faceup discard pile.
 - If the deck is exhausted, shuffle the discard pile into a new Dish deck.
@@ -63,18 +63,18 @@ If you also want to Catch a fish with your 2nd action, you may roll the second d
 ### Serve a Fish on a Dish
 
 - Serve a fish dish to one of your customers.
-- Put the served customer out face-up, so it can be seen which patrons have already eaten, 	while also maintaining ownership for scoring.
+- Put the served customer out face-up, so it can be seen which patrons have already eaten, while also maintaining ownership for scoring.
 - Their meal is splayed face-up atop them.
-- In a 2 player game, when one customer is served— draw another from the draw pile. However, a 	player can't have more than 6 total patrons between both their 'line' and those already served.
+- In a 2 player game, when one customer is served— draw another from the draw pile. However, a player can't have more than 6 total patrons between both their 'line' and those already served.
 
 ## End game
 
-- Take turns until 1 player has served 6 patrons (2 player), 4 patrons (3 player), or 3 patrons (4 player). 
-- When a player serves a patron to 'end the game', some players might need to take 1 more turn so all players get the same number of turns. During this last round, a player might be able to	Serve two dishes with their 2 actions, thus unlimited jokers (either black or red (max. 4 pnts.)) can be served, if no other customers are available.
+- Take turns until 1 player has served 6 patrons (2 player), 4 patrons (3 player), or 3 patrons (4 player).
+- When a player serves a patron to 'end the game', some players might need to take 1 more turn so all players get the same number of turns. During this last round, a player might be able to Serve two dishes with their 2 actions, thus unlimited jokers (either black or red (max. 4 pnts.)) can be served, if no other customers are available.
 
 ## Scoring
 
 - The price a patron will pay you for their meal depends it's quality and their preferences.
-- The quality of the fish dish is based on how many domino ends are on the 2 fish (dominoes), that 	match the value on the number on the dish (card). A '3' dish with two-3s on the fish is 2 pnts.
+- The quality of the fish dish is based on how many domino ends are on the 2 fish (dominoes), that match the value on the number on the dish (card). A '3' dish with two-3s on the fish is 2 pnts.
 - The personal preference of a customer is based on their suit. If the patron and dish are both red or black gain 1 point. If the patron and dish are same suit gain another 1 point.
 - The maximum value of a fish dish is 5 pnts.
