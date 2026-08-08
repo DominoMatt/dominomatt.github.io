@@ -31,9 +31,11 @@ downloads:
 
 ## Gameplay
 
+- Draw up to your hand size of 6 at the beginning of every round.
 - The domino end played towards your opponent is the Attack Type/'suit'.
 - The end closest you is it's Power/'rank'.
 - When a trick is played the domino ends that 'match' each other is the Attack Type/'suit'.
+- The attacker Attacks, then the defender Defends; and so on until someone has gets hit.
 
 ### Attack
 
@@ -47,7 +49,7 @@ Play any domino, with a 1-6 as an end value. The attacking/'lead' player continu
 
 ### Defend
 
-Play a domino with an end that matches the Attack's Type or has a 0/blank on one (or more) of it's ends, thereby...
+Play a domino with an end that matches the Attack's Type or has a 0/blank on one (or more) of it's ends...
 
 <ol type="a">
   <li>Block:
