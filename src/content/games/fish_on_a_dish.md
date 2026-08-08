@@ -29,18 +29,18 @@ relatedGames: [fish_pond]
 - Then put all the tiles (both face-up and down) into the 'Pond'.
 - Shuffle all 24 dishes (1(Ace)-6 in all 4 suits) into a deck and put it aside facedown.
 - Shuffle all 12 customers (face cards in all 4 suits) into a deck.
-- Deal 3 customers to each player (in a 1,2, or 4 player game). Deal 4 customers to each player in a 3 player match.
-    - In 1 or 2 player game, set the additional customers aside as a draw pile.
+- Deal 3 customers to each player (in a 2, or 4 player game). Deal 4 customers to each player in a 3 player match.
+    - In 2 player game, set the additional customers aside as a draw pile.
 - A 1st player is selected, so all players take the same # of turns.
 
 ## Gameplay
 
-### On your turn
+#### On your turn
 
-- On your turn, take 2 actions of your choice (Catch a fish, Draft a dish, Cook a fish dish, or serve a Fish on a Dish).
+- Take 2 actions of your choice (Catch a fish, Draft a dish, Cook a fish dish, or Serve a Fish on a Dish).
 - You have a hand of 6 (5 in 3+ player) to hold your fish, dishes, or prepared dishes. If you gain an extra, discard 1 of your choice.
 
-### Catch a fish (see Fish Pond for more details)
+### Catch a fish (like in Fish Pond)
 
 Roll a die to Catch any Fish (domino) in the Pond that has the same value on 1 of it's ends as the die's value.
 
@@ -52,13 +52,15 @@ If you also want to Catch a fish with your 2nd action, you may roll the second d
 ### Draft a dish
  
 - To Draft a dish... draw 3 dishes from the top of the dish pile, keep one of them.
+- Add the remaining 2 dishes into a faceup discard pile.
+- If the deck is exhausted, shuffle the discard pile into a new Dish deck.
 
 ### Cook a fish dish
 
 - It takes two fish (dominoes) and one dish (1-6) to prepare and cook a fish dish.
 - Your freshly cooked Fish on a Dish takes up 1 space in your hand instead of 3.
 
-### Serve a fish dish
+### Serve a Fish on a Dish
 
 - Serve a fish dish to one of your customers.
 - Put the served customer out face-up, so it can be seen which patrons have already eaten, 	while also maintaining ownership for scoring.
@@ -68,11 +70,11 @@ If you also want to Catch a fish with your 2nd action, you may roll the second d
 ## End game
 
 - Take turns until 1 player has served 6 patrons (2 player), 4 patrons (3 player), or 3 patrons (4 player). 
-- When a player serves a patron to 'end the game', some players might need to take 1 more turn so 	all players get the same number of turns. During this last round, a player might be able to	Serve two dishes with their 2 actions, unlimited jokers (either black or red (max. 4 pnts.)) can be served, if no other customers are available.
+- When a player serves a patron to 'end the game', some players might need to take 1 more turn so all players get the same number of turns. During this last round, a player might be able to	Serve two dishes with their 2 actions, thus unlimited jokers (either black or red (max. 4 pnts.)) can be served, if no other customers are available.
 
 ## Scoring
 
 - The price a patron will pay you for their meal depends it's quality and their preferences.
-- The quality of the fish dish is based on how many domino ends are on the 2 fish (dominoes), that 	match the value on the number on the dish (card). A '3' dish with two-3s on fish is 2 pnts.
-- The personal preferences of a patron is based on their suit. If the patron and dish are both red or	black gain 1 point. If the patron and dish are same suit gain 1 point.
+- The quality of the fish dish is based on how many domino ends are on the 2 fish (dominoes), that 	match the value on the number on the dish (card). A '3' dish with two-3s on the fish is 2 pnts.
+- The personal preference of a customer is based on their suit. If the patron and dish are both red or black gain 1 point. If the patron and dish are same suit gain another 1 point.
 - The maximum value of a fish dish is 5 pnts.
