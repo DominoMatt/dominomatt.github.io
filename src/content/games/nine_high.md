@@ -1,7 +1,7 @@
 ---
 title: Nine High
 order: 9
-category: Climbing
+category: Dominoes as Cards
 players: 3-6 players
 age: ages 9+
 time: 15-20 mins
