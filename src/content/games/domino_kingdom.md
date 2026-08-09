@@ -1,7 +1,7 @@
 ---
 title: Domino Kingdom
 order: 4
-category: Dominoes
+category: Grid
 players: 1-2 players
 age: ages 7+
 time: 10-15 mins
