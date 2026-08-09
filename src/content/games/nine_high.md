@@ -2,7 +2,7 @@
 title: Nine High
 order: 9
 category: Climbing
-players: 2-4 players
+players: 3-6 players
 age: ages 9+
 time: 15-20 mins
 accent: "#5f4c78"
@@ -15,14 +15,14 @@ contents: Rules Sheet
 requires: Double Nine Dominoes
 ---
 
-### Warning: This game is untested. Maybe we can give it a try at Comic Con.
+### Warning: This game is untested.
 
 - Shed your hand by playing one or more dominoes (as equal end matched 'sets' of dominoes) to the play area that outranks the current highest 'set' of dominoes played. (see Rankings below)
 - Sets' are groups of dominoes that all share a common end value (are equal end matched).
 
 ## Setup:
 
-- Shuffle/Mix all the dominoes face-down and
+- Shuffle all the dominoes face-down and
 - Deal 9 dominoes to each player as their hand.
 - Choose a 1st player, they play the initial tile of the hand. (1st player rotates between hands)
 
