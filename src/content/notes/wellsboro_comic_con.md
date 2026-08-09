@@ -2,18 +2,18 @@
 title: Wellsboro Comic Con
 date: 2026-07-25
 accent: "#bd7f2e"
-dek: "It's August 8, 2026."
+dek: "Comic Con is here and gone"
 # games: []
 published: false
 ---
 
-## Welcome to the Wellsboro Comic Con
+## Wellsboro Comic Con
 
 It's the fifth annual Wellsboro Comic Con! And I'm happy that your here. Enjoy the sights and sounds of the Con and downtown Wellsboro.
 
 ## Come find me
 
-Visit the second floor of the Deane Center, and find the 'gaming room'. I'll be the one sitting amongst my dominoes waiting for you dear player.
+Visit the second floor of the Deane Center, and find the 'gaming room'. I'll be the one sitting amongst my dominoes waiting for you.
 
 ## What I'm offering
 
@@ -23,9 +23,8 @@ Or better yet... learn and play (playtest) some of the original domino-based gam
 
 ## Get involved
 
+- Come play a game.
 - If you are interested, help me fill out a playtest report.
-- I also have an un-playedtested game (Nine High) I'd like to play, if there are 4 players willing at some point.
-- Join me on The Road from UR.
 
 ## Tradition
 
