@@ -2,7 +2,7 @@
 title: Wellsboro Comic Con
 date: 2026-07-25
 accent: "#bd7f2e"
-dek: "Comic Con is here and gone"
+dek: "Comic Con is here and gone."
 # games: []
 published: false
 ---
