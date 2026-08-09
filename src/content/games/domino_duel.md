@@ -25,7 +25,7 @@ downloads:
 
 ## Set-up
 
-- Shuffle the dominoes face-down or in a bag (boneyard).
+- Shuffle the double six dominoes face-down.
 - Each player gets 3 HP (health) at the start of the game. (same as best of 5 play)
 - First player can be randomly determined and after drawing up decides whether to Attack or Defend.
 
@@ -60,11 +60,11 @@ Play a domino with an end that matches the Attack's Type or has a 0/blank on one
   </li>
   <li>Counter:
     <ul>
-      <li>Play a domino that matches the Attack's Value and has Power greater than the attacking domino's Power. (A 2-6 Counters a 2-5)</li>
+      <li>Play a domino that matches the Attack's Value and has Power greater than the attacking domino. (A 2-6 Counters a 2-5)</li>
       <li><b>The defender would now becomes the attacker.</b></li>
     </ul>
   </li>
-    <li>If you can't (or don't want to) Defend, Lose 1 health... triggering Round End.
+    <li>If you can't (or don't want to) Defend, Lose 1 HP... trigger Rounds End.
     <ul>
       <li>Play any non-matching, non-blank domino ('junk'); effectively improving your hand.</li>
       <li>Refuse to defend; to save all your hand for the next round.</li>
@@ -76,7 +76,7 @@ Play a domino with an end that matches the Attack's Type or has a 0/blank on one
 
 Doubles rank highest in their 'suit', followed by highest Power and so on... (e.g. 2-2, 2-6, 2-5, 2-4, 2-3, 2-1, 2-0). This same ranking pattern is true of each suit.
 
-<h2 id="round-end">Round end</h2>
+<h2 id="round-end">Rounds end</h2>
 
 The round ends after either a player loses 1 health or 12 plays/tricks.
 
@@ -104,4 +104,4 @@ Short rest: Before drawing up, if you have >= 4 tiles left in hand, you may disc
 
 ## 'Line' of play
 
-For consistency sake, when starting a round the attacker makes the first Play and the 'line' of play (the duel) gets played left to right from the attacking players perspective until the round is complete.
+For consistency sake, when starting a round the attacker makes the first Play and the 'line' of play (the duel) gets played left to right sequentially from that original attacking players perspective until the rounds end.
