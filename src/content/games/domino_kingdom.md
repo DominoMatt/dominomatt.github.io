@@ -55,9 +55,9 @@ If there is no face-up domino available for option A, flip one up from the boney
 
 ### Play
 
-Play your domino to the 5x5 layout using Equal End Matching (see below).
+Play your domino to the 5x5 layout using Equal End Matching (see below). Town center edges are Wild.
 
-- If you cannot make a match, you must place the domino face-down somewhere in your 5x5 layout, [orth. adj.](#glossary) to another domino already in the layout. (You may also choose to do this voluntarily.)
+- If you cannot make a match, you must place the domino face-down somewhere in your 5x5 layout.
 
 ## Scoring
 
@@ -69,7 +69,6 @@ When you can no longer play any dominoes to your layout, score as follows:
 
 ![Kingdom Domino Exmaple](/print/kd_example.png)
 
-> Scoring Example:
 > Largest sets — 13 points total:
 >
 > - 5 pts — 5-blanks
@@ -102,6 +101,10 @@ Same game... easier scoring.
 
 ## Glossary
 
-**Equal End Matching** — At least 1 of the 2 ends of the domino being played (not necessarily both) must match the value of an orthogonally adjacent, still-open end of an already-played domino, or match one of the 4 sides of the Town Center.
+**Equal End Matching** — At least 1 of the 2 ends of the domino being played (not necessarily both) must match the value of an orthogonally adjacent end/side of:
+   <ol type="a">
+   <li>An already-played domino in your 5x5. or</li>
+   <li>1 of the 4 sides of the Town Center (they are Wild).</li>
+   </ol>an already-played domino, or match one of the 4 sides of the Town Center.
 
 **Orthogonal** — Edge to edge, not diagonal. (orth. adj. = orthogonally adjacent)
