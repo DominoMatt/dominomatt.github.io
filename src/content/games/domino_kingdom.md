@@ -50,7 +50,7 @@ If there is no face-up domino available for option A, flip one up from the boney
 
 <ol type="a">
 <li>Draw the known domino that is face-up.</li>
-<li>Draw an unknown domino from the boneyard. (You must now play this one)</li>
+<li>Draw an unknown domino from the boneyard. (You must now play it)</li>
 </ol>
 
 ### Play
@@ -88,9 +88,11 @@ When you can no longer play any dominoes to your layout, score as follows:
 
 ### 3-4 player
 
-Use a double nine set or two double six sets mixed together to increase player count.
+More players... more fun.
 
 #### double nine set or two double six sets mixed together, 2-4 players, 20 minutes
+
+Use a double nine set or two double six sets mixed together to increase player count.
 
 ### Easy Scoring 
 
@@ -98,7 +100,7 @@ Same game... easier scoring.
 
 #### ages 6+
 
-- Score your 2 or 3 biggest sets.
+- Score your 3 biggest sets.
 - Don't worry about your negative points.
 
 ## Glossary
