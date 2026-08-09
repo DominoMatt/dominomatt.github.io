@@ -92,7 +92,7 @@ More players... more fun.
 
 #### double nine set or two double six sets mixed together, 2-4 players, 20 minutes
 
-Use a double nine set or two double six sets mixed together to increase player count.
+- Use a double nine set or two double six sets mixed together to increase player count.
 
 ### Easy Scoring 
 
