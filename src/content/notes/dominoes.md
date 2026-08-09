@@ -6,7 +6,7 @@ dek: "Dominoes — also called tiles, bones, rocks, stones, men, or cards — ar
 games: [basic_dominoes]
 ---
 
-- A domino is typically twice as long as it is wide and are split into two ends by a center line.
+- A domino is typically twice as long as it is wide and is split into two ends by a center line.
 - Double X sets contain all combinations of values 0 thru X.
 - Each end has a value (in pips or numerals).
 - Each domino has a weight, which equals the sum of both end values.
