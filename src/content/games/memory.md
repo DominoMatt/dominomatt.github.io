@@ -1,7 +1,7 @@
 ---
 title: Memory Game
 order: 2
-category: Dominoes
+category: Kids
 players: 2-3 players
 age: ages 5+
 time: 5-10 mins
@@ -19,7 +19,7 @@ requires: Double Six Dominoes
 
 ## Setup
 
-- Shuffle all the dominoes face-down.
+- Shuffle all the double six dominoes face-down.
 - Set out all 28 dominoes face-down in 7 rows and 4 columns.
 
 ## Gameplay
