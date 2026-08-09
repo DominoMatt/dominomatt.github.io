@@ -39,7 +39,7 @@ export const site = {
       lede: "A game for everyone; some generic (common) components are required.",
     },
     notes: {
-      title: 'Articles',
+      title: 'The Boneyard',
       lede: 'Articles on dominoes and a few other topics.',
     },
   },
