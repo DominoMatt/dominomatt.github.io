@@ -69,6 +69,7 @@ When you can no longer play any dominoes to your layout, score as follows:
 
 ![Kingdom Domino Exmaple](/print/kd_example.png)
 
+> Scoring Example:
 > Largest sets — 13 points total:
 >
 > - 5 pts — 5-blanks
