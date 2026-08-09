@@ -90,7 +90,7 @@ When you can no longer play any dominoes to your layout, score as follows:
 
 Use a double nine set or two double six sets mixed together to increase player count.
 
-#### double nine set or two double six sets mixed together, 2-4 players, 20 minutea
+#### double nine set or two double six sets mixed together, 2-4 players, 20 minutes
 
 ### Easy Scoring 
 
