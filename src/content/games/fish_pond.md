@@ -20,15 +20,15 @@ relatedGames: [fish_on_a_dish]
 
 - Turn all 28 dominoes face-up, flip the tiles w/ blank ends face-down... shuffling the blanks.
 - Then put all the tiles (both face-up and down) into the 'Pond'.
-- Place the 1(Ace)-6 (or homemade 1-6) out in a row near the fish pond as Trophies.
+- Place the 1(Ace)-6 (or homemade 1 thru 6) out in a row near the Fish Pond as Trophies.
 - A 1st player is selected, so all players take the same # of turns.
 
 ## Gameplay
 
 ### On your turn
 
-1. Roll a six-sided die. Example: If a 6 is rolled you can capture any Fish in the pond w/ a 6 on one of it's ends.
-2. Catch any Fish (domino) in the Pond that has the same value on 1 of it's ends as the die's value.
+1. Roll a six-sided die.
+2. Catch any Fish (domino) in the Pond that has the same value on 1 of it's ends as your die's value.
 
    - If no more Fish match your die's value, you select one of the face-down Fish (blanks) and turn it face-up.
    - If it matches your die, catch it; or if not leave it face-up in the pond.
