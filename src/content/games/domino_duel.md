@@ -1,7 +1,7 @@
 ---
 title: Domino Duel
 order: 1
-category: Trick-taking
+category: Dominoes as Cards
 players: "2 players"
 age: ages 9+
 time: 20 min
