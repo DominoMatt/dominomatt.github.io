@@ -65,9 +65,11 @@ When you can no longer play any dominoes to your layout, score as follows:
 
 1. Find the 3 largest orthogonally connected sets in your layout.
 2. Score 1 point for each domino end that is part of one of these 3 sets.
-3. Subtract 1 point per face-down end, unmatched end, or 1x1 hole in the layout.<br> &nbsp;&nbsp;&nbsp;&nbsp; Exception: unmatched ends attached to the Town Center's edges don't count against you.
+3. Subtract 2 point per face-down domino,
+4. Subtract 1 point per unmatched end, or 1x1 hole in the layout.
+   - Exception: Singleton ends attached to the Town Center's edges don't count against you.
 
-![Kingdom Domino Exmaple](/print/kd_example.png)
+![Kingdom Domino Example](/print/kd_example.png)
 
 > Largest sets — 13 points total:
 >
@@ -105,6 +107,6 @@ Same game... easier scoring.
    <ol type="a">
    <li>An already-played domino in your 5x5. or</li>
    <li>1 of the 4 sides of the Town Center (they are Wild).</li>
-   </ol>an already-played domino, or match one of the 4 sides of the Town Center.
-
+   </ol>
+   
 **Orthogonal** — Edge to edge, not diagonal. (orth. adj. = orthogonally adjacent)
