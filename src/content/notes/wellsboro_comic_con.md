@@ -9,7 +9,7 @@ published: false
 
 ## Wellsboro Comic Con
 
-It's the fifth annual Wellsboro Comic Con! And I'm happy that your here. Enjoy the sights and sounds of the Con and downtown Wellsboro.
+It's the fifth annual Wellsboro Comic Con! Enjoy the sights and sounds of the Con and downtown Wellsboro.
 
 ## Come find me
 
