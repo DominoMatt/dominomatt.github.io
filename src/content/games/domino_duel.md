@@ -81,7 +81,7 @@ Doubles rank highest in their 'suit', followed by highest Power and so on... (e.
 The round ends after either a player loses 1 health or 12 plays/tricks.
 
 - If someone lost HP during the round:
-  1. Players keep all of the dominoes left in their hand (if any).
+  1. Players keep the dominoes left in their hand (if any).
   2. All other tiles are shuffled face-down.
   3. Players then draw up until they reach their hand size of 6.
   4. If someone lost HP, they decide if they want to start Attacking or Defending the next round.
