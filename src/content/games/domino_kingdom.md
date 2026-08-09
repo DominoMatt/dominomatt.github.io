@@ -50,12 +50,12 @@ If there is no face-up domino available for option A, flip one up from the boney
 
 <ol type="a">
 <li>Draw the known domino that is face-up.</li>
-<li>Draw an unknown domino from the boneyard.</li>
+<li>Draw an unknown domino from the boneyard. (You must now play this one)</li>
 </ol>
 
 ### Play
 
-Play your domino to the 5x5 layout using Equal End Matching (see below). Town center edges are Wild.
+Play your domino to the 5x5 layout using [Equal End Matching](#glossary). Town center edges are Wild.
 
 - If you cannot make a match, you must place the domino face-down somewhere in your 5x5 layout.
 
