@@ -1,7 +1,7 @@
 ---
 title: Fish Pond
 order: 3
-category: Dominoes
+category: Kids
 players: 2-3 players
 age: ages 5+
 time: 10 mins
