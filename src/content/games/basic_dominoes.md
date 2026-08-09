@@ -1,7 +1,7 @@
 ---
 title: Draw Dominoes
 order: 6
-category: Dominoes
+category: Domino Variant
 players: 2-4 players
 age: ages 4+
 time: 5-15 mins
