@@ -12,17 +12,17 @@ art: domino_kingdom_town.svg
 description: "Tile your 5x5 grid, creating the 3 largest terrains/sets possible."
 mechanics: [Set Building, Grid Layout, Equal End Matching]
 license: CC BY-NC
-contents: Rules Sheet, Downloads
-requires: Double Six Dominoes, Town Center Marker
+contents: Rules Sheet, Downloads, 2 Variants
+requires: Double Six Dominoes, Town Center Marker (or stand-in)
 downloads:
    - title: 5x5 grid (large)
      file: domino kingdom large.pdf
      description: "Print and Play"
-     spec: PDF · LETTER · COLOR
+     spec: PDF · LETTER · B & W
    - title: 5x5 grid (small)
      file: domino kingdom small.pdf
      description: "Print and Play"
-     spec: PDF · LETTER · COLOR
+     spec: PDF · LETTER · B & W
    - title: Town Center
      file: stl/town_center.stl
      description: "Town Center"
@@ -69,8 +69,6 @@ When you can no longer play any dominoes to your layout, score as follows:
 
 ![Kingdom Domino Exmaple](/print/kd_example.png)
 
-> **Example** (see picture)
->
 > Largest sets — 13 points total:
 >
 > - 5 pts — 5-blanks
