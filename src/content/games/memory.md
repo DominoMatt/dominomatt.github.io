@@ -53,7 +53,7 @@ Play continues until **all possible matches** have been made, then score.
 
 Secret Objectives adds goals that players use to inform gameplay and strategy.
 
-#### Hidden goals: playing cards 1(Ace)-6 in one suit; age 5+
+#### Hidden goals: playing cards 1(Ace)-6 in one suit; age 6+
 
 - Before the round begins, shuffle six cards 1(Ace)-6 and deal one Secret Objective to each player.
 - Score 1 extra point for each domino that matches your secret value. (Doubles only score 1 extra point.)
