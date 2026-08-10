@@ -1,0 +1,13 @@
+{
+  "name": "Free Domino Games",
+  "short_name": "Domino Games",
+  "description": "Free domino-based games and rules, from classic variants to original titles - print-and-play downloads, for all ages.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#16140d",
+  "theme_color": "#16140d",
+  "icons": [
+    { "src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

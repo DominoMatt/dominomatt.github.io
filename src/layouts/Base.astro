@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import { site } from '../data/site';
+import { url } from '../lib/links';
 
 // Self-hosted, subsetted (latin-only) weights of every face actually used
 // across the site — see global.css's --serif-display/--serif-text/--sans/
@@ -33,6 +34,12 @@ interface Props {
 
 const { title, description = site.description } = Astro.props;
 const fullTitle = title ? `${title} · ${site.title}` : site.title;
+
+// Astro.site is the configured origin (astro.config.mjs); Astro.url.pathname
+// is already base-aware, so this is correct across all three hosting shapes
+// documented in astro.config.mjs without touching src/lib/links.ts.
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const ogImageURL = new URL(url('/og-image.png'), Astro.site);
 ---
 
 <!doctype html>
@@ -42,6 +49,29 @@ const fullTitle = title ? `${title} · ${site.title}` : site.title;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+
+    <link rel="icon" href={url('/favicon.svg')} type="image/svg+xml" />
+    <link rel="icon" href={url('/favicon-32x32.png')} sizes="32x32" type="image/png" />
+    <link rel="icon" href={url('/favicon-16x16.png')} sizes="16x16" type="image/png" />
+    <link rel="shortcut icon" href={url('/favicon.ico')} />
+    <link rel="apple-touch-icon" href={url('/apple-touch-icon.png')} />
+    <link rel="manifest" href={url('/site.webmanifest')} />
+    <meta name="theme-color" content="#16140d" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={site.title} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:image" content={ogImageURL} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageURL} />
+
     <link rel="preload" as="font" type="font/woff2" href={caslonDisplayWoff2} crossorigin />
     <link rel="preload" as="font" type="font/woff2" href={caslonTextWoff2} crossorigin />
     <link rel="preload" as="font" type="font/woff2" href={splineMonoWoff2} crossorigin />

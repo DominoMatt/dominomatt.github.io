@@ -11,7 +11,11 @@ export const site = {
   markSvg: 'single_domino_white.svg',
   name: 'FREE DOMINO GAMES',
   title: 'Free Domino Games',
-  description: 'Free domino games',
+  // Fallback <meta name="description"> — used on the homepage only; every
+  // other page supplies its own (game/note description or dek). Also the
+  // fallback og:description/twitter:description for the homepage.
+  description:
+    'Free domino-based games and rules, from classic variants to original titles - print-and-play downloads, for all ages.',
   interactCopy:
     "Everything here is free to play. If you've enjoyed a game or article, drop me a line.",
 
@@ -24,7 +28,7 @@ export const site = {
   // this file.
   pages: {
     home: {
-      tagline: 'Domino games for all ages', // homepage <h1> — leave empty to hide it
+      tagline: 'Domino-based games for all ages', // homepage <h1> — leave empty to hide it
     },
     contact: {
       title: 'Contact me',
@@ -69,6 +73,6 @@ export const site = {
   // touch — see AUTHORING.md for the day-to-day content workflow.
   homepage: {
     notes: ['dominoes', 'under_construction', 'wellsboro_comic_con'],
-    games: ['domino_duel', 'memory', 'fish_pond', 'domino_kingdom', 'push_your_luck', 'basic_dominoes', 'the_road_from_ur','fish_on_a_dish', 'nine_high', 'dungeonominoes'],
+    games: ['domino_duel', 'memory', 'fish_pond', 'domino_kingdom', 'push_your_luck', 'basic_dominoes', 'the_road_from_ur', 'fish_on_a_dish', 'nine_high', 'dungeonominoes'],
   },
 };
