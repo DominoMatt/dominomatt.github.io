@@ -29,13 +29,13 @@ relatedGames: [fish_pond]
   2. Then put all the tiles (both face-up and down) into the 'Pond'.
 - Shuffle all 24 dishes (1(Ace)-6 in all 4 suits) into a deck and put it aside facedown.
 - Shuffle all 12 customers (face cards in all suits) into a deck.
-- Deal 3 customers to each player's 'line' in a 2 player game. Deal 4 customers each in a 3 player match.
-  - In 2 player game, set the additional customers aside as a draw pile.
+- Deal 3 customers to each player's 'line'.
+  - Set the additional customers aside as a draw pile.
 - A 1st player is selected, so all players take the same # of turns.
 
 ## Gameplay
 
-You have a hand of 6 (5 in 3 player) to hold your fish, dishes, or prepared dishes. If you gain an extra, discard 1 of your choice.
+You have a hand of 6 (5 in 3 player) to hold your fish, dishes, and/or prepared dishes. If you gain an extra, discard 1 of your choice.
 
 #### On your turn
 
@@ -46,7 +46,7 @@ You have a hand of 6 (5 in 3 player) to hold your fish, dishes, or prepared dish
 Roll a die to Catch any Fish (domino) in the Pond that has the same value on 1 of it's ends as the die's value.
 
 - If no more Fish match your die's value, you select one of the face-down Fish (blanks) and turn it face-up; if it matches your die, catch it; or if not leave it face-up in the pond.
-- When you catch a Fish, put it in front of you; they must be kept face-up.
+- When you catch a Fish, put it face-up in front of you.
 
 If you also want to Catch a fish with your 2nd action, you may roll the second die before catching the 1st domino/fish, so as to most strategically harvest your fish.
 
@@ -67,7 +67,8 @@ If you also want to Catch a fish with your 2nd action, you may roll the second d
 - Serve a fish dish to one of your customers.
 - Put the served customer out face-up, so it can be seen which patrons have already eaten, while also maintaining ownership for scoring.
 - Their meal is splayed face-up atop them.
-- In a 2 player game, when one customer is served— draw another from the draw pile. However, a player can't have more than 6 total customers between both their 'line' and those already served.
+- When one customer is served, draw another from the draw pile.
+  > However, a player can't draw another if they have 6 total customers between both their 'line' and those they've already served in a 2 player game. Or 4 total customers in 3 player.
 
 ## End game
 
@@ -77,7 +78,7 @@ If you also want to Catch a fish with your 2nd action, you may roll the second d
 ## Scoring
 
 - The price a patron will pay you for their meal depends it's quality and their preferences.
-- The quality of the fish dish is based on how many domino ends are on the 2 fish (dominoes), that match the value on the number on the dish (card). A '3' dish with two-3s on the fish is 2 pnts.
+- The quality of the fish dish is based on how many domino ends are on the two fish (dominoes), that match the value on the number on the dish (card). A '3' dish with two-3s on the fish is 2 pnts.
 - The personal preference of a customer is based on their suit. If the patron and dish are both red or black gain 1 point. If the patron and dish are same suit gain another 1 point.
 - The maximum value of a fish dish is 5 pnts.
 - Add all your sales together for your final score.
