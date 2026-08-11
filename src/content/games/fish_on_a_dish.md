@@ -67,7 +67,9 @@ If you also want to Catch a fish with your 2nd action, you may roll the second d
 - Serve a fish dish to one of your customers.
 - Put the served customer out face-up, so it can be seen which patrons have already eaten, while also maintaining ownership for scoring.
 - Their meal is splayed face-up atop them.
-When one customer is served, draw another from the draw pile.
+
+When one customer is served, draw another from the draw pile.'
+
   - However, a player can't draw another if they have 6 total customers between both their 'line' and those they've already served in a 2 player game; or 4 total customers in 3 player.
 
 ## End game
