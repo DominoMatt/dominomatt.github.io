@@ -7,8 +7,8 @@ games: [basic_dominoes]
 ---
 
 - A domino is typically twice as long as it is wide and is split into two ends by a center line.
-- Double X sets contain all combinations of values 0 thru X.
 - Each end has a value (in pips or numerals).
+- Double X sets contain all combinations of values 0 thru X.
 - Each domino has a weight, which equals the sum of both end values.
 
 ## Set Sizes
