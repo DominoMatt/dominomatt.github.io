@@ -8,6 +8,7 @@ dek: "A domino tray, a town center..."
 ---
 
 This is a collection of all 3-d printed assets (.stl) that are offered on this site.
+WARNING! 3-d printed objects can pose a choking hazard to young children and pets.
 
 ### Are they Print and Play assets?
 
