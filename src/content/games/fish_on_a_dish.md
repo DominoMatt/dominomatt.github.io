@@ -80,3 +80,4 @@ If you also want to Catch a fish with your 2nd action, you may roll the second d
 - The quality of the fish dish is based on how many domino ends are on the 2 fish (dominoes), that match the value on the number on the dish (card). A '3' dish with two-3s on the fish is 2 pnts.
 - The personal preference of a customer is based on their suit. If the patron and dish are both red or black gain 1 point. If the patron and dish are same suit gain another 1 point.
 - The maximum value of a fish dish is 5 pnts.
+- Add all your sales together for your final score.
