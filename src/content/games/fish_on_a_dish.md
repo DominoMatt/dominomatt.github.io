@@ -58,7 +58,7 @@ If you also want to Catch a fish with your 2nd action, you may roll the second d
 
 ### Cook a fish dish
 
-- It takes two fish (dominoes) and one dish (1-6) to prepare and cook a fish dish.
+- It takes two fish (dominoes) and one dish (card) to prepare and cook a fish dish.
 - Place the 2 fish on top of the dish.
 - Your freshly cooked Fish on a Dish takes up 1 space in your hand instead of 3.
 
