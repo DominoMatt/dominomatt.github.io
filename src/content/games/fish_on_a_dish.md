@@ -67,7 +67,7 @@ If you also want to Catch a fish with your 2nd action, you may roll the second d
 - Serve a fish dish to one of your customers.
 - Put the served customer out face-up, so it can be seen which patrons have already eaten, while also maintaining ownership for scoring.
 - Their meal is splayed face-up atop them.
-- When one customer is served, draw another from the draw pile.
+When one customer is served, draw another from the draw pile.
   - However, a player can't draw another if they have 6 total customers between both their 'line' and those they've already served in a 2 player game; or 4 total customers in 3 player.
 
 ## End game
@@ -77,7 +77,7 @@ If you also want to Catch a fish with your 2nd action, you may roll the second d
 
 ## Scoring
 
-- The price a patron will pay you for their meal depends it's quality and their preferences.
+- The price a customer will pay you for their meal depends it's quality and their preferences.
 - The quality of the fish dish is based on how many domino ends are on the two fish (dominoes), that match the value on the number on the dish (card). A '3' dish with two-3s on the fish is 2 pnts.
 - The personal preference of a customer is based on their suit. If the patron and dish are both red or black gain 1 point. If the patron and dish are same suit gain another 1 point.
 - The maximum value of a fish dish is 5 pnts.
