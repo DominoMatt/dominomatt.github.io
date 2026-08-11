@@ -2,13 +2,13 @@
 title: Under Construction
 date: 2026-08-03
 accent: "#bd7f2e"
-dek: "More games, and more notes— added as they're finished."
+dek: "Currently playtesting 'published' titles... more games, and notes will be added as they're finished."
 published: false
 ---
 
 ## What's here
 
-Every game on the site is free to play, and share. Generally, the games require generic and common components and any additional components that are necessary are included as downloads.
+Every game on the site is free to play (playtest), and share. Generally, the games require generic and common components (mainly dominoes) and any additional components that are necessary are included as downloads.
 
 ## A work in progress...
 
