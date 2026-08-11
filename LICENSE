@@ -1,6 +1,6 @@
 This license covers the codebase only (everything under `src/`, config files,
 and build tooling). Game content in `src/content/games/` is licensed
-separately per its own `license:` frontmatter (currently CC BY-NC for all
+separately per its own `license:` frontmatter (currently CC BY-NC or 'traditional' for all
 games); articles in `src/content/notes/` are all rights reserved. See the
 README's License section for details.
 

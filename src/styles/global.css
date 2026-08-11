@@ -845,7 +845,7 @@ a {
    rules page is its only home; the /games row used to carry a mono copy of
    it (.game-requires) but that was dropped, leaving `contents` alone there.
    Sits between the lede and the mechanics pills, typeset at .prose p size in
-   the body sans, italic, so it reads as a print-and-play aside in the
+   the body sans, so it reads as a print-and-play aside in the
    article's voice rather than another mono meta brow. The lead-in drops to
    --faint so the requirement itself is the part that carries. */
 .requires {
@@ -859,6 +859,8 @@ a {
 
 .requires-lead {
   color: var(--ink);
+  font-weight: 600;
+  font-style: normal;
 }
 
 .titleblock .mechanics {
