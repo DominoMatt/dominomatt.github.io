@@ -3,14 +3,14 @@ title: Layout Games
 date: 2026-07-13
 accent: "#4a6147"
 dek: "Dominoes are used to play a variety of games... most of them layout games."
-games: [basic_dominoes, domino_kingdom]
+games: [basic_dominoes, dungeonominoes]
 ---
 
 Dominoes are played end to end, by matching a tile to an open end in the layout, progressing the line of play... the stereotypical domino game. Layout Games played in this traditional manner are widely considered **Connection Games**.
 
-On the other hand there is a little looser definition of Layout Game.
+On the other hand there is a little looser definition of Layout Game...
 
-- Other Layout Games
+### [Other Layout Games](https://dominomatt.github.io/notes/layout_games/)
 
 ## Variation in Connection Games
 
