@@ -879,7 +879,8 @@ a {
      h2  section    — serif display, ruled, with an accent tick
      h3  subsection — sans, bold (a voice shift via weight, not italic)
      h4  label      — small uppercase mono (the old numbered "kicker",
-                      now at the bottom of the scale, un-numbered)
+                      un-numbered)
+     h5  sub-label  — the h4 label, less space above (variant meta lines)
    Each page sets --accent inline on .prose from its frontmatter, so the
    markers / rules / links pick up that page's colour. */
 
@@ -932,6 +933,18 @@ a {
 
 .prose h4 {
   margin: 2.667em 0 0;
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mut);
+}
+
+/* h5 — the h4 label, tighter above. Used for variant meta lines under a
+   variant's intro, so they read as a diff to the info brow. */
+.prose h5 {
+  margin: 1.667em 0 0;
   font-family: var(--mono);
   font-size: 0.75rem;
   font-weight: 500;
@@ -1569,6 +1582,11 @@ summary:focus-visible {
     margin: 1.6em 0 0;
   }
 
+  html[data-print-mode='compact'] .prose h5,
+  html[data-print-mode='two-column'] .prose h5 {
+    margin: 1em 0 0;
+  }
+
   html[data-print-mode='compact'] .prose p,
   html[data-print-mode='two-column'] .prose p {
     margin-top: 0.6em;
@@ -1615,7 +1633,8 @@ summary:focus-visible {
 
   html[data-print-mode='two-column'] .prose h2,
   html[data-print-mode='two-column'] .prose h3,
-  html[data-print-mode='two-column'] .prose h4 {
+  html[data-print-mode='two-column'] .prose h4,
+  html[data-print-mode='two-column'] .prose h5 {
     break-after: avoid;
     break-inside: avoid;
   }

@@ -90,15 +90,15 @@ When you can no longer play any dominoes to your layout, score as follows:
 
 More players... more fun.
 
-#### double nine set or two double six sets mixed together, 2-4 players, 20 minutes
+##### double nine set or two double six sets mixed together, 2-4 players, 20 minutes
 
 - Use a double nine set or two double six sets mixed together to increase player count.
 
-### Easy Scoring 
+### Easy Scoring
 
-Same game... easier scoring. 
+Same game... easier scoring.
 
-#### ages 6+
+##### ages 6+
 
 - Score your 3 biggest sets.
 - Don't worry about your negative points.
@@ -110,5 +110,5 @@ Same game... easier scoring.
    <li>An already-played domino in your 5x5. or</li>
    <li>1 of the 4 sides of the Town Center (they are Wild).</li>
    </ol>
-   
+
 **Orthogonal** — Edge to edge, not diagonal. (orth. adj. = orthogonally adjacent)

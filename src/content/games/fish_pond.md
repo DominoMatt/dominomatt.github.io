@@ -56,11 +56,11 @@ Most points wins. Tie goes to the player with the fewest total fish.
 
 ## Variants
 
-### Fisher's  Co-op
+### Fisher's Co-op
 
 Can 2 or 3 players manage to collect all 6 trophies?
 
-#### Cooperative Mode
+##### Cooperative Mode
 
 - Player's cooperate/collaborate to ensure that they and their fellow fishers collect all trophies.
 - Is it harder to collect all trophies in 2 or 3 player game?
