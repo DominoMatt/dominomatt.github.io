@@ -8,7 +8,7 @@ published: false
 
 ## What's here
 
-Every game on the site is free to play (playtest), and share. Generally, the games require generic and common components (mainly dominoes) and any additional components that are necessary are included as downloads.
+Original domino-based games to play (playtest), and share. Generally, the games require generic and common components (mainly dominoes) and any additional components that are necessary are included as downloads.
 
 ## A work in progress...
 

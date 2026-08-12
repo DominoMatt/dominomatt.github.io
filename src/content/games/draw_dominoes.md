@@ -34,7 +34,7 @@ attributions:
 
 ## Gameplay
 
--In most basic games the Heaviest double in all player's hands is set to start the round. If no doubles: <ol type="a"> <li>All tiles are shuffled and re-dealt; or</li> <li>Players take turns drawing one tile at a time until a double is found.</li>  
+-In most basic games the Heaviest double in all player's hands is set to start the round. If no doubles: <ol type="a"> <li>All tiles are shuffled and re-dealt; or</li> <li>Players take turns drawing one tile at a time until a double is found.</li>
 </ol>
 
 #### On your turn

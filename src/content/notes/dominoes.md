@@ -3,7 +3,7 @@ title: What Are Dominoes?
 date: 2026-07-09
 accent: "#8f3327"
 dek: "Dominoes — also called tiles, bones, rocks, stones, men, or cards — are generic gaming pieces that have been around for 400+ years."
-games: [basic_dominoes]
+games: [draw_dominoes]
 ---
 
 - A domino is typically twice as long as it is wide and is split into two ends by a center line.
