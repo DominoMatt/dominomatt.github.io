@@ -1050,14 +1050,24 @@ a {
 }
 
 .prose blockquote {
+  position: relative;
   margin: 1.1em 0 0;
   padding: 0.1em 0 0.1em 1.1em;
-  border-left: 3px solid var(--accent);
   max-width: var(--measure);
   font-style: italic;
   font-size: 1.125rem;
   line-height: 1.66;
   color: var(--ink);
+}
+
+.prose blockquote::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0.7em;
+  width: 1.5px;
+  background: var(--accent);
 }
 
 .prose blockquote p {
@@ -1581,6 +1591,11 @@ summary:focus-visible {
   html[data-print-mode='compact'] .prose h3,
   html[data-print-mode='two-column'] .prose h3 {
     margin: 0.9em 0 0;
+  }
+
+  html[data-print-mode='compact'] .prose h3::before,
+  html[data-print-mode='two-column'] .prose h3::before {
+    width: 1px;
   }
 
   html[data-print-mode='compact'] .prose h2 + h3,
