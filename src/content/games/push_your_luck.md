@@ -10,10 +10,10 @@ ink: "#dde4d8"
 motif: circle
 art: dice_set.svg
 description: "Match dice values to the ends of your Objectives... once an Objective has all it's ends matched it can be Completed."
-mechanics: [Push Your Luck, Matching, Roll and Keep]
+mechanics: [Push Your Luck, Matching, Roll and Keep, Solo]
 license: CC BY-NC
 contents: Rules Sheet
-requires: 4x 6-sided dice and 20 chips/markers; or a ton of dice to both roll and mark with (best)
+requires: 4x 6-sided dice & 20 markers; or a ton of dice to both roll and mark with, Double 6 set
 published: true
 ---
 

@@ -930,7 +930,7 @@ a {
 .prose h3::before {
   content: '';
   display: inline-block;
-  width: 1px;
+  width: 1.5px;
   height: 0.85em;
   margin-right: 0.1em;
   background: var(--accent);
