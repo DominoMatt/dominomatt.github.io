@@ -83,4 +83,4 @@ A hand is complete when a player goes out/sheds their hand (has 0 dominoes in ha
 
 ## Related Reading
 
-- [Dominoes As Card](https://dominomatt.github.io/notes/layout_games/)
+- [Dominoes As Card](https://dominomatt.github.io/notes/dominoes_as_cards/)
