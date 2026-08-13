@@ -39,7 +39,7 @@ You have a hand of 6 (5 in 3 player) to hold your fish, dishes, and/or prepared 
 
 #### On your turn
 
-- Take 2 actions of your choice (Catch a fish, Draft a dish, Cook a fish dish, or Serve a Fish on a Dish).
+- Take 2 actions of your choice (Catch a fish, Draft a dish, and/or Cook and Serve a Fish on a Dish).
 
 ### Catch a fish (like in Fish Pond)
 
@@ -56,19 +56,20 @@ If you also want to Catch a fish with your 2nd action, you may roll the second d
 - Add the remaining 2 dishes into a faceup discard pile.
 - If the deck is exhausted, shuffle the discard pile into a new Dish deck.
 
-### Cook a fish dish
+### Cook and Serve a Fish on a Dish
 
-- It takes two fish (dominoes) and one dish (card) to prepare and cook a fish dish.
-- Place the 2 fish on top of the dish.
-- Your freshly cooked Fish on a Dish takes up 1 space in your hand instead of 3.
+1. Cook
 
-### Serve a Fish on a Dish
+  - It takes two fish (dominoes) and one dish (card) to prepare and cook a fish dish.
+  - Place the 2 fish on top of the dish.
 
-- Serve a fish dish to one of your customers.
-- Put the served customer out face-up, so it can be seen which patrons have already eaten, while also maintaining ownership for scoring.
-- Their meal is splayed face-up atop them.
+2. Serve
 
-When one customer is served, draw another from the draw pile.'
+  - Serve a fish dish to one of your customers.
+  - Put the served customer out face-up, so it can be seen which patrons have already eaten, while also maintaining ownership for scoring.
+  - Their meal is splayed face-up atop them.
+
+3. When one customer is served, draw another from the draw pile.'
 
   - However, a player can't draw another if they have 6 total customers between both their 'line' and those they've already served in a 2 player game; or 4 total customers in 3 player.
 
