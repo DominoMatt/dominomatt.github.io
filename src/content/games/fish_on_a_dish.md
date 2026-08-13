@@ -2,7 +2,7 @@
 title: Fish on a Dish
 order: 8
 category: Actions-based
-players: "2-3"
+players: 2-3 players
 age: ages 8+
 time: 20 min
 accent: "#d9b44a"
@@ -24,6 +24,7 @@ relatedGames: [fish_pond]
 ---
 
 ## Set-up
+
 - Fish Pond set-up:
   1. Turn all 28 dominoes face-up, flip the tiles w/ blank ends face-down... shuffling the blanks.
   2. Then put all the tiles (both face-up and down) into the 'Pond'.
@@ -60,18 +61,18 @@ If you also want to Catch a fish with your 2nd action, you may roll the second d
 
 1. Cook
 
-    - It takes two fish (dominoes) and one dish (card) to prepare and cook a fish dish.
-    - Place the 2 fish on top of the dish.
+   - It takes two fish (dominoes) and one dish (card) to prepare and cook a fish dish.
+   - Place the 2 fish on top of the dish.
 
 2. Serve
 
-    - Serve a fish dish to one of your customers.
-    - Put the served customer out face-up, so it can be seen which patrons have already eaten, while also maintaining ownership for scoring.
-    - Their meal is splayed face-up atop them.
+   - Serve a fish dish to one of your customers.
+   - Put the served customer out face-up, so it can be seen which patrons have already eaten, while also maintaining ownership for scoring.
+   - Their meal is splayed face-up atop them.
 
 3. When one customer is served, draw another from the draw pile.'
 
-    - However, a player can't draw another if they have 6 total customers between both their 'line' and those they've already served in a 2 player game; or 4 total customers in 3 player.
+   - However, a player can't draw another if they have 6 total customers between both their 'line' and those they've already served in a 2 player game; or 4 total customers in 3 player.
 
 ## End game
 

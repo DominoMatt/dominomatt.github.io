@@ -2,7 +2,7 @@
 title: Domino Duel
 order: 1
 category: Dominoes as Cards
-players: "2 players"
+players: 2 players
 age: ages 9+
 time: 20 min
 accent: "#a06a9f"

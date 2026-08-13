@@ -3,7 +3,7 @@ title: Dungeonominoes (Basic)
 boxArtTitle: Dungeon-ominoes
 order: 10
 category: Domino Variant
-players: "2-4"
+players: 2-4 players 
 age: ages 7+
 time: 15 min
 accent: "#757575"
