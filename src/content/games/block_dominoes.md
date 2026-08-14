@@ -50,7 +50,7 @@ In most basic games the Heaviest double in all player's hands is set to start th
 
 ## Rounds End
 
-- If a player sheds their hand on your turn end the round.
+- If a player sheds their hand on their turn end the round.
 - If the layout becomes blocked, no players can make a play.
 
 ## Scoring
