@@ -1,6 +1,6 @@
 ---
-title: Draw Dominoes
-order: 6
+title: Block Dominoes
+order: 11
 category: Domino Variant
 players: 2-4 players
 age: ages 4+
@@ -30,9 +30,9 @@ attributions:
 
   | Players | # of dominoes |
   | ------- | ------------- |
-  | 2       | 9 tiles       |
-  | 3       | 7 tiles       |
-  | 4       | 5 tiles       |
+  | 2       | 11 tiles      |
+  | 3       | 9 tiles       |
+  | 4       | 7 tiles       |
 
 ## Gameplay
 
@@ -46,25 +46,12 @@ In most basic games the Heaviest double in all player's hands is set to start th
 #### On your turn
 
 1. Play 1 of your dominoes to an open end of the line layout (via [Equal End Matching](#glossary)).
-2. Draw if you can't add a tile to the layout.
-
-- If you shed your hand on your turn end the round.
-
-### Draw
-
-If you can't make a play... draw.
-
-- Choose a draw mode at the beginning of the round.
-    <ol type="a">
-       <li>Draw tiles from the boneyard until you can make a play.</li>
-       <li>Draw a single tile and then either make a play or pass (I like this one).</li>  
-    </ol>
+2. If you can't make a play to the layout... pass.
 
 ## Rounds End
 
 - If a player sheds their hand on your turn end the round.
-- If the layout becomes blocked, this should be determined before all tiles have been drawn needlessly.
-  > For instance, if both layout ends are 5s and all 7 tiles with 5s have already been set... the game is blocked.
+- If the layout becomes blocked, no players can make a play.
 
 ## Scoring
 
