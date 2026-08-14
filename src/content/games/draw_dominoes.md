@@ -62,7 +62,7 @@ If you can't make a play... draw.
 
 ## Rounds End
 
-- If a player sheds their hand on your turn end the round.
+- If a player sheds their hand on their turn end the round.
 - If the layout becomes blocked, this should be determined before all tiles have been drawn needlessly.
   > For instance, if both layout ends are 5s and all 7 tiles with 5s have already been set... the game is blocked.
 
