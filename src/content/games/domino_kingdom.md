@@ -57,7 +57,7 @@ If there is no face-up domino available for option A, flip one up from the boney
 
 Play your domino to the 5x5 layout using [Equal End Matching](#glossary). Town center edges are Wild.
 
-- If you cannot make a match, you may play the 'known' one; if you still can't, place the domino face-down somewhere in your 5x5 layout.
+- If you cannot possibly play the 'unknown', you may play the 'known' one; if you still can't, place the unknown domino face-down somewhere in your 5x5 layout.
 
 ## Scoring
 
