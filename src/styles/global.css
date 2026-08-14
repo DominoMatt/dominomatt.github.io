@@ -1491,6 +1491,29 @@ summary:focus-visible {
     content-visibility: visible !important;
     block-size: auto !important;
   }
+
+  /* the blockquote accent bar is drawn top:0 → bottom:0 of the quote box,
+     which includes the box's 0.1em top/bottom padding — in print that
+     makes the bar stick ~4px above the text. Tuck the top in so the bar
+     aligns with the first line; the bottom stays where it is. */
+  .prose blockquote::before {
+    top: 10px;
+  }
+
+  .prose blockquote {
+    margin-top: 0.25em;
+  }
+
+  /* give the front-matter title block a top margin matching the side
+     padding (28px in compact/two-column print) — the page's own margin
+     (set in the browser's print settings) sits outside this. */
+  .wrap {
+    padding-top: 28px;
+  }
+
+  .titleblock {
+    margin-top: 0;
+  }
 }
 
 /* ---- print: compact + two-column modes -------------------------
@@ -1513,12 +1536,12 @@ summary:focus-visible {
 
   html[data-print-mode='compact'] .wrap,
   html[data-print-mode='two-column'] .wrap {
-    padding: 20px 28px 32px;
+    padding: 28px 28px 32px;
   }
 
   html[data-print-mode='compact'] .titleblock,
   html[data-print-mode='two-column'] .titleblock {
-    margin-top: 16px;
+    margin-top: 0;
   }
 
   html[data-print-mode='compact'] .titleblock-head,

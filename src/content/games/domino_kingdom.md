@@ -15,14 +15,14 @@ license: CC BY-NC
 contents: Rules Sheet, Downloads, 2 Variants
 requires: Double Six Dominoes, Town Center Marker (or stand-in)
 downloads:
-   - title: 5x5 grid (large)
+   - title: 5x5 grid (large- 1in.)
      file: domino kingdom large.pdf
      description: "Print and Play"
-     spec: PDF · LETTER · B & W
-   - title: 5x5 grid (small)
+     spec: PDF · LETTER · Black & White
+   - title: 5x5 grid (small- 3/4in.)
      file: domino kingdom small.pdf
      description: "Print and Play"
-     spec: PDF · LETTER · B & W
+     spec: PDF · LETTER · Black & White
    - title: Town Center
      file: stl/town_center.stl
      description: "Town Center"
@@ -36,7 +36,7 @@ downloads:
 
 ## Gameplay
 
-Draw and play dominoes to tile your 5x5 grid, creating the 3 largest terrains/sets possible while minimizing single (unmatched) ends in your layout.
+Tile your 5x5 grid, creating the 3 largest terrains/sets possible while minimizing single (unmatched) ends in your layout.
 
 #### On your turn
 
@@ -46,18 +46,18 @@ Draw and play dominoes to tile your 5x5 grid, creating the 3 largest terrains/se
 
 ### Draw
 
-If there is no face-up domino available for option A, flip one up from the boneyard first. Draw a domino by doing A or B below.
+If there is no face-up domino available for option A, flip one up from the boneyard first, then:
 
 <ol type="a">
-<li>Draw the known domino that is face-up.</li>
-<li>Draw an unknown domino from the boneyard. (You must now play it)</li>
+<li>Draw the *known* domino that is face-up. OR</li>
+<li>Draw an *unknown* domino from the boneyard. (You must play this 1 now)</li>
 </ol>
 
 ### Play
 
 Play your domino to the 5x5 layout using [Equal End Matching](#glossary). Town center edges are Wild.
 
-- If you cannot make a match, you must place the domino face-down somewhere in your 5x5 layout.
+- If you cannot make a match, you may play the 'known' one; if you still can't, place the domino face-down somewhere in your 5x5 layout.
 
 ## Scoring
 
@@ -88,20 +88,23 @@ When you can no longer play any dominoes to your layout, score as follows:
 
 ### 3-4 player
 
-More players... more fun.
-
 ##### double nine set or two double six sets mixed together, 2-4 players, 20 minutes
 
 - Use a double nine set or two double six sets mixed together to increase player count.
 
 ### Easy Scoring
 
-Same game... easier scoring.
-
 ##### ages 6+
 
-- Score your 3 biggest sets.
-- Don't worry about your negative points.
+- Score your 3 biggest sets. Don't worry about your negative points.
+
+### Low Score Wins
+
+##### ages 8+
+
+- Score 1 pnt for every non-matched end in your layout.
+- Single ends next to the Town Center are matched.
+- Play multiple games, totaling pnts. per game; play until X is reached.
 
 ## Glossary
 
