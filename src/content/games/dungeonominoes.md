@@ -17,7 +17,7 @@ contents: Rules Sheet · 1-page basic Rooms
 requires: Double 6 dominoes · Rooms (basic) cards
 published: true
 downloads:
-   - title: Card Sheet
+   - title: Rooms (basic) cards
      file: cards - basic rooms.pdf
      description: "Print and Play"
      spec: PDF · LETTER · COLOR
@@ -43,7 +43,7 @@ attributions:
 
 1. Players take turns settings one domino from hand to an open end of the layout on their turn.
    - Set tiles according to the Layout and Rooms rules below.
-2. If you don't have a play... Draw 1 and play or pass. (This isn't true until the 1st Room is set to the layout)
+2. If you don't have a play... **Draw 1** and play or pass. (This isn't true until the 1st Room is set to the layout)
 3. When a player sheds their hand (goes out) or the game is blocked, the round is done.
 
 - Certain branches of the layout may need to be re-adjusted during play, to account for table space and the layout doubling back on itself.
@@ -72,4 +72,4 @@ The layout starts as an arm layout and becomes more tree-like during play.
 - A random basic Room gets placed under the double; it may allow the layout to branch.
 - Eventually, through play, the layout becomes tree-like.
 - However, with few doubles and randomness in drawn rooms, the layout may never advance far beyond an arm layout by the end of the round.
-- After the first Room is placed, the draw mode becomes draw 1.
+- After the first Room is placed, the draw mode becomes 'draw 1'.

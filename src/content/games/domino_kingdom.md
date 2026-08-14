@@ -49,8 +49,8 @@ Tile your 5x5 grid, creating the 3 largest terrains/sets possible while minimizi
 If there is no face-up domino available for option A, flip one up from the boneyard first, then:
 
 <ol type="a">
-<li>Draw the *known* domino that is face-up. OR</li>
-<li>Draw an *unknown* domino from the boneyard. (You must play this 1 now)</li>
+<li>Draw the <i>known</i> domino that is face-up. OR</li>
+<li>Draw an <i>unknown</i> domino from the boneyard. (You must play this 1 now)</li>
 </ol>
 
 ### Play
