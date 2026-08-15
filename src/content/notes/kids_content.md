@@ -8,7 +8,7 @@ published: true
 ---
 
 - This is merely an idea that is **Under Construction**... there is no content here yet.
-- This is a positive/good direction for value-added content creation.
+- This is a positive/good direction for content creation.
 
 ## Kid's Content
 
