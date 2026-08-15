@@ -2,12 +2,12 @@
 title: Kid's Content
 date: 2026-08-11
 accent: "#8a5a44"
-dek: "Kid friendly domino games and value-added content for younger players."
+dek: "Kid-friendly domino-based games and value-added content for younger players."
 games: [fish_pond]
 published: true
 ---
 
-- This is merely an idea that is Under Construction... there is no content here yet.
+- This is merely an idea that is **Under Construction**... there is no content here yet.
 - This is a positive/good direction for value-added content creation.
 
 ## Kid's Content
