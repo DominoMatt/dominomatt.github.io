@@ -3,7 +3,7 @@ title: Cross Dominoes
 order: 12
 category: Domino Variant
 players: 2-5 players
-age: ages 4+
+age: ages 5+
 time: 5-15 mins
 accent: "#3f7d74"
 ink: "#dde4d8"
@@ -75,4 +75,5 @@ If you can't make a play... draw.
 Equal-End Matching:
 
 - At least 1 end of a domino being played must match an open end of another domino that is already been played/set in the layout.
-- The matching ends are connected together end-to-end and that end is closed and a new open end in the layout is now available. A basic line layout has 2 open ends.
+- The matching ends are connected together end-to-end and that end is closed and a new open end in the layout is now available.
+- A cross layout has 4 open ends.
