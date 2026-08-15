@@ -1,10 +1,10 @@
 ---
 title: Kid's Content
-date: 2026-08-15
+date: 2026-08-11
 accent: "#8a5a44"
-dek: "Kid-friendly domino games and value-added content for younger players."
+dek: "Kid friendly domino games and value-added content for younger players."
 games: [fish_pond]
-published: false
+published: true
 ---
 
 - This is merely an idea that is Under Construction... there is no content here yet.
@@ -37,3 +37,10 @@ Under Construction
 
 - Trophies for Fish Pond.
 - Fish Pond rules that are readable by young players.
+
+## Get Involved
+
+This is my active goal and intent... to develop the Fishing Collection.
+
+- Play Fish Pond.
+- Collaborate in developing the Fishing Collection.
