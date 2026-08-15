@@ -2,7 +2,7 @@
 title: Cross Dominoes
 order: 12
 category: Domino Variant
-players: 2-4 players
+players: 2-5 players
 age: ages 4+
 time: 5-15 mins
 accent: "#3f7d74"
@@ -25,7 +25,7 @@ attributions:
 
 ## Setup
 
-- Shuffle all 28 dominoes face-down and set them aside as the boneyard.
+- Shuffle all the dominoes in the set face-down and set them aside as the boneyard.
 - Player draw hands according to player count.
 
   | Players | double 6 | double 9 |
