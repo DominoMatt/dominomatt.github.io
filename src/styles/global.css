@@ -919,23 +919,24 @@ a {
 }
 
 .prose h3 {
+  position: relative;
   margin: 1.545em 0 0;
   font-family: var(--serif-display);
   font-size: 1.55rem;
   line-height: 1.2;
   font-weight: 500;
-
 }
 
+/* horizontal accent line tucked under the first letter */
 .prose h3::before {
   content: '';
-  display: inline-block;
-  width: 1.5px;
-  height: 0.85em;
-  margin-right: 0.1em;
+  position: absolute;
+  left: 0;
+  bottom: -0.025em;
+  width: 1ch;
+  height: 1.25px;
   background: var(--accent);
   border-radius: 1px;
-  vertical-align: -0.0825em;
 }
 
 .prose h2 + h3 {
@@ -1618,7 +1619,8 @@ summary:focus-visible {
 
   html[data-print-mode='compact'] .prose h3::before,
   html[data-print-mode='two-column'] .prose h3::before {
-    width: 1px;
+    height: 1px;
+    bottom: 0.1em;
   }
 
   html[data-print-mode='compact'] .prose h2 + h3,
