@@ -7,7 +7,7 @@ time: 20 min
 accent: "#98683a"
 ink: "#dde4d8"
 art: sign.svg
-description: "Race along the road from Ur, laying dominoes to chart your path. (Under Construction!)"
+description: "Race along the Road from Ur, laying dominoes to chart your path. (Under Construction)"
 mechanics: [Tile Placement, Roll and Move, Co-op]
 license: CC BY-NC
 contents: Rules Sheet
@@ -18,7 +18,7 @@ requires: Double Six Dominoes, pawns, dice
 
 ### Block Dominoes: Laying the way
 
-Phase 1: A [block](https://dominomatt.github.io/notes/block_dominoes/) domino game
+Phase 1: A [block](https://dominomatt.github.io/rules/block_dominoes/) domino game
 
 - All dominoes left in player's hand when the round is done are carried forward into Phase 2.
 
@@ -32,7 +32,7 @@ Phase 1: A [block](https://dominomatt.github.io/notes/block_dominoes/) domino ga
 
 Phase 2: On your turn... Roll 2d6 and move your pawns twice, one for each dice.
 
-- Each domino is a space for the roll and move phase .
+- Each domino is 1 space for the roll and move phase .
 - Each domino has 2 ends. One pawn can sit on each end, thus 2 pawns may share the same domino (space).
 
 | Players | Pawns |
@@ -62,7 +62,19 @@ Phase 2: On your turn... Roll 2d6 and move your pawns twice, one for each dice.
 
 - When you move off of a domino and you are the last pawn on it (last pawn off)... take that tile (unless it's a double) and the layout is pushed together and shortened.
 
+## Fatigue
+
+Last pawn leaving a domino takes that tile (unless it's a double) and the layout is pushed together.
+
+- Players keep the tile aside for scoring purposes, along with any dominoes left in hand after Phase 1.
+
 ### Doubles ae Safe
 
 - Doubles are considered 'safe' and were played 90 degrees to the layout in phase 1.
 - Doubles can never be removed from the layout , last pawn off a double leaves it in place ('a safe space').
+
+## Scoring
+
+- Get 1 point for every fatigue (domino) taken during the Roll and Move.
+- Get 1 point for every dominoes left in hand after Phase 1 ended.
+- Low score wins.
