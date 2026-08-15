@@ -1,6 +1,6 @@
 ---
-title: Block Dominoes
-order: 11
+title: Cross Dominoes
+order: 12
 category: Domino Variant
 players: 2-4 players
 age: ages 4+
@@ -9,29 +9,30 @@ accent: "#3f7d74"
 ink: "#dde4d8"
 motif: pips
 art: 1_2_domino.svg
-description: "The classic end to end matching game, shed your hand to the layout."
-mechanics: [Line layout, Equal End Matching]
+description: "A classic Cross layout — shed your hand to the layout."
+mechanics: [Cross layout, Equal End Matching]
 license: traditional
 contents: Rules Sheet
-requires: Double Six Dominoes
+requires: Double Six Dominoes or Double Nine Dominoes
 attributions:
   - Box art icon by lawnchairlauncher, Apache License
 ---
 
-- Basic Dominoes is a shedding game that forms a line layout.
-- In Block Dominoes, you merely pass on your turn if you can't play.
-- Doubles can be set 90 degrees to layout for 'style', they are not spinners and don't branch the layout.
+- Cross dominoes can be played with either a double 6 or 9 set, depending on player count.
+- Cross Dominoes is a shedding game that forms a layout with 4 open ends.
+- In Cross Dominoes, you make the first double set to the layout a four way spinner.
+- The doubles set beyond the 1st are not spinners and don't branch the layout.
 
 ## Setup
 
 - Shuffle all 28 dominoes face-down and set them aside as the boneyard.
 - Player draw hands according to player count.
 
-  | Players | # of dominoes |
-  | ------- | ------------- |
-  | 2       | 11 tiles      |
-  | 3       | 9 tiles       |
-  | 4       | 7 tiles       |
+  | Players | double 6 | double 9 |
+  | ------- | -------- | -------- |
+  | 2       | 9 tiles  | 11 tiles |
+  | 3       | 7 tiles  | 9 tiles  |
+  | 4+      | -        | 7 tiles  |
 
 ## Gameplay
 
@@ -45,17 +46,29 @@ In most basic games the Heaviest double in all player's hands is set to start th
 #### On your turn
 
 1. Play 1 of your dominoes to an open end of the line layout (via [Equal End Matching](#glossary)).
-2. If you can't make a play to the layout... pass.
+2. Draw if you can't add a tile to the layout.
+
+- If you shed your hand on your turn end the round.
+
+### Draw
+
+If you can't make a play... draw.
+
+- Choose a draw mode at the beginning of the round.
+    <ol type="a">
+       <li>Draw tiles from the boneyard until you can make a play.</li>
+       <li>Draw a single tile and then either make a play or pass (I like this one).</li>  
+    </ol>
 
 ## Rounds End
 
 - If a player sheds their hand on their turn end the round.
-- If the layout becomes blocked, no players can make a play.
+- If the layout becomes blocked, this should be determined before all tiles have been drawn needlessly.
 
 ## Scoring
 
 - Total the weights of all the dominoes left in the other player's hands when the round ends... each player receiving points for all other players tiles left in hand (high score being best). (Weight: sum of both ends)
-- Alternatively, total the weight in the your hand when the round ends... each player takes points for their tiles left in hand (low score being best).
+- Alternatively, total the weight in the your hand when the round ends... each player gets points for their tiles left in hand (low score being best).
 
 ## Glossary
 

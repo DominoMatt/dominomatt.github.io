@@ -9,7 +9,7 @@ accent: "#3f7d74"
 ink: "#dde4d8"
 motif: pips
 art: 1_2_domino.svg
-description: "The classic end to end matching game — shed your hand to the layout."
+description: "The classic end to end matching game, shed your hand to the layout."
 mechanics: [Line layout, Equal End Matching]
 license: traditional
 contents: Rules Sheet
@@ -18,9 +18,8 @@ attributions:
   - Box art icon by lawnchairlauncher, Apache License
 ---
 
-- Basic Dominoes is the most simple version of dominoes, it is played with a double six set.
-- Basic Dominoes is a blocking game (a shedding game) that uses equal end matching to form the line of play.
-- A line layout has two open ends, one or both maybe become blocked in play.
+- Basic Dominoes is a shedding game that forms a line layout.
+- In Draw Dominoes, you draw 1 or more tiles if you can't make a play.
 - Doubles can be set 90 degrees to layout for 'style', they are not spinners and don't branch the layout.
 
 ## Setup
@@ -69,7 +68,7 @@ If you can't make a play... draw.
 ## Scoring
 
 - Total the weights of all the dominoes left in the other player's hands when the round ends... each player receiving points for all other players tiles left in hand (high score being best). (Weight: sum of both ends)
-- Alternatively, total the weight in the your hand when the round ends... each player points for their tiles left in hand (low score being best).
+- Alternatively, total the weight in the your hand when the round ends... each player gets points for their tiles left in hand (low score being best).
 
 ## Glossary
 
