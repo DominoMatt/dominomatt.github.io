@@ -1,30 +1,39 @@
 ---
 title: Kid's Content
-date: 2026-08-11
+date: 2026-08-15
 accent: "#8a5a44"
-dek: "Kid-friendly domino games and content for younger players."
+dek: "Kid-friendly domino games and value-added content for younger players."
 games: [fish_pond]
 published: false
 ---
 
-## Color & Play
+- This is merely an idea that is Under Construction... there is no content here yet.
+- This is a positive/good direction for value-added content creation.
 
--Color sheets that can then be used as game components.
+## Kid's Content
 
-## Read & Play
+- More than just games that are meant to be played.
+- Content designed to give additional relevance to simple games.
 
-- A simplified ruleset that leans heavily on it's art to help convey it's meaning.
+### Color & Play
+
+Coloring sheets that can then be used as game components.
+
+1. Color
+2. Cut
+3. Play
+
+### Read & Play
+
+Art and prior plays let context clues make reading bigger words possible.
+
 - Target age would be 1st grade graduates.
 - Could take the form of a 'mini-zine'.
 - Could be comic adjacent??
 
 ## The Fishing Collection
 
-### Color & Play
+Under Construction
 
--Trophies for Fish Pond.
-
-### Read & Play
-
-- A set of rules that is readable by young players, specifically after having played the game.
-- Heavy artwork to illustrate the simplified rules.
+- Trophies for Fish Pond.
+- Fish Pond rules that are readable by young players.

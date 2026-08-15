@@ -10,7 +10,7 @@ ink: "#dde4d8"
 motif: circle
 art: domino_kingdom_town.svg
 description: "Tile your 5x5 grid, creating the 3 largest terrains/sets possible."
-mechanics: [Set Building, Grid Layout, Equal End Matching]
+mechanics: [Set Building, Grid Layout, Equal End Matching, Solo]
 license: CC BY-NC
 contents: Rules Sheet, Downloads, 2 Variants
 requires: Double Six Dominoes, Town Center Marker (or stand-in)

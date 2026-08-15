@@ -16,4 +16,7 @@ Does 'printing' something make it print and play (PNP)?
 
 I think cards almost always fall under the category of print and play.
 
-Afterall, why is it you'd print a sheet of cards... to play with them. On the other hand I suppose they could fall in realm of trading cards.
+- Afterall, why is it you'd print a sheet of cards... to play with them.
+- On the other hand I suppose they could fall in realm of 'trading' cards.
+
+## Assembling 'Good' Quality PNP Cards
