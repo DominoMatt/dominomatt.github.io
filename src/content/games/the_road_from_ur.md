@@ -83,13 +83,15 @@ Last pawn leaving a domino takes that tile (unless it's a double) and the layout
 - Get 1 point for every dominoes left in hand after Phase 1 ended.
 - Low score wins.
 
+<div style="break-before: page; height: 0; overflow: hidden;">&nbsp;</div>
+
 ## Variants
 
 ### Cooperative Mode
 
-You and your traveling companions work together to move from one to the other.
+You and your traveling companions work together to transverse the layout.
 
-#### Co-op, Movement rules, Scoring
+##### Co-op, Movement rules, Scoring
 
 - The movement rules are changed... when you land on a space with both ends occupied by any players pawns:
 
