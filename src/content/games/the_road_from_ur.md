@@ -8,7 +8,7 @@ accent: "#98683a"
 ink: "#dde4d8"
 art: sign.svg
 description: "Race along the Road from Ur, laying dominoes to chart your path. (Under Construction)"
-mechanics: [Tile Placement, Roll and Move, Co-op]
+mechanics: [Tile Placement, Roll and Move]
 license: CC BY-NC
 contents: Rules Sheet
 requires: Double Six Dominoes, pawns, dice
@@ -43,6 +43,8 @@ Phase 2: On your turn... Roll 2d6 and move your pawns twice, one for each dice.
 
 ## Running the Road: Roll and Move
 
+The roll and move phase lasts until all players have successfully moved all their pawns from their start off the far end of the layout.
+
 - Can be played with opposed movement or same direction of movement.
 - The player with the most tiles left over from phase 1 chooses the which end they start from.
 
@@ -50,6 +52,7 @@ Phase 2: On your turn... Roll 2d6 and move your pawns twice, one for each dice.
 
 - Roll 2d6 and move twice.
 - You must move each of the dice values (not just their sum). If a 2 and 5 are rolled, you must move a pawn 2 spaces and a pawn 5 spaces, in either order.
+- Take turns with the other player/s until you personally have gotten all your pawns off the far end of the layout.
 
 ### Movement Rules:
 
@@ -78,3 +81,24 @@ Last pawn leaving a domino takes that tile (unless it's a double) and the layout
 - Get 1 point for every fatigue (domino) taken during the Roll and Move.
 - Get 1 point for every dominoes left in hand after Phase 1 ended.
 - Low score wins.
+
+## Variants
+
+### Cooperative Mode
+
+You and your traveling companions work together to move from one to the other.
+
+#### Co-op, Movement rules, Scoring
+
+- The movement rules are changed... when you land on a space with both ends occupied by any players pawns:
+
+  <ol type="a">
+    <li>Move either 1 space backward or forward.</li>
+        <ul> 
+        <li>If this cascades into another space with 2 occupied ends you must maintain the forward or backward direction.
+        </li> 
+        </ul>
+    <li>Go back to start or send another pawn back to start (if they are willing).</li>
+  </ol>
+
+- **Scoring** is still low score wins... in Co-op Mode all players must get across the finish under 5 fatigue apiece.
