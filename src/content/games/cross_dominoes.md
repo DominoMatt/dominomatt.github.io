@@ -18,7 +18,7 @@ attributions:
   - Box art icon by lawnchairlauncher, Apache License
 ---
 
-- Cross dominoes can be played with either a double 6 or 9 set, depending on player count.
+- Cross dominoes can be played with either a double 6 or 9 set, depending on player count (but is better w/ double 9s).
 - Cross Dominoes is a shedding game that forms a layout with 4 open ends.
 - In Cross Dominoes, you make the first double set to the layout a four way spinner.
 - The doubles set beyond the 1st are not spinners and don't branch the layout.
