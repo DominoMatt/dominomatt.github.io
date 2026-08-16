@@ -51,10 +51,11 @@ The roll and move phase lasts until all players have successfully moved all thei
 #### On Your Turn
 
 - Roll 2d6 and move twice.
-- You must move each of the dice values (not just their sum). If a 2 and 5 are rolled, you must move a pawn 2 spaces and a pawn 5 spaces, in either order.
 - Take turns with the other player/s until you personally have gotten all your pawns off the far end of the layout.
 
 ### Movement Rules:
+
+You must move each of the dice values (not just their sum). If a 2 and 5 are rolled, you must move a pawn 2 spaces and a pawn 5 spaces, in either order.
 
 - When you land on a space (domino) and there is an open end... land there.
 - When you land on a space (domino) and both ends are already taken:
@@ -71,7 +72,7 @@ Last pawn leaving a domino takes that tile (unless it's a double) and the layout
 
 - Players keep the tile aside for scoring purposes, along with any dominoes left in hand after Phase 1.
 
-### Doubles ae Safe
+### Doubles are Safe
 
 - Doubles are considered 'safe' and were played 90 degrees to the layout in phase 1.
 - Doubles can never be removed from the layout , last pawn off a double leaves it in place ('a safe space').
