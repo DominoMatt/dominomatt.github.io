@@ -44,7 +44,7 @@ export const site = {
     },
     notes: {
       title: 'The Boneyard',
-      lede: 'Articles/Notes on dominoes and a few other topics.',
+      lede: 'Articles and Notes on dominoes and a few other topics.',
     },
   },
 

@@ -14,12 +14,9 @@ Does 'printing' something make it print and play (PnP)?
 I think cards almost always fall under the category of print and play.
 
 - Print them.
+- Cut them out.
 - Assemble them.
 - Play them.
-
-## Assembling 'Good' Quality PnP Cards
-
-Print the asset, cut the cards out, assemble the finished Card.
 
 ### Print
 
@@ -41,7 +38,15 @@ There are many ways to cut out your print and play cards.
 
 I am offering most my PnP assets with an _EZ-cut_ variant designed to be easily cut out.
 
-### Assembly
+### Assemble
+
+See Assembling Quality PnP Cards below.
+
+### Play
+
+The final step... use your PnP Cards to play a game.
+
+## Assembling Quality PnP Cards
 
 This is the method that I have used to make a very decent quality of print and play card.
 
@@ -49,21 +54,21 @@ This is the method that I have used to make a very decent quality of print and p
 2. Backer card
 3. Print and play card
 
-#### Color backed card sleeves
+### Color backed card sleeves
 
 Using color/art backed sleeves is paramount to the quality and methodology of these print and play cards.
 
 - There are better and worse brands of card sleeves on the market.
 - Buying better quality sleeves leads to better quality print and play Cards.
 
-#### Backer card
+### Backer card
 
 Insert any card you have lying around the house into the sleeve.
 
 - This is a great way to utilize TCG bulk cards.
 - This card adds thickness and rigidity.
 
-#### Print and play card
+### Print and play card
 
 Finally, add your cut out print and play card.
 
