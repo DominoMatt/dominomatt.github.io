@@ -2,7 +2,7 @@
 title: Kid's Content
 date: 2026-08-11
 accent: "#8a5a44"
-dek: "Kid-friendly domino-based games and value-added content for younger players."
+dek: "Kid friendly domino-based games and value-added content for younger players."
 games: [fish_pond]
 published: true
 ---
