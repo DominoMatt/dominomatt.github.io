@@ -25,7 +25,7 @@ Coloring sheets that can then be used as game components.
 
 ### Read & Play
 
-Art and prior plays let context clues make reading bigger words possible.
+Art and prior plays makes reading larger words possible (context clues).
 
 - Target age would be 1st grade graduates.
 - Could take the form of a 'mini-zine'.
@@ -40,7 +40,7 @@ Under Construction
 
 ## Get Involved
 
-This is my active goal and intent... to develop the Fishing Collection.
+Developing the Fishing Collection is my active goal and intent.
 
 - Play Fish Pond.
 - Collaborate in developing the Fishing Collection.
