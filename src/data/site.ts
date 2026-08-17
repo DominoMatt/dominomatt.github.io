@@ -15,7 +15,7 @@ export const site = {
   // other page supplies its own (game/note description or dek). Also the
   // fallback og:description/twitter:description for the homepage.
   description:
-    'Free domino-based games for all ages, from classic domino layout variants to original titles....',
+    'Domino-based games for all ages, from classic domino layout variants to original titles. Play (playtest) original games... My games require generic and common components (mainly dominoes) and any additional components that are necessary are included as downloads.',
   interactCopy:
     "Everything here is free to play. If you've enjoyed a game or article, drop me a line.",
 
