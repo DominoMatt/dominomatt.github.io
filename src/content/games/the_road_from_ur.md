@@ -83,8 +83,6 @@ Last pawn leaving a domino takes that tile (unless it's a double) and the layout
 - Get 1 point for every dominoes left in hand after Phase 1 ended.
 - Low score wins.
 
-<div style="break-before: page; height: 0; overflow: hidden;">&nbsp;</div>
-
 ## Variants
 
 ### Cooperative Mode
@@ -105,3 +103,5 @@ You and your traveling companions work together to transverse the layout.
   </ol>
 
 - **Scoring** is still low score wins... in Co-op Mode all players must get across the finish under 5 fatigue apiece.
+
+<div style="break-before: column; height: 0; overflow: hidden;">&nbsp;</div>

@@ -1682,14 +1682,15 @@ summary:focus-visible {
    sits outside .prose and stays full-width above the columns. Headings
    get break-after/inside: avoid so a section title never lands alone at
    the bottom of a column; images/tables/blockquotes get break-inside:
-   avoid so they don't split across the column gap. Lists are left free
+   avoid-page so they don't split across the column gap. Lists are left free
    to break naturally — forcing every list to stay whole would leave
    large gaps at column bottoms for anything longer than a few items. */
 
 @media print {
   html[data-print-mode='two-column'] .prose {
-    column-count: 2;
+    column-width: 320px;
     column-gap: 28px;
+    overflow: clip;
   }
 
   html[data-print-mode='two-column'] .prose h2,
@@ -1704,6 +1705,6 @@ summary:focus-visible {
   html[data-print-mode='two-column'] .prose table,
   html[data-print-mode='two-column'] .prose blockquote,
   html[data-print-mode='two-column'] .prose pre {
-    break-inside: avoid;
+    break-inside: avoid-page;
   }
 }

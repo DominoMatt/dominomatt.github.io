@@ -29,6 +29,19 @@ content and `height: 0; overflow: hidden` keep it invisible on screen while
 giving the break something to attach to — an empty element is unreliable inside
 the two-column multicol container.
 
+Two break syntaxes are in use, chosen by print mode:
+
+- **`break-before: page`** — a hard page break. Works in the single-column
+  normal and compact modes.
+- **`break-before: column`** — a break to the next column. Equivalent to a page
+  break in the single-column modes, and the reliable choice in two-column mode:
+  Chrome does not honour `break-before: page` inside a multicol container, but
+  it does honour `break-before: column`.
+
+Use `break-before: page` when the section must start on a fresh page in every
+layout; `break-before: column` when it should start at the top of a fresh column
+in two-column mode.
+
 ## Consequences
 
 - The "no raw HTML" principle now has two documented exceptions: the

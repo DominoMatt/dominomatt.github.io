@@ -47,6 +47,8 @@ relatedGames: [fish_on_a_dish]
 - Some players get 1 more turn to have the same # as 1st player.
 - Before scoring, starting with the 1st player, players can collect Public Objective from any still available if they have a legal set to collect it. Continue in turn order until all players are done collecting.
 
+<div style="break-before: column; height: 0; overflow: hidden;">&nbsp;</div>
+
 ## Scoring
 
 Most points wins. Tie goes to the player with the fewest total fish.
