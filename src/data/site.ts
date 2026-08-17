@@ -40,7 +40,7 @@ export const site = {
     },
     games: {
       title: 'Games', // category name is appended to the browser <title> automatically, not to the H1
-      lede: "Something for everyone, from original titles to traditional variants... explore the domino as a gaming system."
+      lede: "Something for everyone, from original titles to traditional variants... explore the domino as an analog gaming system."
     },
     notes: {
       title: 'The Boneyard',
