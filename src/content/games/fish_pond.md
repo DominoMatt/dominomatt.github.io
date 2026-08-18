@@ -13,6 +13,11 @@ mechanics: [Matching, Fishing, Equal End Matching, Co-op]
 license: CC BY-NC
 contents: Rules Sheet, 1 variant
 requires: Double Six Dominoes, 1x d6 Dice (or 1 per player), 1(Ace)-6 from Playing Cards
+downloads:
+   - title: Trophies: Color and Play
+     file: fp_trophies.pdf
+     description: "Print and Play"
+     spec: PDF · LETTER · Black & White
 relatedGames: [fish_on_a_dish]
 ---
 
@@ -20,7 +25,7 @@ relatedGames: [fish_on_a_dish]
 
 - Turn all 28 dominoes face-up, flip the tiles w/ blank ends face-down... shuffling the blanks.
 - Then put all the tiles (both face-up and down) into the 'Pond'.
-- Place the 1(Ace)-6 (or homemade 1 thru 6) out in a row near the Fish Pond as Trophies.
+- Place the 1(Ace)-6 (or Color & Play PnP) out in a row near the Fish Pond as Trophies.
 - A 1st player is selected, so all players take the same # of turns.
 
 ## Gameplay
@@ -66,3 +71,13 @@ Can 2 or 3 players manage to collect all 6 trophies?
 
 - Player's cooperate/collaborate to ensure that they and their fellow fishers collect all trophies.
 - Is it harder to collect all trophies in 2 or 3 player game?
+
+### Majority Scoring
+
+Collect more doubles than the other players.
+
+##### Majority Scoring, Ages 6+
+
+- Count all your doubles, both atop Trophies and others caught.
+- Score 1 point for each player that you have more doubles than.
+- In two player if there is a tie... neither player gets any points, because players have more doubles than 0 players.
