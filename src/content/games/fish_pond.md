@@ -11,7 +11,7 @@ art: fish_pond_cover.svg
 description: "Catch Fish to collect Trophies before other players can."
 mechanics: [Matching, Fishing, Equal End Matching, Co-op]
 license: CC BY-NC
-contents: Rules Sheet, 1 variant
+contents: Rules Sheet, 1 Download, 2 variants
 requires: Double Six Dominoes, 1x d6 Dice (or 1 per player), 1(Ace)-6 from Playing Cards
 downloads:
    - title: Trophies: Color and Play
