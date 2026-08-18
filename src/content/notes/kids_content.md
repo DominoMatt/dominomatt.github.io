@@ -10,9 +10,9 @@ published: true
 - More than just games that are meant to be played.
 - Content designed to give additional relevance to simple games.
 
-## Under Development
+## Color/Read and Play: Under Development
 
-- This is an idea that is **Under Construction**... however there are some (1) assets here.
+- This is an idea that is **Under Construction**... however there are some (1) assets under this category.
 - This is a positive/good direction for content creation.
 
 ### Color & Play
@@ -32,16 +32,16 @@ Art and prior plays makes reading larger words possible (context clues).
 - Could take the form of a 'mini-zine'.
 - Could be comic adjacent??
 
+## Get Involved
+
+I'm currently developing the Fishing Collection as my active goal and intent.
+
+- Play Fish Pond.
+- Collaborate in developing the Fishing Collection.
+
 ## The Fishing Collection
 
 Under Development
 
 - [Trophies](/print/fp_trophies.pdf) for Fish Pond.
 - Fish Pond rules that are readable by young players.
-
-## Get Involved
-
-Developing the Fishing Collection is my active goal and intent.
-
-- Play Fish Pond.
-- Collaborate in developing the Fishing Collection.

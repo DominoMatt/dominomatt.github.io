@@ -9,7 +9,7 @@ accent: "#3f7d74"
 ink: "#dde4d8"
 motif: pips
 art: 1_2_domino.svg
-description: "A classic Cross layout — shed your hand to the layout."
+description: "A classic cross layout — shed your hand to one of it's 4 open ends."
 mechanics: [Cross layout, Equal End Matching]
 license: traditional
 contents: Rules Sheet
@@ -45,7 +45,7 @@ In most basic games the Heaviest double in all player's hands is set to start th
 
 #### On your turn
 
-1. Play 1 of your dominoes to an open end of the line layout (via [Equal End Matching](#glossary)).
+1. Play 1 of your dominoes to an open end of the cross layout (via [Equal End Matching](#glossary)).
 2. Draw if you can't add a tile to the layout.
 
 - If you shed your hand on your turn end the round.
@@ -62,7 +62,7 @@ If you can't make a play... draw.
 
 ## Rounds End
 
-- If a player sheds their hand on their turn end the round.
+- If a player sheds their hand on their turn... end the round.
 - If the layout becomes blocked, this should be determined before all tiles have been drawn needlessly.
 
 ## Scoring
