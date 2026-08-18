@@ -7,7 +7,7 @@ games: [fish_pond]
 published: true
 ---
 
-- This is merely an idea that is **Under Construction**... there is no content here yet.
+- This is an idea that is **Under Construction**... there is some content here.
 - This is a positive/good direction for content creation.
 
 ## Kid's Content
@@ -33,9 +33,9 @@ Art and prior plays makes reading larger words possible (context clues).
 
 ## The Fishing Collection
 
-Under Construction
+Under Development
 
-- Trophies for Fish Pond.
+- [Trophies](/print/fp_trophies.pdf) for Fish Pond.
 - Fish Pond rules that are readable by young players.
 
 ## Get Involved
