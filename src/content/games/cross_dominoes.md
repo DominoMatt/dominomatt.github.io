@@ -62,7 +62,9 @@ If you can't make a play... draw.
 
 ## Rounds End
 
-- If a player sheds their hand on their turn... end the round.
+End the round if:
+
+- If a player sheds their hand on their turn. OR
 - If the layout becomes blocked, this should be determined before all tiles have been drawn needlessly.
 
 ## Scoring
