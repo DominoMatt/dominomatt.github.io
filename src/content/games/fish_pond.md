@@ -13,12 +13,12 @@ mechanics: [Matching, Fishing, Equal End Matching, Co-op]
 license: CC BY-NC
 contents: Rules Sheet, 1 Download, 2 variants
 requires: Double Six Dominoes, 1x d6 Dice (or 1 per player), 1(Ace)-6 from Playing Cards
+relatedGames: [fish_on_a_dish]
 downloads:
-   - title: Trophies: Color and Play
+   - title: Trophies- Color and Play
      file: fp_trophies.pdf
      description: "Print and Play"
      spec: PDF · LETTER · Black & White
-relatedGames: [fish_on_a_dish]
 ---
 
 ## Set-up
