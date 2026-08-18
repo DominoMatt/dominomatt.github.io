@@ -7,7 +7,7 @@ games: [fish_pond]
 published: true
 ---
 
-- This is an idea that is **Under Construction**... there is some assets here.
+- This is an idea that is **Under Construction**... there are some assets here.
 - This is a positive/good direction for content creation.
 
 ## Kid's Content
