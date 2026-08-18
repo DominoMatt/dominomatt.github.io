@@ -10,7 +10,7 @@ ink: "#dde4d8"
 motif: pips
 art: 1_2_domino.svg
 description: "The classic end to end matching game, shed your hand to the layout."
-mechanics: [Line layout, Equal End Matching]
+mechanics: [Line layout, Equal End Matching, Shedding]
 license: traditional
 contents: Rules Sheet
 requires: Double Six Dominoes

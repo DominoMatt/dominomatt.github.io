@@ -10,7 +10,7 @@ ink: "#dde4d8"
 motif: pips
 art: 1_2_domino.svg
 description: "A classic cross layout — shed your hand to one of it's 4 open ends."
-mechanics: [Cross layout, Equal End Matching]
+mechanics: [Cross layout, Equal End Matching, Shedding]
 license: traditional
 contents: Rules Sheet
 requires: Double Six Dominoes or Double Nine Dominoes
