@@ -7,7 +7,7 @@ games: [fish_pond]
 published: true
 ---
 
-- This is an idea that is **Under Construction**... there is some content here.
+- This is an idea that is **Under Construction**... there is some assets here.
 - This is a positive/good direction for content creation.
 
 ## Kid's Content
@@ -19,9 +19,10 @@ published: true
 
 Coloring sheets that can then be used as game components.
 
-1. Color
-2. Cut
-3. Play
+1. Print
+2. Color
+3. Cut
+4. Play
 
 ### Read & Play
 
