@@ -7,13 +7,13 @@ games: [fish_pond]
 published: true
 ---
 
-- This is an idea that is **Under Construction**... there are some assets here.
-- This is a positive/good direction for content creation.
-
-## Kid's Content
-
 - More than just games that are meant to be played.
 - Content designed to give additional relevance to simple games.
+
+## Under Development
+
+- This is an idea that is **Under Construction**... however there are some (1) assets here.
+- This is a positive/good direction for content creation.
 
 ### Color & Play
 
