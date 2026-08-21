@@ -43,6 +43,6 @@ I'm currently developing the Fishing Collection as my active goal and intent.
 
 Under Development
 
-- [Trophies](/print/Fish Pond Trophies.pdf) for Fish Pond.
-- [Other Fish](/print/Other Fish.pdf) for better 3+ player rounds.
+- [Trophies](/print/fish_pond_trophies.pdf) for Fish Pond.
+- [Other Fish](/print/other_fish.pdf) for better 3+ player rounds.
 - Fish Pond rules that are readable by young players.

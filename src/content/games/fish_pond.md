@@ -16,11 +16,11 @@ requires: Double Six Dominoes, 1x d6 Dice (or 1 per player), 1(Ace)-6 from Playi
 relatedGames: [fish_on_a_dish]
 downloads:
    - title: Trophies- Color and Play
-     file: Fish Pond Trophies.pdf
+     file: fish_pond_trophies.pdf
      description: "Print and Play Trophies"
      spec: PDF · LETTER · Black & White
    - title: Other Fish- Color and Play
-     file: Other Fish.pdf
+     file: other_fish.pdf
      description: "Expansion for 3-4 players"
      spec: PDF · LETTER · Black & White
 ---
