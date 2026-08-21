@@ -8,14 +8,12 @@ time: 5-15 mins
 accent: "#3f7d74"
 ink: "#dde4d8"
 motif: pips
-art: 1_2_domino.svg
+art: domino_variants.svg
 description: "A classic cross layout — shed your hand to one of it's 4 open ends."
 mechanics: [Cross layout, Equal End Matching, Shedding]
 license: traditional
 contents: Rules Sheet
 requires: Double Six Dominoes or Double Nine Dominoes
-attributions:
-  - Box art icon by lawnchairlauncher, Apache License
 ---
 
 - Cross dominoes can be played with either a double 6 or 9 set, depending on player count (but is better w/ double 9s).

@@ -14,11 +14,11 @@ license: CC BY-NC
 contents: Rules Sheet
 requires: 'Double Six Dominoes, 2x d6 dice (minimum), 24 dishes & 12 customers (1(Ace)-6 & face-cards in all suits from playing cards)'
 # published: false
-# downloads:
-#   - title: Print & Play PDF
-#     file: fish_on_a_dish.pdf
-#     description: "A short description for the download."
-#     spec: PDF · A4 + LETTER · 6 PP
+downloads:
+   - title: Other Fish- Color and Play
+     file: Other Fish.pdf
+     description: "Expansion for 3 players"
+     spec: PDF · LETTER · Black & White
 # attributions: []
 relatedGames: [fish_pond]
 ---

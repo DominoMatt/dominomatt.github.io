@@ -8,14 +8,12 @@ time: 5-15 mins
 accent: "#3f7d74"
 ink: "#dde4d8"
 motif: pips
-art: 1_2_domino.svg
+art: domino_variants.svg
 description: "The classic end to end matching game, shed your hand to the layout."
 mechanics: [Line layout, Equal End Matching, Shedding]
 license: traditional
 contents: Rules Sheet
 requires: Double Six Dominoes
-attributions:
-  - Box art icon by lawnchairlauncher, Apache License
 ---
 
 - Basic Dominoes is a shedding game that forms a line layout.
