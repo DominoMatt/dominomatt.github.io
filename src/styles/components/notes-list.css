@@ -1,0 +1,52 @@
+/* ---- notes list (shared: index "latest 3" + notebook) ------- */
+
+.notes .note-row {
+  display: flex;
+  gap: 22px;
+  align-items: baseline;
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+  cursor: pointer;
+}
+
+.notes .note-row:first-child {
+  border-top: 0;
+}
+
+.notes--all .note-row {
+  border-top: 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.note-row:hover {
+  opacity: 0.72;
+}
+
+.note-main {
+  flex: 1;
+}
+
+.note-title {
+  display: block;
+  font-family: var(--serif-display);
+  font-size: 1.5rem;
+  line-height: 1.12;
+  letter-spacing: -0.005em;
+}
+
+.note-dek {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.875rem;
+  line-height: 1.45;
+  color: var(--mut);
+}
+
+.note-date {
+  flex-shrink: 0;
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.06em;
+  color: var(--faint);
+}
+

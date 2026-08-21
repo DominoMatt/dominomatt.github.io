@@ -1,0 +1,72 @@
+/* ---- site header (index only) ------------------------------- */
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.brand-mark {
+  font-family: var(--serif-display);
+  font-size: 4.25rem;
+  line-height: 0.66;
+  letter-spacing: -0.02em;
+}
+
+/* an SVG mark sizes to match the text mark's visual box; width follows the
+   file's own aspect ratio, overriding any width/height baked into the SVG */
+.brand-mark svg {
+  display: block;
+  height: 44px;
+  width: auto;
+}
+
+.brand-name {
+  font-family: var(--mono);
+  font-size: 0.8125rem;
+  letter-spacing: 0.34em;
+  white-space: nowrap;
+}
+
+.nav {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.1em;
+}
+
+.nav a {
+  color: var(--faint);
+}
+
+.nav a.active {
+  color: var(--ink);
+}
+
+.nav a:hover {
+  color: var(--ink);
+}
+
+.nav .sep {
+  color: var(--faint);
+}
+
+
+@media (max-width: 640px) {
+  /* title + nav together are wider than the viewport at this size, so
+     stack them — nav on top, brand below — instead of squeezing both
+     into one row. */
+  .site-header {
+    flex-direction: column-reverse;
+    align-items: stretch;
+    gap: 14px;
+  }
+}

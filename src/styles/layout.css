@@ -1,0 +1,39 @@
+/* ---- layout -------------------------------------------------- */
+
+.wrap {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 56px 32px 88px;
+}
+
+.rule {
+  height: 1px;
+  margin: 0;
+  border: 0;
+  background: var(--ink);
+}
+
+.label {
+  font-family: var(--mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.1em;
+  color: var(--faint);
+}
+
+/* matches .prose h4's typography (the in-article "label" heading), for
+   section headers that sit right below prose content, e.g. downloads and
+   related games. */
+.label--h4 {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mut);
+}
+
+
+@media (max-width: 640px) {
+  .wrap {
+    padding: 40px 22px 64px;
+  }
+}

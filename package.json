@@ -10,6 +10,7 @@
     "astro": "astro",
     "format": "prettier --write \"**/*.md\"",
     "format:check": "prettier --check \"**/*.md\"",
+    "check:styles": "node scripts/check-styles.mjs",
     "hooks": "git config core.hooksPath .githooks"
   },
   "dependencies": {

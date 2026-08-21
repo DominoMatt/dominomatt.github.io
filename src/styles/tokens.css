@@ -1,0 +1,29 @@
+:root {
+  --bg: #16140d;
+  --ink: #ece6d8;
+  --mut: #8f8a7d;
+  --faint: #6e695d;
+  --line: rgba(236, 230, 216, 0.16);
+  --tint: #1f1c13;
+  --code: rgba(236, 230, 216, 0.09);
+  --accent: #bd7f2e; /* fallback; each rules/notes page sets its own on .prose */
+  --btnbg: #ece6d8;
+  --btnink: #16140d;
+
+  /* The "<Family> fallback" names are generated at build time by the
+     fontaine Vite plugin (astro.config.mjs) — a local system font resized
+     via size-adjust/ascent-override/descent-override to match each
+     self-hosted face's metrics, so the font-display:swap reflow shrinks
+     even before the real face finishes downloading. */
+  --serif-display: 'Libre Caslon Display', 'Libre Caslon Display fallback', serif;
+  --serif-text: 'Libre Caslon Text', 'Libre Caslon Text fallback', serif;
+  --sans: 'Libre Franklin', 'Libre Franklin fallback', sans-serif;
+  --mono: 'Spline Sans Mono', 'Spline Sans Mono fallback', monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+

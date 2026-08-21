@@ -62,6 +62,10 @@ a full review cycle, so grounded answers matter more than fast ones.
 Run `npm run build`. It validates every game's and note's frontmatter against
 `src/content.config.ts`, so it catches the most common content mistakes.
 
+If you touched anything under `src/styles/`, also run `npm run check:styles`.
+The build cannot help you there: a stylesheet nobody imports ships none of its
+rules and fails nothing. Both commands run in CI on every pull request.
+
 If the build fails, either fix it or say plainly that it fails and why. Never
 report a change as done without building.
 
@@ -84,7 +88,13 @@ builds to plain HTML and deploys to GitHub Pages on every push to `main`
   `src/content/notes/`
 - **Templates** — `.astro` files in `src/components/`, `src/layouts/`,
   `src/pages/`
-- **Styling** — one global stylesheet, `src/styles/global.css`; dark theme only
+- **Styling** — `src/styles/`, dark theme only. `global.css` is a table of
+  contents: it holds no rules, only `@import`s of the partials beside it.
+  Per-component rules live in `src/styles/components/<name>.css`, prose and
+  markdown styling in `prose.css`, colour/type variables in `tokens.css`, and
+  every `@media print` rule in `print.css`. Edit the partial, not `global.css` —
+  you only touch `global.css` to add a whole new partial, and then the position
+  of the `@import` matters (import order is cascade order).
 - **Config and site copy** — `src/data/site.ts`
 
 `AUTHORING.md` is the human-facing guide to writing games and notes, with full
@@ -96,9 +106,10 @@ its comments explain every field. Prefer reading those over guessing.
 Editing `src/content/games/*.md`, `src/content/notes/*.md`, and files under
 `public/print/` is normal work. Do it, within the scope rules above.
 
-Changes to components, layouts, pages, `global.css`, `astro.config.mjs` or
-`package.json` are not routine. Make them when asked, but say what you are
-changing and why first. **Never add a dependency without asking.**
+Changes to components, layouts, pages, anything in `src/styles/`,
+`astro.config.mjs` or `package.json` are not routine. Make them when asked, but
+say what you are changing and why first. **Never add a dependency without
+asking.**
 
 **Install with `npm ci`, never bare `npm install`.** `npm install` re-resolves
 platform-specific optional dependencies and rewrites `package-lock.json` to suit

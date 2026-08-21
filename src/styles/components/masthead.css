@@ -1,0 +1,54 @@
+/* ---- index masthead ----------------------------------------- */
+
+.tagline {
+  margin: 34px 0 0;
+  font-family: var(--serif-display);
+  font-size: 2.5rem;
+  line-height: 1.06;
+  letter-spacing: -0.01em;
+  max-width: 560px;
+  text-wrap: pretty;
+}
+
+.interact {
+  padding: 40px 0 34px;
+}
+
+.interact-copy {
+  margin: 10px 0 0;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+/* Studio credit, homepage only. Two faces on purpose: "design by" in the
+   serif's true italic (Libre Caslon Text ships one; Libre Caslon Display
+   does not, which is why --serif-display isn't used here), the wordmark in
+   tracked sans caps. It sits quietly at --faint and only lifts to --mut on
+   hover, so it reads as a signature rather than a fourth call to action. */
+.designmark {
+  margin: 26px 0 0;
+  text-align: right;
+  font-size: 0.6875rem;
+  line-height: 1;
+  color: var(--faint);
+}
+
+.designmark a {
+  transition: color 0.15s ease;
+}
+
+.designmark a:hover {
+  color: var(--mut);
+}
+
+.designmark-by {
+  font-family: var(--serif-text);
+  font-style: italic;
+}
+
+.designmark-name {
+  font-family: var(--sans);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+}
+
