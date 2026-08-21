@@ -66,6 +66,25 @@ responsive tweaks but a separate design with its own logic (compact mode,
 two-column mode, ink inversion) that would be unmaintainable spread across
 twelve files.
 
+### Keeping the split honest
+
+Splitting one file into seventeen adds a failure mode the single file could not
+have. A broken `@import` path fails the build loudly, and so does invalid CSS —
+both were tested. But a partial that exists and nothing imports is silent: the
+build succeeds and the rules simply never ship.
+
+`npm run check:styles` (`scripts/check-styles.mjs`, no dependencies) walks the
+`@import` graph out from `global.css` and fails if any stylesheet under
+`src/styles/` is unreachable. It follows imports transitively, so a partial is
+free to import another partial.
+
+That check runs in CI on pull requests, from a new `.github/workflows/ci.yml`
+that installs, checks, and builds. Until now `deploy.yml` was the only workflow
+and it fires on push to `main`, so the first sign of a broken build was a broken
+deployment — the outcome ADR 0002 objected to when it rejected a CI formatting
+gate. This job is not a style gate and deliberately checks no conventions; it
+answers only "does this still build".
+
 ## Consequences
 
 - Editing styles means editing a partial. `global.css` is touched only to
@@ -74,7 +93,15 @@ twelve files.
   The output grew by 69 bytes (0.2%), entirely from three additional
   `@media (max-width: 640px)` wrappers — the minifier does not merge media
   blocks across files. That is the price of colocating responsive rules.
-- No new dependency, and no change to `astro.config.mjs`.
+- No new dependency, and no change to `astro.config.mjs`. The orphan check is
+  plain Node against the standard library.
+- `check:styles` is deliberately not wired into `npm run build`. The build stays
+  a build, and the pull-request job is where the gate belongs. The cost is that
+  a commit pushed straight to `main`, bypassing a PR, is not checked — if that
+  becomes the normal way work lands here, wire it into `build` instead.
+- CI now runs on pull requests as well as on push to `main`. That is a new
+  expectation for any change, not just a CSS one: it has to build before it can
+  merge.
 - Cascade safety is now a review question. The mechanical split was verified
   byte-identical; the three subsequent moves (focus into `base.css`, the
   stranded contact-form rules into `components/contact-form.css`, and the

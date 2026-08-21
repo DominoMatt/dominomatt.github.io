@@ -62,6 +62,10 @@ a full review cycle, so grounded answers matter more than fast ones.
 Run `npm run build`. It validates every game's and note's frontmatter against
 `src/content.config.ts`, so it catches the most common content mistakes.
 
+If you touched anything under `src/styles/`, also run `npm run check:styles`.
+The build cannot help you there: a stylesheet nobody imports ships none of its
+rules and fails nothing. Both commands run in CI on every pull request.
+
 If the build fails, either fix it or say plainly that it fails and why. Never
 report a change as done without building.
 

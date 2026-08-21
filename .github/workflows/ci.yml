@@ -1,0 +1,40 @@
+name: CI
+
+# Runs on pull requests, so a broken build is found before it reaches `main`.
+#
+# deploy.yml only fires on push to `main`, which means without this the first
+# sign of a broken stylesheet or a failed build is a failed deployment. That is
+# the outcome docs/adr/0002-markdown-formatting.md wanted to avoid — this job
+# is deliberately not a style gate, only a "does it still build" gate.
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build and check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      # `npm ci` and never bare `npm install` — see AGENTS.md §3. `npm install`
+      # re-resolves platform-specific optional dependencies and rewrites
+      # package-lock.json to suit whatever machine it ran on.
+      - name: Install
+        run: npm ci
+
+      # Catches a stylesheet that exists but nothing imports: the build would
+      # succeed and its rules would silently never ship.
+      - name: Check stylesheet wiring
+        run: npm run check:styles
+
+      - name: Build
+        run: npm run build
