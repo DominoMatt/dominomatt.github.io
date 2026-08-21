@@ -1,0 +1,64 @@
+/* cover motifs */
+.m-pips {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 9px;
+  width: 62px;
+}
+
+.m-pips span {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+
+.m-diamond {
+  width: 34px;
+  height: 34px;
+  transform: rotate(45deg);
+  margin: 8px 0 0 6px;
+}
+
+.m-circle {
+  align-self: flex-end;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+}
+
+.m-line {
+  width: 100%;
+  height: 3px;
+  margin-top: auto;
+}
+
+/* motifs reused as the collapsed index row's swatch, in place of real
+   art — same shapes, scaled down and re-centred for the smaller box */
+.game-accent .m-pips {
+  width: 29px;
+  gap: 4px;
+}
+
+.game-accent .m-pips span {
+  width: 7px;
+  height: 7px;
+}
+
+.game-accent .m-diamond {
+  width: 22px;
+  height: 22px;
+  margin: 0;
+}
+
+.game-accent .m-circle {
+  align-self: center;
+  width: 34px;
+  height: 34px;
+}
+
+.game-accent .m-line {
+  width: 34px;
+  height: 2px;
+  margin-top: 0;
+}
+

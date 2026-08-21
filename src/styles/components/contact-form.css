@@ -1,0 +1,97 @@
+/* ---- contact form ------------------------------------------- */
+
+.contact-form {
+  margin-top: 44px;
+}
+
+.field-label {
+  margin-bottom: 9px;
+  font-family: var(--mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.12em;
+  color: var(--faint);
+}
+
+.chips {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.06em;
+  padding: 9px 16px;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  color: var(--mut);
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.chip:hover {
+  transform: translateY(-1px);
+}
+
+.chip input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.chip:has(input:checked),
+.chip.active {
+  background: var(--ink);
+  color: var(--bg);
+  border-color: var(--ink);
+}
+
+.chip:has(input:focus-visible) {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+
+/* form grid + fields. These sat below the "mechanics tags" header in the
+   old single-file global.css — a stray, since .row/.col/.input are only
+   ever used by src/pages/contact.astro. */
+
+.row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1;
+  min-width: 220px;
+}
+
+.input {
+  width: 100%;
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  padding: 13px 14px;
+  font-family: var(--serif-text);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--ink);
+  outline: none;
+}
+
+.input:focus {
+  border-color: var(--ink);
+}
+
+textarea.input {
+  resize: vertical;
+}
+
+select.input option {
+  background: var(--bg);
+  color: var(--ink);
+}
+

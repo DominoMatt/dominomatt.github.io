@@ -1,0 +1,53 @@
+/* ---- end-of-page game cross-links ("box art") -----------------
+   Shared by an article's "games in this article" and a game's own
+   "related games" — both end with a row of linked GameCover thumbnails. */
+
+.game-links {
+  margin-top: 48px;
+}
+
+.game-links-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.game-link {
+  display: block;
+  transition: transform 0.15s ease;
+}
+
+.game-link:hover {
+  transform: translateY(-2px);
+}
+
+.footer-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 54px;
+  padding-top: 32px;
+  border-top: 1px solid var(--line);
+  flex-wrap: wrap;
+}
+
+.note-next {
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.05em;
+  color: var(--mut);
+}
+
+.note-next:hover {
+  color: var(--ink);
+}
+
+.copyright-notice {
+  margin: 12px 0 0;
+  font-family: var(--mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.06em;
+  color: var(--faint);
+}
+

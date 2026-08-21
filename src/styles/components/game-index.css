@@ -1,0 +1,169 @@
+/* ---- game index (native <details> accordion) ---------------- */
+
+.game {
+  border-bottom: 1px solid var(--line);
+}
+
+.game-head {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 24px 0;
+  cursor: pointer;
+  list-style: none;
+}
+
+.game-head::-webkit-details-marker {
+  display: none;
+}
+
+.game-head:hover {
+  opacity: 0.74;
+}
+
+.game-no {
+  width: 24px;
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--faint);
+}
+
+.game-head-main {
+  flex: 1;
+}
+
+.game-title {
+  display: block;
+  font-family: var(--serif-display);
+  font-size: 2.5rem;
+  line-height: 0.98;
+  letter-spacing: -0.01em;
+}
+
+.game-meta {
+  display: block;
+  margin-top: 8px;
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--mut);
+}
+
+.game-accent {
+  width: 60px;
+  aspect-ratio: 1;
+  border-radius: 1px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-sign {
+  width: 18px;
+  text-align: center;
+  font-family: var(--mono);
+  font-size: 1.375rem;
+  color: var(--mut);
+}
+
+.game-sign::after {
+  content: '+';
+}
+
+.game[open] .game-sign::after {
+  content: '−';
+}
+
+.game-detail {
+  display: flex;
+  gap: 30px;
+  padding: 6px 0 34px 46px;
+}
+
+.game-cover-link {
+  display: block;
+  flex-shrink: 0;
+  transition: transform 0.15s ease;
+}
+
+.game-cover-link:hover {
+  transform: translateY(-2px);
+}
+
+.game-cover {
+  width: 158px;
+  height: 212px;
+  padding: 18px;
+  border-radius: 1px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.game-cover-title {
+  margin-top: auto;
+  font-family: var(--serif-display);
+  font-size: 1.875rem;
+  line-height: 0.9;
+}
+
+.game-body {
+  flex: 1;
+  padding-top: 2px;
+}
+
+.game-desc {
+  margin: 0;
+  max-width: 380px;
+  font-size: 1.125rem;
+  line-height: 1.55;
+}
+
+.game-body .mechanics {
+  margin-top: 14px;
+}
+
+.game-license {
+  margin: 6px 0 0;
+  font-family: var(--mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+
+.game-contents {
+  margin-top: 24px;
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+  color: var(--mut);
+}
+
+.game-downloads-count {
+  margin-top: 6px;
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.06em;
+  color: var(--faint);
+}
+
+.game-body .actions {
+  margin-top: 28px;
+}
+
+
+@media (max-width: 640px) {
+  .game-title {
+    font-size: 2rem;
+  }
+
+  .game-detail {
+    flex-direction: column;
+    gap: 22px;
+    padding-left: 0;
+  }
+}

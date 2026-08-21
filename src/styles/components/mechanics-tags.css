@@ -1,0 +1,19 @@
+/* ---- mechanics tags (game widget + rules masthead) ----------- */
+/* Same family as .chip, but 0 radius and tighter padding so they read
+   as tags, not as clickable buttons. */
+
+.mechanics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.mechanic-pill {
+  font-family: var(--mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.06em;
+  padding: 3px 9px;
+  border: 1px solid var(--line);
+  border-radius: 0;
+  color: var(--mut);
+}
