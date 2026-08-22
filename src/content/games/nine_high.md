@@ -75,7 +75,7 @@ If Playing, do 1 and then 2...
 
 ### Values ranking
 
-Rankings of sets: 0/blank, 1, 2, 3, 4, 5, 6, 7 ,8, 9, doubles (Lowest to Highest)
+Rankings of sets: doubles, 0/blank, 1, 2, 3, 4, 5, 6, 7 ,8, 9 (Lowest to Highest)
 
 ## Score
 
