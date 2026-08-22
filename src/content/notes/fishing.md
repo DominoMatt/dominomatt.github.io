@@ -3,7 +3,7 @@ title: Gone Fishing
 date: 2026-08-11
 accent: "#8a5a44"
 dek: "Fishing games and value-added content for younger players."
-games: [fish_pond]
+games: [fish_pond, fish_on_a_dish]
 published: false
 ---
 
