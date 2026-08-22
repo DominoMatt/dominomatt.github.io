@@ -24,3 +24,24 @@ Under Development
 - [Trophies](/print/fish_pond_trophies.pdf) for Fish Pond.
 - [Other Fish](/print/other_fish.pdf) for better 3+ player rounds.
 - Fish Pond rules that are readable by young players.
+
+## Color & Play
+
+Coloring sheets that can then be used as game components.
+
+1. Print
+2. Color
+3. Cut
+4. Play
+
+### Fish Pond Trophies
+
+- easiest project (lvl 1)
+- even the youngest players can cut out these components/cards.
+- the cards are face up objective cards so poor edge make no difference.
+- No sleeving is neccessary.
+
+### Other Fish Deck
+
+- allows for 4 players in Fish Pond.
+- allows for 3 players in Fish on a Dish.
