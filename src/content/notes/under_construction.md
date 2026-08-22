@@ -12,7 +12,7 @@ Original domino-based games to play (playtest), and share. The games require gen
 
 ## A work in progress...
 
-This website's content is currently under construction. The game themselves are in playtesting status. I am making no warranty as to the quality of content posted here.
+This website's content is currently under construction. The games themselves are in playtesting status. I am making no warranty as to the quality of content posted here.
 
 - There could be changes, edits, and spellchecks taking place.
 - There will be games and other content added over the coming months and years.
