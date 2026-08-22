@@ -12,7 +12,7 @@ published: true
 
 ## Color/Read and Play: Under Development
 
-- This is an idea that is **Under Construction**... however there are some (1) assets under this category.
+- This is an idea that is **Under Construction**... however there are some (2) assets under this category.
 - This is a positive/good direction for content creation.
 
 ### Color & Play
