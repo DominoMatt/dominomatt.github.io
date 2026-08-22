@@ -36,12 +36,15 @@ Coloring sheets that can then be used as game components.
 
 ### Fish Pond Trophies
 
-- easiest project (lvl 1)
-- even the youngest players can cut out these components/cards.
-- the cards are face up objective cards so poor edge make no difference.
-- No sleeving is neccessary.
+- Easiest project (lvl 1)
+- Even the youngest players can cut out these components/cards.
+- The cards are face up objective cards so poor edge make no difference.
+- No sleeving is necessary.
 
-### Other Fish Deck
+### Other Fish
 
-- allows for 4 players in Fish Pond.
-- allows for 3 players in Fish on a Dish.
+- Allows for 4 players in Fish Pond.
+- Allows for 3 players in Fish on a Dish.
+- Needs to be sleeved so you can use them face down.
+- Utilize them as an expansion that is used face down alongside the dominoes with blank ends.
+- If sleeved in blue backed sleeves it gives the look of a 'pond'.
