@@ -41,7 +41,7 @@ I'm currently developing the Fishing Collection as my active goal and intent.
 
 ## The Fishing Collection
 
-Under Development
+Under Development... link [**here**](https://dominomatt.github.io/notes/fishing/)
 
 - [Trophies](/print/fish_pond_trophies.pdf) for Fish Pond.
 - [Other Fish](/print/other_fish.pdf) for better 3+ player rounds.
