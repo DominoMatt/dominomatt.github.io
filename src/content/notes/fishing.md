@@ -38,13 +38,14 @@ Coloring sheets that can then be used as game components.
 
 - Easiest project (lvl 1)
 - Even the youngest players can cut out these components/cards.
-- The cards are face up objective cards so poor edge make no difference.
+- The cards are face up objective cards so poor cuts/edges make no difference.
 - No sleeving is necessary.
 
 ### Other Fish
 
-- Allows for 4 players in Fish Pond.
+- Allows for upto 4 players in Fish Pond.
 - Allows for 3 players in Fish on a Dish.
 - Needs to be sleeved so you can use them face down.
-- Utilize them as an expansion that is used face down alongside the dominoes with blank ends.
-- If sleeved in blue backed sleeves it gives the look of a 'pond'.
+- Play them face down alongside the dominoes with blank ends.
+- If sleeved in **blue** backed sleeves it gives the look of a 'pond'.
+- Can be used in 2 player, just swap the 7 Other Fish for the 7 blank ended dominoes.
