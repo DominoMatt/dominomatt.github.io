@@ -35,7 +35,7 @@ downloads:
 - The domino end played towards your opponent is the Attack Type/'suit'.
 - The end closest you is it's Power/'rank'.
 - When a trick is played the domino ends that 'match' each other is the Attack Type/'suit'.
-- The attacker Attacks, then the defender Defends; and so on until someone has gets hit.
+- The attacker continues to Attack, and defender Defend; until a Counter or until someone gets hit.
 
 ### Attack
 
