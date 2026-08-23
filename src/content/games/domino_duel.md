@@ -36,7 +36,7 @@ downloads:
 - The end closest you is it's Power/'rank'.
 - When a trick is played the domino ends that 'match' each other is the Attack Type/'suit'.
 - The attacker continues to Attack, and defender Defend; until a Counter or until someone gets hit.
-- [Line of Play](#glossary)
+- [Line of Play](#'line'_of_play)
 
 ### Attack
 
