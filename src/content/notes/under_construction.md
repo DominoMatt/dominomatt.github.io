@@ -10,6 +10,13 @@ published: false
 
 Original domino-based games to play (playtest), and share. The games require generic and common components (mainly dominoes) and any additional components that are necessary are included as downloads.
 
+## Formatting Notes
+
+**READ ME**
+
+- 1, 2, 3... is a sequential type flow.
+- A, B, C... is a list of options
+
 ## A work in progress...
 
 This website's content is currently under construction. The games themselves are in playtesting status. I am making no warranty as to the quality of content posted here.
