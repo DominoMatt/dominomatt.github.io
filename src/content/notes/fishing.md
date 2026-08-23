@@ -29,11 +29,6 @@ Under Development
 
 Coloring sheets that can then be used as game components.
 
-1. Print
-2. Color
-3. Cut
-4. Play
-
 ### Fish Pond Trophies
 
 - Easiest project (lvl 1)
