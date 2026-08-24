@@ -1,4 +1,5 @@
-/* ---- notes list (shared: index "latest 3" + notebook) ------- */
+/* ---- notes list (shared: index "latest 3" + notebook + end-of-page
+   "Note References" cross-links, via cross-links.css's .note-refs) ------- */
 
 .notes .note-row {
   display: flex;

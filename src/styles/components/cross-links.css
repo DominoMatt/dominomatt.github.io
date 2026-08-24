@@ -1,9 +1,34 @@
-/* ---- end-of-page game cross-links ("box art") -----------------
-   Shared by an article's "games in this article" and a game's own
-   "related games" — both end with a row of linked GameCover thumbnails. */
+/* ---- end-of-page content footer ---------------------------------
+   The whole "Downloads / Note References / Game References" footer block,
+   shared by both games' and notes' pages, bracketed by a heavier .rule on
+   each side (rendered by the page template, not here — see .rule--heavy
+   below). Game references end with a row of linked GameCover thumbnails
+   ("box art"); note references reuse NoteRow, styled by notes-list.css's
+   .notes rules; downloads/attributions are styled in downloads.css.
 
-.game-links {
-  margin-top: 48px;
+   Every top-level section in the footer — .downloads-section,
+   .attributions-section, .note-refs, .game-links — carries .footer-block.
+   That's the only thing giving them their spacing and, via the adjacent-
+   sibling rule below, a thin accent-coloured divider between whichever of
+   them actually render (each guards its own rendering, so this only ever
+   matches two sections that are really next to each other in the DOM). */
+
+.footer-block {
+  margin-top: 24px;
+}
+
+.footer-block + .footer-block {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid var(--accent);
+}
+
+/* Heavier bracketing rule at the start and end of the whole footer block —
+   thicker than the standard 1px .rule so it visually outweighs the thin
+   inter-block dividers above. Colour comes from the same per-page inline
+   `background` the plain .rule--addendum use already set. */
+.rule--heavy {
+  height: 3px;
 }
 
 .game-links-grid {
@@ -22,6 +47,14 @@
   transform: translateY(-2px);
 }
 
+/* .note-row's own first-child padding-top (18px, notes-list.css) already
+   provides most of the label-to-row gap — top this up to the same 24px used
+   by .downloads-list and .game-links-grid, rather than stacking a full 24px
+   margin on top of that padding. */
+.note-refs .notes {
+  margin-top: 6px;
+}
+
 .footer-actions {
   display: flex;
   align-items: center;
@@ -30,6 +63,15 @@
   padding-top: 32px;
   border-top: 1px solid var(--line);
   flex-wrap: wrap;
+}
+
+/* When the content footer above already rendered (and so already ends in
+   its own heavy .rule), this replaces that light border instead of stacking
+   a second divider right underneath it. */
+.footer-actions--flush {
+  margin-top: 32px;
+  padding-top: 0;
+  border-top: 0;
 }
 
 .note-next {

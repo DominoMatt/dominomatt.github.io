@@ -1,0 +1,23 @@
+---
+import type { Note } from '../lib/content';
+import NoteRow from './NoteRow.astro';
+
+interface Props {
+  notes: Note[];
+  label: string;
+  accent: string;
+}
+
+const { notes, label, accent } = Astro.props;
+---
+
+{
+  notes.length > 0 && (
+    <section class="footer-block note-refs" style={`--accent:${accent}`} aria-label={label}>
+      <div class="label label--h4">{label}</div>
+      <div class="notes">
+        {notes.map((n) => <NoteRow note={n} />)}
+      </div>
+    </section>
+  )
+}

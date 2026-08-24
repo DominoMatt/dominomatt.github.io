@@ -41,6 +41,7 @@ export interface Game {
   requires: string; // what the player supplies, e.g. "Double Six Dominoes" — the rules page only; distinct from a Download's `spec` (print metadata)
   downloads: Download[]; // empty = nothing to download, e.g. print-from-page-only games
   relatedGames: string[]; // ids of other games cross-linked from this one's frontmatter
+  notes: string[]; // ids of notes cross-linked from this game's frontmatter
   attributions: string[]; // credit lines, e.g. "Box Art by CoolArtist" — empty = nothing to credit
   published: boolean; // false = built at /rules/:id but left out of /games + the sitemap
 }
@@ -55,6 +56,8 @@ export interface Note {
   accent: string;
   dek: string;
   games: string[]; // ids of games referenced from this article's frontmatter
+  downloads: Download[]; // empty = nothing to download
+  relatedNotes: string[]; // ids of other notes cross-linked from this one's frontmatter
   published: boolean; // false = built at /notes/:id but left out of /notes + the sitemap
 }
 
@@ -143,6 +146,7 @@ export async function getGames(): Promise<Game[]> {
       requires: e.data.requires,
       downloads: (e.data.downloads ?? []).map((d) => ({ ...d, type: fileType(d.file) })),
       relatedGames: e.data.relatedGames ?? [],
+      notes: e.data.notes ?? [],
       attributions: e.data.attributions ?? [],
       published: e.data.published,
     }));
@@ -162,6 +166,8 @@ export async function getNotes(): Promise<Note[]> {
       accent: e.data.accent,
       dek: e.data.dek,
       games: e.data.games ?? [],
+      downloads: (e.data.downloads ?? []).map((d) => ({ ...d, type: fileType(d.file) })),
+      relatedNotes: e.data.relatedNotes ?? [],
       published: e.data.published,
     }));
 }
@@ -215,6 +221,20 @@ export function getReferencedGames(note: Note, games: Game[]): Game[] {
 // accidentally lists its own id.
 export function getRelatedGames(game: Game, games: Game[]): Game[] {
   return resolveIds(game.relatedGames, games, `game "${game.id}" relatedGames`).filter((g) => g.id !== game.id);
+}
+
+// Resolves the note ids referenced from a game's `notes` frontmatter to the
+// full Note objects, in the order given — the "Note References" section on
+// a game's rules page.
+export function getReferencedNotes(game: Game, notes: Note[]): Note[] {
+  return resolveIds(game.notes, notes, `game "${game.id}" notes`);
+}
+
+// Same idea, but for a note cross-linking other notes via its own
+// `relatedNotes` frontmatter — drops a self-reference too, in case a note
+// accidentally lists its own id.
+export function getRelatedNotes(note: Note, notes: Note[]): Note[] {
+  return resolveIds(note.relatedNotes, notes, `note "${note.id}" relatedNotes`).filter((n) => n.id !== note.id);
 }
 
 // ---- game art (masthead icon) ------------------------------------------
