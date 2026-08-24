@@ -14,6 +14,7 @@ license: CC BY-NC
 contents: Rules Sheet, 1 Download, 2 variants
 requires: Double Six Dominoes, 1x d6 Dice (or 1 per player), 1(Ace)-6 from Playing Cards
 relatedGames: [fish_on_a_dish]
+notes: [fishing]
 downloads:
    - title: Trophies- Color and Play
      file: fish_pond_trophies.pdf

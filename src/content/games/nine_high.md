@@ -13,6 +13,7 @@ mechanics: [Shedding, Climbing, Equal End Matching]
 license: CC BY-NC
 contents: Rules Sheet
 requires: Double Nine Dominoes
+notes: [dominoes_as_cards]
 ---
 
 ### Warning: This game is untested.
@@ -80,7 +81,3 @@ Rankings of sets: doubles, 0/blank, 1, 2, 3, 4, 5, 6, 7 ,8, 9 (Lowest to Highest
 ## Score
 
 A hand is complete when a player goes out/sheds their hand (has 0 dominoes in hand). Each player adds a point to their score for each domino left in their hand. When a player score exceeds 10 points the game ends... **low score wins**.
-
-## Related Reading
-
-- [Dominoes As Card](https://dominomatt.github.io/notes/dominoes_as_cards/)

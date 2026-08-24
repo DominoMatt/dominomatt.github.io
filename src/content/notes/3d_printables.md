@@ -4,6 +4,15 @@ date: 2026-07-31
 accent: "#436189"
 dek: "A domino tray, a town center..."
 # games: [domino_duel, domino_kingdom]
+downloads:
+  - title: Domino Tray
+    file: stl/domino_tray.stl
+    description: Holds a hand of 6 dominoes, sized for Domino Duel. Features a card slot.
+    spec: 0.2-0.3 resolution ~ 25% infill ~ brim helpful ~ no rafts/supports needed
+  - title: Town Center
+    file: stl/town_center.stl
+    description: A 1x1 inch house, used in Domino Kingdom. Resize before slicing to match your domino set.
+    spec: 0.2-0.3 resolution ~ 25% infill ~ scale to domino size (100% = 1 inch dominoes)
 # published: false
 ---
 
@@ -12,7 +21,7 @@ dek: "A domino tray, a town center..."
 
 ### Are they Print and Play assets?
 
-I definitely think so. On the other hand, just because an object is 'printed' doesn't necessarily make it a print and play asset. A game component that you actually play the game with or on is 'print and play'. Whereas a printable rule sheet does not make something print and play. 
+I definitely think so. On the other hand, just because an object is 'printed' doesn't necessarily make it a print and play asset. A game component that you actually play the game with or on is 'print and play'. Whereas a printable rule sheet does not make something print and play.
 
 - The town center could be considered print and play, you use it to play a certain game.
 - The domino tray would not be a print and play asset, it isn't needed to play a particular game, it's just a handy item to have around.
@@ -36,4 +45,4 @@ Download: [Town Center](/print/stl/town_center.stl).stl
 
 - This house is used in Domino Kingdom.
 - It's base size is slightly less than 1 inch (24x24mm)... so it plays well with standard dominoes.
-- Resize it before you slice. (i.e. 75% makes it sized for play with 3/4 in. wide dominoes) 
+- Resize it before you slice. (i.e. 75% makes it sized for play with 3/4 in. wide dominoes)
