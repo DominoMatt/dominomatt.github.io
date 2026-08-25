@@ -19,7 +19,7 @@ requires: Double Six Dominoes, pawns, dice
 
 ### Block Dominoes: Laying the way
 
-Phase 1: A [block](https://dominomatt.github.io/rules/block_dominoes/) domino game
+Phase 1: A [block](/rules/block_dominoes/) domino game
 
 - All dominoes left in player's hand when the round is done are carried forward into Phase 2.
 

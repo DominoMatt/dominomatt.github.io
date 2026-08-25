@@ -1,6 +1,33 @@
 import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 
+// Shared by both games and notes — an ordered list of downloadable files.
+// Omit entirely (or leave empty) for content that's play/read-from-the-page
+// only, with nothing to download.
+const downloadsSchema = z
+  .array(
+    z.object({
+      title: z.string(),
+      file: z.string(), // path under public/print/, e.g. "twelves.pdf" or "twelves/deck.pdf"
+      description: z.string(), // short blurb, always shown; may be multi-line
+      spec: z.string().optional(), // e.g. "A4 + LETTER · 6 PP" — omit to hide the meta line
+      version: z.string().default('V1.0'),
+      // earlier releases of this same file, newest first. Omit entirely
+      // for a file with no version history to show.
+      history: z
+        .array(
+          z.object({
+            version: z.string(),
+            note: z.string(),
+            date: z.string(),
+            file: z.string().optional(), // path under public/print/ — omit to leave this old version undownloadable
+          })
+        )
+        .default([]),
+    })
+  )
+  .optional();
+
 // Games: one markdown file per game in src/content/games/.
 // Frontmatter holds the card metadata; the body holds the rules, written as
 // "## Section / ### Subsection" markdown (see AUTHORING.md).
@@ -30,30 +57,12 @@ const games = defineCollection({
     // ordered list of downloadable files for this game. Omit entirely (or
     // leave empty) for a game that's play-from-the-page only, with nothing
     // to download.
-    downloads: z
-      .array(
-        z.object({
-          title: z.string(),
-          file: z.string(), // path under public/print/, e.g. "twelves.pdf" or "twelves/deck.pdf"
-          description: z.string(), // short blurb, always shown; may be multi-line
-          spec: z.string().optional(), // e.g. "A4 + LETTER · 6 PP" — omit to hide the meta line
-          version: z.string().default('V1.0'),
-          // earlier releases of this same file, newest first. Omit entirely
-          // for a file with no version history to show.
-          history: z
-            .array(
-              z.object({
-                version: z.string(),
-                note: z.string(),
-                date: z.string(),
-                file: z.string().optional(), // path under public/print/ — omit to leave this old version undownloadable
-              })
-            )
-            .default([]),
-        })
-      )
-      .optional(),
+    downloads: downloadsSchema,
     relatedGames: z.array(z.string()).optional(), // other game ids to cross-link at the end
+    // note ids that discuss this game, cross-linked at the end as "Note
+    // References" — no length limit. Omit entirely for a game with no
+    // natural note cross-link.
+    notes: z.array(z.string()).optional(),
     // credit lines shown as a bulleted "Attributions" list in the Attachments
     // section, below downloads. Omit entirely for a game with nothing to credit.
     attributions: z.array(z.string()).optional(), // e.g. "Box Art by CoolArtist"
@@ -74,6 +83,12 @@ const notes = defineCollection({
     accent: z.string(),
     dek: z.string(),
     games: z.array(z.string()).optional(), // game ids to show as "box art" at the end
+    // ordered list of downloadable files for this note. Omit entirely (or
+    // leave empty) for a note with nothing to print or download.
+    downloads: downloadsSchema,
+    // other note ids to cross-link at the end as "Note References" — no
+    // length limit. Omit entirely for a note with no natural cross-link.
+    relatedNotes: z.array(z.string()).optional(),
     // false hides it from /notes and the sitemap; the page itself still
     // builds at /notes/<id> — a URL-only "unlisted" state, not a draft.
     published: z.boolean().default(true),

@@ -128,6 +128,7 @@ downloads:
     spec: PDF · A4 + LETTER · 6 PP     # optional — this file's print spec, not the game's
 # attributions: ["Box Art by CoolArtist", "3D Tokens by CoolPrinter"]  # optional — credit lines; see below
 # relatedGames: [smallkings, wake]   # optional — cross-links these games at the end
+# notes: [onepage]                   # optional — cross-links these notes at the end; see below
 # published: false                  # optional — omit for the normal case; see below
 ---
 
@@ -151,21 +152,21 @@ How the game ends.
 two, and each shows up in exactly one place:
 
 - `contents:` — **what you give the player.** Shown on the game's row on
-  `/games`, once it's expanded. Free text; existing games use `Rules Sheet`,
-  and a print-and-play game might use `28 printed tiles · 1-page rules` for
-  what's in the PDF.
+  `/games`, once it's expanded. Free text; existing games use `Rules Sheet`, and
+  a print-and-play game might use `28 printed tiles · 1-page rules` for what's
+  in the PDF.
 - `requires:` — **what the player has to supply themselves.** Shown on the
-  game's rules page, under the description, as _You will need: <requires>_ —
-  so write it as the things that have to be on the table to play, e.g.
-  `Double Six Dominoes, D6 Dice x1`. It deliberately does **not** appear on
-  the `/games` row; that row is a summary, and the requirements belong with
-  the rules.
+  game's rules page, under the description, as _You will need: <requires>_ — so
+  write it as the things that have to be on the table to play, e.g.
+  `Double Six Dominoes, D6 Dice x1`. It deliberately does **not** appear on the
+  `/games` row; that row is a summary, and the requirements belong with the
+  rules.
 
 > **Note:** a `downloads:` entry has its own separate `spec:` field further
 > down, and it means something different — paper size, page count, print
 > settings for that one file. Print specs go there, never in `requires:`.
-> (`requires:` was itself called `spec:` until 2026-08-07, which is exactly
-> the confusion the rename fixes.)
+> (`requires:` was itself called `spec:` until 2026-08-07, which is exactly the
+> confusion the rename fixes.)
 
 Leaving either out isn't an option — the site won't build without them.
 
@@ -208,10 +209,10 @@ downloads:
   (`|`, every line kept as-is) block scalars both work; each resulting line
   renders as its own paragraph.
 - `spec` — optional one-line meta string about **this file** (paper size, page
-  count, print settings, whatever's relevant) shown next to the version. Omit
-  it and that entry just shows no spec text. Not to be confused with the game's
-  top-level `requires:` — that's what the player needs at the table, this is
-  how the file prints.
+  count, print settings, whatever's relevant) shown next to the version. Omit it
+  and that entry just shows no spec text. Not to be confused with the game's
+  top-level `requires:` — that's what the player needs at the table, this is how
+  the file prints.
 - `version` — optional; defaults to `V1.0` if you leave it out.
 - `history` — optional list of earlier releases of this same file, newest first,
   each with a `version`, a one-line `note` on what changed, and a `date`. Leave
@@ -272,6 +273,15 @@ worth pointing a reader to — their cover art renders at the end of this game's
 rules page, each linking to its own rules. Leave it out entirely for a game with
 no natural cross-link.
 
+`notes:` is optional. List the ids (filenames, no `.md`) of any notes that
+discuss this game, in the order given — no limit on how many. They render as a
+"Note References" section at the end of this game's rules page, in the same row
+style as `/notes`, each linking to its own article. Leave it out entirely for a
+game no note talks about.
+
+A game's end-of-page sections always appear in the same order when present:
+Downloads, then Note References, then Game References (`relatedGames`).
+
 ### Publishing a game early, or not at all
 
 `published: false` takes a game off `/games` (and its category filter) and out
@@ -293,6 +303,11 @@ date: 2026-03-01              # YYYY-MM-DD — notes sort newest first by this
 accent: "#bd7f2e"            # keep the quotes
 dek: "One-line summary shown under the title."
 # games: [twelves, wake]      # optional — shows these games' cover art at the end
+# downloads:                  # optional — same shape as a game's downloads; see below
+#   - title: Print & Play PDF
+#     file: onepage.pdf
+#     description: A printable copy of this article's one-page layout.
+# relatedNotes: [another-note]  # optional — cross-links these notes at the end
 # published: false            # optional — omit for the normal case; see below
 ---
 
@@ -314,6 +329,22 @@ the article (`MARCH 2026`) — you only enter it once, as `YYYY-MM-DD`.
 article talks about, in brackets and separated by commas — the game's cover art
 renders at the end of the piece, linking to its rules page. Leave it out
 entirely for a note that isn't about a specific game.
+
+`downloads:` is optional — the exact same shape as a game's `downloads:` (see
+above): an ordered list of `title` / `file` / `description`, with optional
+`spec`, `version`, and `history`. Leave it out entirely for a note with nothing
+to print or download; when present, it renders the same "Downloads" section used
+on a game's rules page.
+
+`relatedNotes:` is optional. List the ids (filenames, no `.md`) of other notes
+worth pointing a reader to, in the order given — no limit on how many. They
+render as a "Note References" section, in the same row style as `/notes`, each
+linking to its own article. Leave it out entirely for a note with no natural
+cross-link.
+
+A note's end-of-page sections always appear in the same order when present:
+Downloads, then Note References (`relatedNotes`), then Game References
+(`games`).
 
 Every article automatically gets a "© {year} dominomatt. All rights reserved."
 line at the bottom, using the year from its own `date:` — nothing to add in

@@ -3,27 +3,31 @@ import { render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
 import GameCoverGrid from '../../components/GameCoverGrid.astro';
+import NoteReferenceList from '../../components/NoteReferenceList.astro';
 import DownloadsList from '../../components/DownloadsList.astro';
-import { getGames, getRelatedGames, getGameArt, getGameEyebrow } from '../../lib/content';
-import type { Game } from '../../lib/content';
+import { getGames, getNotes, getRelatedGames, getReferencedNotes, getGameArt, getGameEyebrow } from '../../lib/content';
+import type { Game, Note } from '../../lib/content';
 
 export async function getStaticPaths() {
   const games = await getGames();
+  const notes = await getNotes();
   return games.map((g) => ({
     params: { game: g.id },
-    props: { g, relatedGames: getRelatedGames(g, games) },
+    props: { g, relatedGames: getRelatedGames(g, games), referencedNotes: getReferencedNotes(g, notes) },
   }));
 }
 
 interface Props {
   g: Game;
   relatedGames: Game[];
+  referencedNotes: Note[];
 }
 
-const { g, relatedGames } = Astro.props;
+const { g, relatedGames, referencedNotes } = Astro.props;
 const { Content } = await render(g.entry);
 const Art = getGameArt(g);
-const hasAddendum = g.downloads.length > 0 || g.attributions.length > 0 || relatedGames.length > 0;
+const hasAddendum =
+  g.downloads.length > 0 || g.attributions.length > 0 || referencedNotes.length > 0 || relatedGames.length > 0;
 ---
 
 <Base title={`${g.title} — Rules`} description={g.description}>
@@ -63,9 +67,19 @@ const hasAddendum = g.downloads.length > 0 || g.attributions.length > 0 || relat
     <Content />
   </div>
 
-  {hasAddendum && <hr class="rule rule--addendum" style={`margin-top:52px;background:${g.accent}`} />}
+  {
+    hasAddendum && (
+      <>
+        <hr class="rule rule--addendum rule--heavy" style={`margin-top:52px;background:${g.accent}`} />
 
-  <DownloadsList game={g} />
+        <DownloadsList accent={g.accent} downloads={g.downloads} attributions={g.attributions} />
 
-  <GameCoverGrid games={relatedGames} label="RELATED GAMES" />
+        <NoteReferenceList notes={referencedNotes} label="NOTE REFERENCES" accent={g.accent} />
+
+        <GameCoverGrid games={relatedGames} label="GAME REFERENCES" accent={g.accent} />
+
+        <hr class="rule rule--addendum rule--heavy" style={`margin-top:24px;background:${g.accent}`} />
+      </>
+    )
+  }
 </Base>

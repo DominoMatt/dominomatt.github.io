@@ -6,14 +6,15 @@ import { url } from '../lib/links';
 interface Props {
   games: Game[];
   label: string;
+  accent: string;
 }
 
-const { games, label } = Astro.props;
+const { games, label, accent } = Astro.props;
 ---
 
 {
   games.length > 0 && (
-    <section class="game-links" aria-label={label}>
+    <section class="footer-block game-links" style={`--accent:${accent}`} aria-label={label}>
       <div class="label label--h4">{label}</div>
       <div class="game-links-grid">
         {games.map((g) => (

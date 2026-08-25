@@ -4,6 +4,7 @@ date: 2026-07-09
 accent: "#8f3327"
 dek: "Dominoes — also called tiles, bones, rocks, stones, men, or cards — are generic gaming pieces that have been around for 400+ years."
 games: [draw_dominoes]
+relatedNotes: [layout_games, dominoes_as_cards]
 ---
 
 - A domino is typically twice as long as it is wide and is split into two ends by a center line.
@@ -35,14 +36,14 @@ Equal End Matching applies to dominoes used as either tiles or cards.
 
 ### As a tile...
 
-Most domino games are tile [**layout games**](https://dominomatt.github.io/notes/layout_games/)— typically tiles are played end-to-end to build layout, most commonly using Equal End Matching. Traditionally this class of domino games are broadly considered Connecting games.
+Most domino games are tile [**layout games**](/notes/layout_games/)— typically tiles are played end-to-end to build layout, most commonly using Equal End Matching. Traditionally this class of domino games are broadly considered Connecting games.
 
 - At least 1 end of a domino being played must match an open end of another domino that is already been played/set in the layout (Equal End Matching).
 - The matching ends are connected together end-to-end and that end is closed and a new open end in the layout is now available. A basic line layout has 2 open ends.
 
 ### As a card...
 
-Dominoes can be played in a manner similar to [cards](https://dominomatt.github.io/notes/dominoes_as_cards/).
+Dominoes can be played in a manner similar to [cards](/notes/dominoes_as_cards/).
 
 - One end of a domino must match an end of another domino (Equal End Matching). This being roughly equivalent to a playing cards 'suit'. A 2-6 and 2-3 domino would be considered a pair of 2s suitwise. The 6 and 3 would be their 'ranks'.
 - Most dominoes belong to two suits; for instance a 2-5 domino belongs the suit of 2s (rank 5) or the suit of 5s (rank 2). However doubles (e.g. 2-2, 5-5, etc.) belong to a single suit and in 'card' type games rank highest in their suit.

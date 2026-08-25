@@ -4,6 +4,16 @@ date: 2026-08-11
 accent: "#8a5a44"
 dek: "Fishing games and value-added content for younger players."
 games: [fish_pond, fish_on_a_dish]
+downloads:
+  - title: Trophies — Color and Play
+    file: fish_pond_trophies.pdf
+    description: Print and Play Trophies for Fish Pond.
+    spec: PDF · LETTER · Black & White
+  - title: Other Fish — Color and Play
+    file: other_fish.pdf
+    description: Expansion cards for 3-4 player rounds.
+    spec: PDF · LETTER · Black & White
+relatedNotes: [kids_content]
 published: false
 ---
 

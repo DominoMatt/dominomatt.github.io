@@ -3,7 +3,9 @@ import { render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
 import GameCoverGrid from '../../components/GameCoverGrid.astro';
-import { getNotes, getGames, getReferencedGames, nextPublished } from '../../lib/content';
+import NoteReferenceList from '../../components/NoteReferenceList.astro';
+import DownloadsList from '../../components/DownloadsList.astro';
+import { getNotes, getGames, getReferencedGames, getRelatedNotes, nextPublished } from '../../lib/content';
 import type { Note, Game } from '../../lib/content';
 import { url } from '../../lib/links';
 
@@ -16,6 +18,7 @@ export async function getStaticPaths() {
       n,
       next: nextPublished(notes, i),
       referencedGames: getReferencedGames(n, games),
+      relatedNotes: getRelatedNotes(n, notes),
     },
   }));
 }
@@ -24,10 +27,12 @@ interface Props {
   n: Note;
   next: Note;
   referencedGames: Game[];
+  relatedNotes: Note[];
 }
 
-const { n, next, referencedGames } = Astro.props;
+const { n, next, referencedGames, relatedNotes } = Astro.props;
 const { Content } = await render(n.entry);
+const hasAddendum = n.downloads.length > 0 || relatedNotes.length > 0 || referencedGames.length > 0;
 ---
 
 <Base title={n.title} description={n.dek}>
@@ -44,9 +49,23 @@ const { Content } = await render(n.entry);
     <Content />
   </div>
 
-  <GameCoverGrid games={referencedGames} label="GAMES IN THIS ARTICLE" />
+  {
+    hasAddendum && (
+      <>
+        <hr class="rule rule--addendum rule--heavy" style={`margin-top:52px;background:${n.accent}`} />
 
-  <div class="footer-actions">
+        <DownloadsList accent={n.accent} downloads={n.downloads} />
+
+        <NoteReferenceList notes={relatedNotes} label="NOTE REFERENCES" accent={n.accent} />
+
+        <GameCoverGrid games={referencedGames} label="GAME REFERENCES" accent={n.accent} />
+
+        <hr class="rule rule--addendum rule--heavy" style={`margin-top:24px;background:${n.accent}`} />
+      </>
+    )
+  }
+
+  <div class={hasAddendum ? 'footer-actions footer-actions--flush' : 'footer-actions'}>
     <a class="note-next" href={url(`/notes/${next.id}`)}>NEXT · {next.title} →</a>
   </div>
 

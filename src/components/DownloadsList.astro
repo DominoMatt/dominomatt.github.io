@@ -1,20 +1,20 @@
 ---
-import type { Game } from '../lib/content';
+import type { Download } from '../lib/content';
 import { descriptionLines } from '../lib/content';
 import { url } from '../lib/links';
 
 interface Props {
-  game: Game;
+  accent: string;
+  downloads: Download[];
+  attributions?: string[]; // omit for content with nothing to credit, e.g. notes
 }
 
-const { game: g } = Astro.props;
-const downloads = g.downloads;
-const attributions = g.attributions;
+const { accent, downloads, attributions = [] } = Astro.props;
 ---
 
 {
   downloads.length > 0 && (
-    <section class="downloads-section" style={`--accent:${g.accent}`} aria-label="Downloads">
+    <section class="footer-block downloads-section" style={`--accent:${accent}`} aria-label="Downloads">
       <div class="label label--h4">DOWNLOADS</div>
       <div class="downloads-list">
         {downloads.map((d) => (
@@ -77,9 +77,9 @@ const attributions = g.attributions;
 
 {
   attributions.length > 0 && (
-    <section class="attributions-section" aria-label="Attributions">
+    <section class="footer-block attributions-section" style={`--accent:${accent}`} aria-label="Attributions">
       <div class="label label--h4">ATTRIBUTIONS</div>
-      <div class="prose attributions-body" style={`--accent:${g.accent}`}>
+      <div class="prose attributions-body" style={`--accent:${accent}`}>
         <ul>
           {attributions.map((a) => (
             <li>{a}</li>
