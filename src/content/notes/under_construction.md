@@ -10,12 +10,17 @@ published: false
 
 Original domino-based games to play (playtest), and share. The games require generic and common components (mainly dominoes) and any additional components that are necessary are included as downloads.
 
-## Formatting Notes
+## READ ME
 
-**READ ME**
+### Formatting Notes For Games
 
-- 1, 2, 3... is a sequential type flow.
-- A, B, C... is a list of options
+- 1, 2, 3... is a sequential flow; do 1, then 2 and so on.
+- A, B, C... is a list of options; choose X options off this list, typically 1.
+- **Bold** is important.
+- *Italics* is ?.
+- 'Single quotes' is air quotes... some liberties have been taken... analogous to a slant rhythm... a sudo meaning. 
+- Arbitrary Capitalizations- This mostly points to word usage that is directly tied to a markdown section, rule section, game mechanic, or random Thing within the ruleset.
+  - This is content issue/bug that need to be resolved.
 
 ## A work in progress...
 
