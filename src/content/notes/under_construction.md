@@ -20,7 +20,7 @@ Original domino-based games to play (playtest), and share. The games require gen
 - *Italics* is ?.
 - 'Single quotes' is air quotes... some liberties have been taken... analogous to a slant rhythm... a sudo meaning. 
 - Arbitrary Capitalizations- This mostly points to word usage that is directly tied to a markdown section, rule section, game mechanic, or random Thing within the ruleset.
-  - This is content issue/bug that need to be resolved.
+  - This is a content issue/bug that need to be resolved in a better way.
 
 ## A work in progress...
 
