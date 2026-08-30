@@ -39,7 +39,7 @@ I'm currently developing the Fishing Collection as my active goal and intent.
 - Play Fish Pond.
 - Collaborate in developing the Fishing Collection.
 
-## The Fishing Collection
+## Gone Fishing: The Fishing Collection
 
 Under Development... link [**here**](/notes/fishing/)
 
