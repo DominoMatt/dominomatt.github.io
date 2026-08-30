@@ -10,7 +10,7 @@ published: false
 
 Original domino-based games to play (playtest), and share. The games require generic and common components (mainly dominoes) and any additional components that are necessary are included as downloads.
 
-## READ ME
+## Read Me
 
 ### Formatting Notes for Games
 
