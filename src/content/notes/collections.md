@@ -12,7 +12,7 @@ published: true
 
 ## Gone Fishing: The Fishing Collection
 
-All fishing related games and print and play assets in one central locale.
+All fishing related games and print and play assets in one central [**locale**](/notes/fishing/).
   
 - Fish Pond
 - Fish on a Dish
@@ -20,7 +20,7 @@ All fishing related games and print and play assets in one central locale.
   
 ## Traditional Domino Variants
 
-The central repo for all the traditional domino games that are here on the site.
+The central repo for all the [traditional domino games](/notes/domino_variants/) that are here on the site.
 
 - Draw
 - Block
