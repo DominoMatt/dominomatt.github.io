@@ -2,17 +2,15 @@
 title: Domino Variants
 date: 2026-08-15
 accent: "#8f3327"
-dek: "A collection of traditional domino game variants."
+dek: "A collection of all traditional domino game variants on the site."
 games: [draw_dominoes, block_dominoes, cross_dominoes]
 published: true
 ---
 
-All traditional domino games on the site.
-
 - Basic dominoes
     - Draw
     - Block
- -Cross dominoes 
+ - Cross dominoes 
 
 ## Basic Dominoes
 
