@@ -35,7 +35,9 @@ downloads:
 
 ## Gameplay
 
-### On your turn
+Cast your line and catch a fish. Collect trophies if you can.
+
+#### On your turn
 
 1. Roll a six-sided die.
 2. Catch any Fish (domino) in the Pond that has the same value on 1 of it's ends as your die's value.
