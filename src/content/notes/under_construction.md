@@ -12,7 +12,7 @@ Original domino-based games to play (playtest), and share. The games require gen
 
 ## READ ME
 
-### Formatting Notes For Games
+### Formatting Notes for Games
 
 - 1, 2, 3... is a sequential flow; do 1, then 2 and so on.
 - A, B, C... is a list of options; choose X options off this list, typically 1.
