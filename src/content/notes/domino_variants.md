@@ -7,7 +7,12 @@ games: [draw_dominoes, block_dominoes, cross_dominoes]
 published: true
 ---
 
-This is a central repo for all the traditional domino games that are here on the site.
+All traditional domino games on the site.
+
+- Basic dominoes
+    - Draw
+    - Block
+ -Cross dominoes 
 
 ## Basic Dominoes
 
