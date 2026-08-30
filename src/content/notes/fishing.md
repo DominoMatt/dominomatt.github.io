@@ -13,7 +13,7 @@ downloads:
     file: other_fish.pdf
     description: Expansion cards for 3-4 player rounds.
     spec: PDF · LETTER · Black & White
-relatedNotes: [kids_content]
+relatedNotes: [kids_content, print_and_play_cards]
 published: false
 ---
 
