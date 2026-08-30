@@ -19,8 +19,7 @@ published: false
 
 ## The Fishing Collection
 
-- More than just games that are meant to be played.
-- Content designed to give additional relevance to simple games.
+Expand your Fishing experience with Color and Play, and Read and Play materials.
 
 - [Trophies](/print/fish_pond_trophies.pdf) for Fish Pond.
 - [Other Fish](/print/other_fish.pdf) for better 3+ player rounds.
