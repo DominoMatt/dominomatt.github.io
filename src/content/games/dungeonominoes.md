@@ -63,7 +63,7 @@ The layout starts as an arm layout and becomes more tree-like during play.
 - Lay the Entrance card down and connect any non-double domino to it.
 - The end not attached to the Entrance is the open end that play will progress from.
 - The layout continues as an arm layout with a single open end until a double gets played.
-- Between the Entrance and the first Room, the **Draw 1** mode is **modified**... if you cannot play, you draw 1, and then must pass.
+- Between the Entrance and the first Room, the **Draw 1** mode is **modified**... if you cannot play, you draw 1, and then **must pass**.
 
 ### Tree
 
