@@ -35,7 +35,7 @@ downloads:
 
 ## Gameplay
 
-Cast your line and catch a fish. Collect trophies if you can.
+Cast your line (roll) and catch a fish. Collect trophies if you can.
 
 #### On your turn
 
