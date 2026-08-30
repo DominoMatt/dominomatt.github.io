@@ -10,21 +10,20 @@ accent: "#757575"
 ink: "#dde4d8"
 # motif: pips
 art: dungeon_arch.svg
-description: "Dungeon-ominoes is a primarily a draw domino game that creates (over time) what could be considered a tree layout."
+description: "Dungeon-ominoes is a draw domino game that creates (over time) what could be considered a tree layout."
 mechanics: [Tile Placement, Hand Management]
 license: CC BY-NC
-contents: Rules Sheet · 1-page basic Rooms
-requires: Double 6 dominoes · Rooms (basic) cards
+contents: Rules Sheet · Rooms (basic8)
+requires: Double 6 dominoes · Room cards (basic8)
 published: true
 downloads:
-   - title: Rooms (basic) cards
+   - title: Room cards
      file: cards - basic rooms.pdf
      description: "Print and Play"
      spec: PDF · LETTER · COLOR
 attributions:
   - Box art icon by Icons8, MIT License
 # relatedGames: []
-# published: false
 ---
 
 ## Setup
@@ -43,7 +42,7 @@ attributions:
 
 1. Players take turns settings one domino from hand to an open end of the layout on their turn.
    - Set tiles according to the Layout and Rooms rules below.
-2. If you don't have a play... **Draw 1** and play or pass. (This isn't true until the 1st Room is set to the layout)
+2. If you don't have a play... **Draw 1** and then play or pass. (This isn't true until the 1st Room is set to the layout)
 3. When a player sheds their hand (goes out) or the game is blocked, the round is done.
 
 - Certain branches of the layout may need to be re-adjusted during play, to account for table space and the layout doubling back on itself.
@@ -64,8 +63,7 @@ The layout starts as an arm layout and becomes more tree-like during play.
 - Lay the Entrance card down and connect any non-double domino to it.
 - The end not attached to the Entrance is the open end that play will progress from.
 - The layout continues as an arm layout with a single open end until a double gets played.
-- Between the Entrance and the first Room, the draw mode is block, meaning that if you cannot play, you pass (no drawing).
-- If the arm becomes blocked (no player can make a play) during the Arm phase, start draw 1 to continue play.
+- Between the Entrance and the first Room, the **Draw 1** mode is **modified**... if you cannot play, you draw 1, and then must pass.
 
 ### Tree
 
