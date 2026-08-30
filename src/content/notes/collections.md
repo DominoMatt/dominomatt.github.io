@@ -7,7 +7,8 @@ relatedNotes: [fishing, domino_variants]
 published: true
 ---
 
-- All Game Collections are listed here.
+- Gone Fishing
+- Traditional Domino Variants
 
 ## Gone Fishing: The Fishing Collection
 
