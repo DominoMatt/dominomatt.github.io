@@ -14,7 +14,7 @@ description: "Dungeon-ominoes is a draw domino game that creates (over time) wha
 mechanics: [Tile Placement, Hand Management]
 license: CC BY-NC
 contents: Rules Sheet · Rooms (basic8)
-requires: Double 6 dominoes · Room cards (basic8)
+requires: Double 9 dominoes · Room cards (basic8)
 published: true
 downloads:
    - title: Room cards
@@ -33,8 +33,8 @@ attributions:
    | Players | # of dominoes |
    | ------- | ------------- |
    | 2       | 9 tiles       |
-   | 3       | 7 tiles       |
-   | 4       | 5 tiles       |
+   | 3       | 8 tiles       |
+   | 4       | 7 tiles       |
 3. Shuffle the 7 basic Room cards and pile them in a face down stack.
 4. Place the Entrance out.
 
@@ -53,6 +53,7 @@ attributions:
 - A basic Room card gets drawn at random when a double is being set to the layout.
 - Connect the arrow to the existing open end of the layout, then place the double on top of the Room card.
 - Each Room is a variable spinner and has between 1 and 3 "outs" (open ends), marked in red for visibility.
+- There are only 7 basic rooms and there is 10 doubles in a double 9 set, so there is 3 extra doubles... after all rooms are placed any more doubles played don't branch the layout and are simply played in line.
 
 ## Layout
 
